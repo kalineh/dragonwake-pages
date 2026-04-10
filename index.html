@@ -1,1 +1,344 @@
-<!doctypehtml><html lang=en-us><head><meta charset=utf-8><meta content="text/html; charset=utf-8"http-equiv=Content-Type><meta content="width=device-width,initial-scale=1"name=viewport><title>Dragonwake</title><style>:root{color-scheme:dark;--page-bg:#12110f;--panel-bg:#1b1916;--panel-border:#574b39;--text-main:#e4dccf;--text-dim:#b3a48a;--accent:#d0b676;--shadow:rgba(0, 0, 0, 0.4)}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at top,rgba(208,182,118,.12),transparent 40%),linear-gradient(180deg,#191714 0,var(--page-bg) 100%);color:var(--text-main);font-family:"Iosevka Term","Cascadia Mono",Consolas,monospace}.page{width:min(100%,1100px);padding:24px;display:grid;gap:16px;justify-items:center}.frame{width:min(100%,980px);padding:14px;border:1px solid var(--panel-border);background:linear-gradient(180deg,rgba(34,31,28,.96),rgba(23,21,18,.98));box-shadow:0 20px 50px var(--shadow)}canvas{display:block;width:100%;height:auto;image-rendering:pixelated;image-rendering:crisp-edges;outline:0;background:#000}.notes{width:min(100%,980px);padding:12px 14px;border:1px solid rgba(87,75,57,.7);background:rgba(27,25,22,.88);color:var(--text-dim);line-height:1.45;font-size:14px}.notes strong{color:var(--accent)}</style><script>var Module={canvas:document.getElementById("canvas")}</script></head><body><main class=page><section class=frame><canvas id=canvas oncontextmenu=event.preventDefault() tabindex=0></canvas></section><section class=notes><strong>Local test:</strong> serve this build over <code>http://localhost</code> with <code>emrun</code> or <code>python -m http.server</code>. Click the canvas if the page needs focus before keyboard input starts landing.</section></main><script async src=dragonwake.js></script></body></html>
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="dragonwake:canonical-ref" content="https://kalineh.github.io/dragonwake-pages/">
+  <title>Dragonwake</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --page-bg: #12110f;
+      --panel-bg: #1b1916;
+      --panel-border: #574b39;
+      --text-main: #e4dccf;
+      --text-dim: #b3a48a;
+      --accent: #d0b676;
+      --shadow: rgba(0, 0, 0, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at top, rgba(208, 182, 118, 0.12), transparent 40%),
+        linear-gradient(180deg, #191714 0%, var(--page-bg) 100%);
+      color: var(--text-main);
+      font-family: "Iosevka Term", "Cascadia Mono", Consolas, monospace;
+    }
+
+    .page {
+      width: min(100%, 1100px);
+      padding: 24px;
+      display: grid;
+      gap: 16px;
+      justify-items: center;
+    }
+
+    .portal {
+      width: min(100%, 980px);
+      display: grid;
+      gap: 12px;
+      padding: 12px 14px;
+      border: 1px solid rgba(208, 182, 118, 0.35);
+      background: linear-gradient(180deg, rgba(48, 38, 24, 0.92), rgba(28, 23, 17, 0.94));
+    }
+
+    .portal-copy {
+      display: grid;
+      gap: 4px;
+    }
+
+    .portal-status {
+      color: var(--accent);
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .portal-meta {
+      color: var(--text-dim);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .portal-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .portal-actions a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 0 12px;
+      border: 1px solid rgba(208, 182, 118, 0.45);
+      color: var(--text-main);
+      text-decoration: none;
+      background: rgba(14, 12, 10, 0.55);
+    }
+
+    .portal-actions a:hover,
+    .portal-actions a:focus-visible {
+      border-color: var(--accent);
+      color: var(--accent);
+      outline: none;
+    }
+
+    .frame {
+      width: min(100%, 980px);
+      padding: 14px;
+      border: 1px solid var(--panel-border);
+      background: linear-gradient(180deg, rgba(34, 31, 28, 0.96), rgba(23, 21, 18, 0.98));
+      box-shadow: 0 20px 50px var(--shadow);
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      outline: none;
+      background: #000;
+    }
+
+    .notes {
+      width: min(100%, 980px);
+      padding: 12px 14px;
+      border: 1px solid rgba(87, 75, 57, 0.7);
+      background: rgba(27, 25, 22, 0.88);
+      color: var(--text-dim);
+      line-height: 1.45;
+      font-size: 14px;
+    }
+
+    .notes strong {
+      color: var(--accent);
+    }
+  </style>
+  <script async src="https://vibejam.cc/2026/widget.js"></script>
+  <script>
+    (function () {
+      const hubUrl = 'https://vibejam.cc/portal/2026';
+      const forwardedKeys = [
+        'username',
+        'color',
+        'ref',
+        'hp',
+        'team',
+        'avatar_url',
+        'speed',
+        'speed_x',
+        'speed_y',
+        'speed_z',
+        'rotation_x',
+        'rotation_y',
+        'rotation_z',
+      ];
+
+      function readCanonicalRef() {
+        const meta = document.querySelector('meta[name="dragonwake:canonical-ref"]');
+        if (!meta || !meta.content) {
+          return '';
+        }
+        return meta.content.trim();
+      }
+
+      function readText(params, key) {
+        const value = params.get(key);
+        return value ? value.trim() : '';
+      }
+
+      function readPortalFlag(params) {
+        const value = readText(params, 'portal').toLowerCase();
+        return value === '1' || value === 'true' || value === 'yes';
+      }
+
+      function safeUrl(value) {
+        if (!value) {
+          return null;
+        }
+
+        try {
+          const url = new URL(value, window.location.href);
+          if (url.protocol !== 'http:' && url.protocol !== 'https:') {
+            return null;
+          }
+          return url;
+        } catch (error) {
+          return null;
+        }
+      }
+
+      function setForwardedParams(url, values, includePortalFlag) {
+        if (includePortalFlag) {
+          url.searchParams.set('portal', 'true');
+        }
+
+        for (const key of forwardedKeys) {
+          if (key === 'ref') {
+            continue;
+          }
+
+          const value = values[key];
+          if (value) {
+            url.searchParams.set(key, value);
+          }
+        }
+      }
+
+      const params = new URLSearchParams(window.location.search);
+      const canonicalRef = readCanonicalRef();
+      const forwarded = {};
+      for (const key of forwardedKeys) {
+        forwarded[key] = readText(params, key);
+      }
+
+      const portalState = {
+        portal: readPortalFlag(params),
+        ref: forwarded.ref,
+        username: forwarded.username,
+        color: forwarded.color,
+        hp: forwarded.hp,
+        team: forwarded.team,
+        avatar_url: forwarded.avatar_url,
+        speed: forwarded.speed,
+        speed_x: forwarded.speed_x,
+        speed_y: forwarded.speed_y,
+        speed_z: forwarded.speed_z,
+        rotation_x: forwarded.rotation_x,
+        rotation_y: forwarded.rotation_y,
+        rotation_z: forwarded.rotation_z,
+      };
+
+      function buildPortalHubUrl() {
+        const url = new URL(hubUrl);
+        if (canonicalRef) {
+          url.searchParams.set('ref', canonicalRef);
+        }
+        setForwardedParams(url, forwarded, false);
+        return url.toString();
+      }
+
+      function buildReturnUrl() {
+        const target = safeUrl(portalState.ref);
+        if (!target) {
+          return '';
+        }
+        setForwardedParams(target, forwarded, true);
+        return target.toString();
+      }
+
+      function redirect(url) {
+        if (url) {
+          window.location.href = url;
+        }
+      }
+
+      const portalApi = {
+        state: portalState,
+        canonicalRef: canonicalRef,
+        buildPortalHubUrl: buildPortalHubUrl,
+        buildReturnUrl: buildReturnUrl,
+        goToHub: function () {
+          redirect(buildPortalHubUrl());
+        },
+        returnToRef: function () {
+          redirect(buildReturnUrl());
+        },
+      };
+
+      var Module = window.Module || {};
+      Module.canvas = document.getElementById('canvas');
+      Module.portalState = portalState;
+      Module.dragonwakePortal = portalApi;
+      Module.canonicalRef = canonicalRef;
+      window.Module = Module;
+      window.dragonwakePortal = portalApi;
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const status = document.getElementById('portal-status');
+        const meta = document.getElementById('portal-meta');
+        const hubLink = document.getElementById('portal-hub');
+        const returnLink = document.getElementById('portal-return');
+        const returnUrl = buildReturnUrl();
+
+        if (hubLink) {
+          hubLink.href = buildPortalHubUrl();
+        }
+
+        if (returnLink) {
+          if (returnUrl) {
+            returnLink.href = returnUrl;
+            returnLink.hidden = false;
+          } else {
+            returnLink.hidden = true;
+          }
+        }
+
+        if (status) {
+          if (portalState.portal) {
+            status.textContent = portalState.username
+              ? 'Portal arrival detected for ' + portalState.username + '.'
+              : 'Portal arrival detected.';
+          } else {
+            status.textContent = 'Vibe Jam 2026 portal-ready build.';
+          }
+        }
+
+        if (meta) {
+          const details = [];
+          if (portalState.ref) {
+            details.push('return armed');
+          }
+          if (portalState.team) {
+            details.push('team ' + portalState.team);
+          }
+          if (portalState.color) {
+            details.push('color ' + portalState.color);
+          }
+          if (portalState.hp) {
+            details.push('hp ' + portalState.hp);
+          }
+          meta.textContent = details.length > 0
+            ? details.join(' | ')
+            : 'Outbound portal links use the canonical GitHub Pages URL.';
+        }
+      });
+    })();
+  </script>
+</head>
+<body>
+  <main class="page">
+    <section class="portal">
+      <div class="portal-copy">
+        <strong class="portal-status" id="portal-status">Vibe Jam 2026 portal-ready build.</strong>
+        <div class="portal-meta" id="portal-meta">Outbound portal links use the canonical GitHub Pages URL.</div>
+      </div>
+      <div class="portal-actions">
+        <a id="portal-hub" href="https://vibejam.cc/portal/2026">Vibe Jam Portal</a>
+        <a id="portal-return" href="#" hidden>Return to Previous World</a>
+      </div>
+    </section>
+    <section class="frame">
+      <canvas id="canvas" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+    </section>
+    <section class="notes">
+      <strong>Local test:</strong> serve this build over <code>http://localhost</code> with
+      <code>emrun</code> or <code>python -m http.server</code>. Click the canvas if the page needs focus
+      before keyboard input starts landing. Portal params are parsed on load and exposed on
+      <code>Module.portalState</code> for the runtime.
+    </section>
+  </main>
+  <script async src="dragonwake.js"></script>
+</body>
+</html>
