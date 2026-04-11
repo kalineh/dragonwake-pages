@@ -34,18 +34,14 @@
     }
 
     body {
-      padding:
-        max(8px, env(safe-area-inset-top))
-        max(8px, env(safe-area-inset-right))
-        max(10px, env(safe-area-inset-bottom))
-        max(8px, env(safe-area-inset-left));
+      padding: 0;
     }
 
     .phone-shell {
-      width: min(100%, 520px);
-      margin: 0 auto;
+      width: 100%;
+      margin: 0;
       display: grid;
-      gap: var(--gap);
+      gap: 4px;
     }
 
     .panel {
@@ -55,7 +51,7 @@
     }
 
     .canvas-wrap {
-      padding: 8px;
+      width: 100%;
     }
 
     canvas {
@@ -70,14 +66,14 @@
     }
 
     .number-row {
-      padding: 8px;
+      padding: 0 4px;
       display: grid;
       grid-template-columns: repeat(9, minmax(0, 1fr));
       gap: 4px;
     }
 
     .controls {
-      padding: 8px;
+      padding: 0 4px 4px;
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(132px, 0.8fr);
       gap: var(--gap);
@@ -169,7 +165,7 @@
 </head>
 <body>
   <main class="phone-shell">
-    <section class="panel canvas-wrap">
+    <section class="canvas-wrap">
       <canvas id="canvas" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
     </section>
 
@@ -182,20 +178,20 @@
       <button class="menu-button" data-char="6" title="Quest log">6</button>
       <button class="menu-button" data-char="7" title="Skills">7</button>
       <button class="menu-button" data-char="8" title="Spellbook">8</button>
-      <button class="menu-button" data-char="z" title="Class actions">9</button>
+      <button class="menu-button" data-char="9" title="Options">9</button>
     </section>
 
     <section class="panel controls">
       <div class="dpad" aria-label="Movement pad">
-        <button class="dpad-button" data-numpad="7" aria-label="Northwest">↖</button>
-        <button class="dpad-button" data-numpad="8" aria-label="North">↑</button>
-        <button class="dpad-button" data-numpad="9" aria-label="Northeast">↗</button>
-        <button class="dpad-button" data-numpad="4" aria-label="West">←</button>
-        <button class="dpad-button" data-numpad="5" aria-label="Wait">•</button>
-        <button class="dpad-button" data-numpad="6" aria-label="East">→</button>
-        <button class="dpad-button" data-numpad="1" aria-label="Southwest">↙</button>
-        <button class="dpad-button" data-numpad="2" aria-label="South">↓</button>
-        <button class="dpad-button" data-numpad="3" aria-label="Southeast">↘</button>
+        <button class="dpad-button" data-numpad="7" aria-label="Northwest">NW</button>
+        <button class="dpad-button" data-numpad="8" aria-label="North">N</button>
+        <button class="dpad-button" data-numpad="9" aria-label="Northeast">NE</button>
+        <button class="dpad-button" data-numpad="4" aria-label="West">W</button>
+        <button class="dpad-button" data-numpad="5" aria-label="Wait">WAIT</button>
+        <button class="dpad-button" data-numpad="6" aria-label="East">E</button>
+        <button class="dpad-button" data-numpad="1" aria-label="Southwest">SW</button>
+        <button class="dpad-button" data-numpad="2" aria-label="South">S</button>
+        <button class="dpad-button" data-numpad="3" aria-label="Southeast">SE</button>
       </div>
 
       <div class="action-stack" aria-label="Core actions">
@@ -204,7 +200,7 @@
         <button class="action-button" data-char="f"><span class="action-key">F</span><span class="action-label">Use</span></button>
         <button class="action-button" data-char="t"><span class="action-key">T</span><span class="action-label">Shoot</span></button>
         <button class="action-button" data-char="x"><span class="action-key">X</span><span class="action-label">Look</span></button>
-        <button class="action-button" data-special="enter"><span class="action-key">⏎</span><span class="action-label">Confirm</span></button>
+        <button class="action-button" data-char="z"><span class="action-key">Z</span><span class="action-label">Class</span></button>
         <button class="action-button" data-special="escape"><span class="action-key">Esc</span><span class="action-label">Back</span></button>
       </div>
     </section>
