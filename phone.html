@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dragonwake Phone</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0c0b09;
+      --panel: #17130f;
+      --panel-2: #201913;
+      --border: #6f5836;
+      --text: #f0e4cc;
+      --text-dim: #bfae8c;
+      --accent: #d8b36e;
+      --button: #2a2119;
+      --button-active: #3b2d1f;
+      --gap: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Consolas, "Lucida Console", "Cascadia Mono", "Iosevka Term", monospace;
+    }
+
+    body {
+      padding:
+        max(8px, env(safe-area-inset-top))
+        max(8px, env(safe-area-inset-right))
+        max(10px, env(safe-area-inset-bottom))
+        max(8px, env(safe-area-inset-left));
+    }
+
+    .phone-shell {
+      width: min(100%, 520px);
+      margin: 0 auto;
+      display: grid;
+      gap: var(--gap);
+    }
+
+    .panel {
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, var(--panel-2), var(--panel));
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    .canvas-wrap {
+      padding: 8px;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #000;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      outline: none;
+      touch-action: manipulation;
+    }
+
+    .number-row {
+      padding: 8px;
+      display: grid;
+      grid-template-columns: repeat(9, minmax(0, 1fr));
+      gap: 4px;
+    }
+
+    .controls {
+      padding: 8px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(132px, 0.8fr);
+      gap: var(--gap);
+      align-items: stretch;
+    }
+
+    .dpad {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: repeat(3, minmax(0, 1fr));
+      gap: 4px;
+      min-height: 216px;
+    }
+
+    .action-stack {
+      display: grid;
+      grid-template-rows: repeat(7, minmax(0, 1fr));
+      gap: 4px;
+      min-height: 216px;
+    }
+
+    button {
+      border: 1px solid var(--border);
+      background: var(--button);
+      color: var(--text);
+      font: inherit;
+      padding: 0;
+      min-height: 44px;
+      border-radius: 0;
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    button:active,
+    button.is-held {
+      background: var(--button-active);
+      color: var(--accent);
+    }
+
+    .menu-button {
+      min-height: 40px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .dpad-button {
+      min-height: 68px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .action-button {
+      min-height: 30px;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .action-key {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .action-label {
+      color: var(--text-dim);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    @media (max-width: 360px) {
+      .controls {
+        grid-template-columns: minmax(0, 1fr) minmax(116px, 0.78fr);
+      }
+
+      .action-button {
+        font-size: 13px;
+      }
+
+      .action-label {
+        font-size: 11px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="phone-shell">
+    <section class="panel canvas-wrap">
+      <canvas id="canvas" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+    </section>
+
+    <section class="panel number-row" aria-label="Menu shortcuts">
+      <button class="menu-button" data-char="1" title="Message log">1</button>
+      <button class="menu-button" data-char="2" title="Character">2</button>
+      <button class="menu-button" data-char="3" title="Inventory">3</button>
+      <button class="menu-button" data-char="4" title="Equipment">4</button>
+      <button class="menu-button" data-char="5" title="Weapon skills">5</button>
+      <button class="menu-button" data-char="6" title="Quest log">6</button>
+      <button class="menu-button" data-char="7" title="Skills">7</button>
+      <button class="menu-button" data-char="8" title="Spellbook">8</button>
+      <button class="menu-button" data-char="z" title="Class actions">9</button>
+    </section>
+
+    <section class="panel controls">
+      <div class="dpad" aria-label="Movement pad">
+        <button class="dpad-button" data-numpad="7" aria-label="Northwest">↖</button>
+        <button class="dpad-button" data-numpad="8" aria-label="North">↑</button>
+        <button class="dpad-button" data-numpad="9" aria-label="Northeast">↗</button>
+        <button class="dpad-button" data-numpad="4" aria-label="West">←</button>
+        <button class="dpad-button" data-numpad="5" aria-label="Wait">•</button>
+        <button class="dpad-button" data-numpad="6" aria-label="East">→</button>
+        <button class="dpad-button" data-numpad="1" aria-label="Southwest">↙</button>
+        <button class="dpad-button" data-numpad="2" aria-label="South">↓</button>
+        <button class="dpad-button" data-numpad="3" aria-label="Southeast">↘</button>
+      </div>
+
+      <div class="action-stack" aria-label="Core actions">
+        <button class="action-button" data-char="e"><span class="action-key">E</span><span class="action-label">Interact</span></button>
+        <button class="action-button" data-char="r"><span class="action-key">R</span><span class="action-label">Take</span></button>
+        <button class="action-button" data-char="f"><span class="action-key">F</span><span class="action-label">Use</span></button>
+        <button class="action-button" data-char="t"><span class="action-key">T</span><span class="action-label">Shoot</span></button>
+        <button class="action-button" data-char="x"><span class="action-key">X</span><span class="action-label">Look</span></button>
+        <button class="action-button" data-special="enter"><span class="action-key">⏎</span><span class="action-label">Confirm</span></button>
+        <button class="action-button" data-special="escape"><span class="action-key">Esc</span><span class="action-label">Back</span></button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      const holdState = {
+        startTimer: 0,
+        repeatTimer: 0,
+      };
+
+      var Module = window.Module || {};
+      Module.canvas = document.getElementById('canvas');
+      window.Module = Module;
+
+      function focusCanvas() {
+        if (Module.canvas) {
+          Module.canvas.focus();
+        }
+      }
+
+      function bridgeReady() {
+        return typeof Module._dragonwake_web_enqueue_character === 'function' &&
+               typeof Module._dragonwake_web_enqueue_numpad_digit === 'function' &&
+               typeof Module._dragonwake_web_enqueue_enter === 'function' &&
+               typeof Module._dragonwake_web_enqueue_escape === 'function';
+      }
+
+      function sendCharacter(ch) {
+        if (!bridgeReady()) {
+          return;
+        }
+        Module._dragonwake_web_enqueue_character(ch.charCodeAt(0));
+        focusCanvas();
+      }
+
+      function sendNumpadDigit(digit) {
+        if (!bridgeReady()) {
+          return;
+        }
+        Module._dragonwake_web_enqueue_numpad_digit(digit);
+        focusCanvas();
+      }
+
+      function sendSpecial(name) {
+        if (!bridgeReady()) {
+          return;
+        }
+        if (name === 'enter') {
+          Module._dragonwake_web_enqueue_enter();
+        } else if (name === 'escape') {
+          Module._dragonwake_web_enqueue_escape();
+        }
+        focusCanvas();
+      }
+
+      function clearHold() {
+        if (holdState.startTimer) {
+          window.clearTimeout(holdState.startTimer);
+          holdState.startTimer = 0;
+        }
+        if (holdState.repeatTimer) {
+          window.clearInterval(holdState.repeatTimer);
+          holdState.repeatTimer = 0;
+        }
+      }
+
+      function beginRepeat(button, send) {
+        clearHold();
+        button.classList.add('is-held');
+        send();
+        holdState.startTimer = window.setTimeout(function () {
+          holdState.repeatTimer = window.setInterval(send, 150);
+        }, 280);
+      }
+
+      function endRepeat(button) {
+        button.classList.remove('is-held');
+        clearHold();
+      }
+
+      function bindTapButtons() {
+        document.querySelectorAll('[data-char]').forEach(function (button) {
+          button.addEventListener('click', function (event) {
+            event.preventDefault();
+            sendCharacter(button.getAttribute('data-char'));
+          });
+        });
+
+        document.querySelectorAll('[data-special]').forEach(function (button) {
+          button.addEventListener('click', function (event) {
+            event.preventDefault();
+            sendSpecial(button.getAttribute('data-special'));
+          });
+        });
+      }
+
+      function bindDpad() {
+        document.querySelectorAll('[data-numpad]').forEach(function (button) {
+          const digit = Number(button.getAttribute('data-numpad'));
+          const send = function () {
+            sendNumpadDigit(digit);
+          };
+
+          button.addEventListener('pointerdown', function (event) {
+            event.preventDefault();
+            beginRepeat(button, send);
+          });
+          button.addEventListener('pointerup', function () {
+            endRepeat(button);
+          });
+          button.addEventListener('pointercancel', function () {
+            endRepeat(button);
+          });
+          button.addEventListener('pointerleave', function () {
+            endRepeat(button);
+          });
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        bindTapButtons();
+        bindDpad();
+        focusCanvas();
+      });
+    })();
+  </script>
+  <script src="dragonwake.js"></script>
+</body>
+</html>
