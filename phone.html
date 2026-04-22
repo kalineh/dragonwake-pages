@@ -8,16 +8,25 @@
   <style>
     :root {
       color-scheme: dark;
-      --bg: #0c0b09;
-      --panel: #17130f;
-      --panel-2: #201913;
-      --border: #6f5836;
-      --text: #f0e4cc;
-      --text-dim: #bfae8c;
-      --accent: #d8b36e;
-      --button: #2a2119;
-      --button-active: #3b2d1f;
-      --gap: 8px;
+      --bg: #090b0f;
+      --screen-bg: #000000;
+      --band: #0f1218;
+      --panel: #151b24;
+      --panel-2: #1b2230;
+      --border: #545f72;
+      --text: #f0f4f8;
+      --text-dim: #b7c0cc;
+      --accent: #7ab0e6;
+      --button: #1a202b;
+      --button-active: #344152;
+      --face-bg: #12161d;
+      --safe-top: max(10px, env(safe-area-inset-top));
+      --safe-bottom: max(10px, env(safe-area-inset-bottom));
+      --safe-side: max(8px, env(safe-area-inset-left), env(safe-area-inset-right));
+      --gap: 10px;
+      --digit-gap: 6px;
+      --line: 2px;
+      --wait-radius: 18%;
     }
 
     * {
@@ -34,24 +43,34 @@
     }
 
     body {
-      padding: 0;
+      min-height: 100svh;
     }
 
     .phone-shell {
-      width: 100%;
-      margin: 0;
+      min-height: 100svh;
+      padding: 0 var(--safe-side) var(--safe-bottom);
       display: grid;
-      gap: 4px;
+      grid-template-rows: minmax(0, 1fr) auto;
+      gap: 8px;
+      background:
+        radial-gradient(circle at top, rgba(122, 176, 230, 0.10), transparent 34%),
+        linear-gradient(180deg, #12161c 0%, var(--bg) 100%);
     }
 
-    .panel {
-      border: 1px solid var(--border);
-      background: linear-gradient(180deg, var(--panel-2), var(--panel));
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    .screen-shell {
+      padding-top: var(--safe-top);
+      display: grid;
+      align-content: start;
+      justify-items: stretch;
+      min-height: 0;
     }
 
     .canvas-wrap {
       width: 100%;
+      background: var(--screen-bg);
+      border: 1px solid rgba(84, 95, 114, 0.55);
+      box-shadow: 0 20px 34px rgba(0, 0, 0, 0.38);
+      overflow: hidden;
     }
 
     canvas {
@@ -65,142 +84,357 @@
       touch-action: manipulation;
     }
 
-    .number-row {
-      padding: 0 4px;
+    .controller-band {
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, var(--panel-2), var(--band));
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.42);
+      padding: 8px 8px 10px;
       display: grid;
-      grid-template-columns: repeat(9, minmax(0, 1fr));
-      gap: 4px;
+      gap: 8px;
     }
 
-    .controls {
-      padding: 0 4px 4px;
+    .number-row {
+      display: grid;
+      grid-template-columns: repeat(9, minmax(0, 1fr));
+      gap: var(--digit-gap);
+    }
+
+    .controller-row {
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      gap: var(--gap);
+      gap: 12px;
       align-items: stretch;
     }
 
-    .dpad {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      grid-template-rows: repeat(3, minmax(0, 1fr));
-      gap: 4px;
-      width: min(100%, 220px);
-      min-height: 216px;
-      justify-self: center;
-      align-self: center;
+    .move-panel,
+    .action-panel {
+      min-width: 0;
+      min-height: 0;
     }
 
-    .action-stack {
+    .move-panel {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      grid-auto-rows: 1fr;
-      gap: 4px;
-      width: min(100%, 168px);
-      justify-self: center;
-      align-self: center;
+      justify-items: center;
+      align-items: center;
+      padding: 4px 0 2px;
     }
 
-    button {
+    .move-pad-hitbox {
+      display: grid;
+      place-items: center;
+      width: min(100%, 17.25rem);
+      aspect-ratio: 1 / 1;
+      touch-action: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .action-panel {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      padding: 4px 0 2px;
+    }
+
+    .move-pad {
+      position: relative;
+      width: 88%;
+      aspect-ratio: 1 / 1;
       border: 1px solid var(--border);
-      background: var(--button);
-      color: var(--text);
-      font: inherit;
+      background: linear-gradient(180deg, #171d28, #11161e);
+      touch-action: none;
+      user-select: none;
+      -webkit-user-select: none;
+      overflow: visible;
+    }
+
+    .move-ring {
+      position: absolute;
+      inset: 13%;
+      border: 2px solid #566272;
+      border-radius: 50%;
+    }
+
+    .move-line {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: calc(100% - 24px);
+      height: var(--line);
+      background: #566272;
+      transform-origin: center center;
+      translate: -50% -50%;
+    }
+
+    .move-line-v { transform: rotate(90deg); }
+    .move-line-d1 { transform: rotate(45deg); }
+    .move-line-d2 { transform: rotate(-45deg); }
+
+    .move-wait {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: calc(var(--wait-radius) * 2);
+      height: calc(var(--wait-radius) * 2);
+      translate: -50% -50%;
+      border-radius: 50%;
+      border: 2px solid #566272;
+      background: #202631;
+    }
+
+    .move-indicator {
+      position: absolute;
+      left: calc(50% + var(--indicator-x, 0px));
+      top: calc(50% + var(--indicator-y, 0px));
+      width: 14%;
+      aspect-ratio: 1 / 1;
+      translate: -50% -50%;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 2px rgba(15, 18, 24, 0.85);
+      opacity: 0;
+      transition: opacity 60ms linear;
+      pointer-events: none;
+    }
+
+    .move-pad.is-active .move-indicator {
+      opacity: 1;
+    }
+
+    .move-pad.is-waiting .move-wait {
+      background: var(--accent);
+      border-color: #e8eff7;
+    }
+
+    .face-cluster {
+      position: relative;
+      width: min(100%, 12rem);
+      aspect-ratio: 1 / 1;
+      justify-self: center;
+    }
+
+    .face-button {
+      position: absolute;
+      width: 38%;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--face-bg);
+      display: grid;
+      place-items: center;
       padding: 0;
-      min-height: 44px;
-      border-radius: 0;
       touch-action: manipulation;
       user-select: none;
       -webkit-user-select: none;
     }
 
-    button:active,
-    button.is-held {
+    .face-button svg {
+      width: 48%;
+      height: 48%;
+      stroke: var(--text);
+      stroke-width: 10;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      pointer-events: none;
+    }
+
+    .face-triangle { left: 31%; top: 1%; }
+    .face-square { left: 1%; top: 31%; }
+    .face-cross { left: 31%; top: 61%; }
+    .face-circle { left: 61%; top: 31%; }
+
+    .aux-column {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 4.55rem;
+      justify-self: center;
+      align-self: stretch;
+      min-height: 12.6rem;
+    }
+
+    .aux-column .aux-button:last-child {
+      margin-top: auto;
+    }
+
+    .aux-button,
+    .menu-button {
+      border: 1px solid var(--border);
+      background: var(--button);
+      color: var(--text);
+      font: inherit;
+      padding: 0;
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .aux-button {
+      min-height: 2.74rem;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .menu-button {
+      min-height: 2.58rem;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .face-button:active,
+    .face-button.is-held,
+    .aux-button:active,
+    .aux-button.is-held,
+    .menu-button:active,
+    .menu-button.is-held {
       background: var(--button-active);
       color: var(--accent);
     }
 
-    .menu-button {
-      min-height: 40px;
-      font-size: 16px;
-      font-weight: 700;
+    .face-button:active svg,
+    .face-button.is-held svg {
+      stroke: var(--accent);
     }
 
-    .dpad-button {
-      min-height: 68px;
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-    .action-button {
-      aspect-ratio: 1 / 1;
-      min-height: 54px;
-      font-size: 22px;
-      font-weight: 700;
-    }
-
-    @media (max-width: 360px) {
-      .controls {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    @media (max-width: 420px) {
+      .controller-row {
+        gap: 10px;
       }
 
-      .action-button {
-        font-size: 18px;
+      .aux-column {
+        width: 4.2rem;
+        min-height: 11.8rem;
+      }
+
+      .aux-button,
+      .menu-button {
+        font-size: 0.95rem;
       }
     }
   </style>
 </head>
 <body>
   <main class="phone-shell">
-    <section class="canvas-wrap">
-      <canvas id="canvas" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+    <section class="screen-shell">
+      <div class="canvas-wrap">
+        <canvas id="canvas" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+      </div>
     </section>
 
-    <section class="panel number-row" aria-label="Menu shortcuts">
-      <button class="menu-button" data-char="1" title="Message log">1</button>
-      <button class="menu-button" data-char="2" title="Character">2</button>
-      <button class="menu-button" data-char="3" title="Inventory">3</button>
-      <button class="menu-button" data-char="4" title="Equipment">4</button>
-      <button class="menu-button" data-char="5" title="Spellbook">5</button>
-      <button class="menu-button" data-char="6" title="Quest log">6</button>
-      <button class="menu-button" data-char="7" title="Skills">7</button>
-      <button class="menu-button" data-char="8" title="Weapon skills">8</button>
-      <button class="menu-button" data-char="9" title="Options">9</button>
-    </section>
+    <section class="controller-band" aria-label="Phone controls">
+      <section class="number-row" aria-label="Menu shortcuts">
+        <button class="menu-button" data-char="1" title="Message log">1</button>
+        <button class="menu-button" data-char="2" title="Character">2</button>
+        <button class="menu-button" data-char="3" title="Equipment">3</button>
+        <button class="menu-button" data-char="4" title="Inventory">4</button>
+        <button class="menu-button" data-char="5" title="Spellbook">5</button>
+        <button class="menu-button" data-char="6" title="Quest log">6</button>
+        <button class="menu-button" data-char="7" title="Skills">7</button>
+        <button class="menu-button" data-char="8" title="Weapon skills">8</button>
+        <button class="menu-button" data-char="9" title="Options">9</button>
+      </section>
 
-    <section class="panel controls">
-      <div class="dpad" aria-label="Movement pad">
-        <button class="dpad-button" data-numpad="7" aria-label="Northwest">NW</button>
-        <button class="dpad-button" data-numpad="8" aria-label="North">N</button>
-        <button class="dpad-button" data-numpad="9" aria-label="Northeast">NE</button>
-        <button class="dpad-button" data-numpad="4" aria-label="West">W</button>
-        <button class="dpad-button" data-numpad="5" aria-label="Wait">WAIT</button>
-        <button class="dpad-button" data-numpad="6" aria-label="East">E</button>
-        <button class="dpad-button" data-numpad="1" aria-label="Southwest">SW</button>
-        <button class="dpad-button" data-numpad="2" aria-label="South">S</button>
-        <button class="dpad-button" data-numpad="3" aria-label="Southeast">SE</button>
-      </div>
+      <section class="controller-row">
+        <div class="move-panel">
+          <div class="move-pad-hitbox" id="move-pad-hitbox">
+            <div class="move-pad" id="move-pad" aria-label="Movement pad">
+              <div class="move-ring" aria-hidden="true"></div>
+              <div class="move-line move-line-h" aria-hidden="true"></div>
+              <div class="move-line move-line-v" aria-hidden="true"></div>
+              <div class="move-line move-line-d1" aria-hidden="true"></div>
+              <div class="move-line move-line-d2" aria-hidden="true"></div>
+              <div class="move-wait" aria-hidden="true"></div>
+              <div class="move-indicator" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
 
-      <div class="action-stack" aria-label="Core actions">
-        <button class="action-button" data-special="enter" title="Interact / confirm">OK</button>
-        <button class="action-button" data-char="r" title="Take">R</button>
-        <button class="action-button" data-char="f" title="Use">F</button>
-        <button class="action-button" data-char="t" title="Shoot">T</button>
-        <button class="action-button" data-char="x" title="Look">X</button>
-        <button class="action-button" data-char="z" title="Class actions">Z</button>
-        <button class="action-button" data-special="escape" title="Back">ESC</button>
-      </div>
+        <div class="action-panel">
+          <div class="aux-column aux-column-left" aria-label="Left utility buttons">
+            <button class="aux-button" data-control="5" title="Auto walk">L1</button>
+            <button class="aux-button" data-control="7" title="Class actions">L2</button>
+            <button class="aux-button" data-control="9" title="Look">SEL</button>
+          </div>
+
+          <div class="face-cluster" aria-label="Core actions">
+            <button class="face-button face-triangle" data-control="4"
+                    title="Tertiary action" aria-label="Tertiary action">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <path d="M50 18 L78 72 L22 72 Z"></path>
+              </svg>
+            </button>
+            <button class="face-button face-square" data-control="3"
+                    title="Secondary action" aria-label="Secondary action">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <rect x="24" y="24" width="52" height="52"></rect>
+              </svg>
+            </button>
+            <button class="face-button face-cross" data-control="1"
+                    title="Interact or confirm" aria-label="Interact or confirm">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <path d="M28 28 L72 72"></path>
+                <path d="M72 28 L28 72"></path>
+              </svg>
+            </button>
+            <button class="face-button face-circle" data-control="2"
+                    title="Back or cancel" aria-label="Back or cancel">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <circle cx="50" cy="50" r="28"></circle>
+              </svg>
+            </button>
+          </div>
+
+          <div class="aux-column aux-column-right" aria-label="Right utility buttons">
+            <button class="aux-button" data-control="6" title="Cast ready spell">R1</button>
+            <button class="aux-button" data-control="8" title="Shoot">R2</button>
+            <button class="aux-button" data-control="10" title="Game menu">START</button>
+          </div>
+        </div>
+      </section>
     </section>
   </main>
 
   <script>
     (function () {
-      const holdState = {
+      const MOVE_REPEAT_DELAY_MS = 240;
+      const MOVE_REPEAT_INTERVAL_MS = 60;
+      const MOVE_WAIT_RADIUS = 0.18;
+      const MOVE_BOUNDARY_GAP = 0.0;
+      const MOVE_CARDINAL_BIAS = 3 * Math.PI / 180;
+      const TWO_PI = Math.PI * 2;
+      const HALF_SECTOR = Math.PI / 8;
+      const SECTOR_SIZE = Math.PI / 4;
+      const indicatorUnit = {
+        7: { x: -0.707, y: -0.707 },
+        8: { x: 0.0, y: -1.0 },
+        9: { x: 0.707, y: -0.707 },
+        4: { x: -1.0, y: 0.0 },
+        6: { x: 1.0, y: 0.0 },
+        1: { x: -0.707, y: 0.707 },
+        2: { x: 0.0, y: 1.0 },
+        3: { x: 0.707, y: 0.707 },
+      };
+      const digitAngle = {
+        6: 0.0,
+        9: Math.PI * 0.25,
+        8: Math.PI * 0.5,
+        7: Math.PI * 0.75,
+        4: Math.PI,
+        1: -Math.PI * 0.75,
+        2: -Math.PI * 0.5,
+        3: -Math.PI * 0.25,
+      };
+      const moveState = {
+        pointerId: null,
+        digit: 0,
         startTimer: 0,
         repeatTimer: 0,
       };
 
       var Module = window.Module || {};
+      Module.dragonwakeLayoutProfile = 'tall';
       Module.canvas = document.getElementById('canvas');
       window.Module = Module;
 
@@ -213,8 +447,13 @@
       function bridgeReady() {
         return typeof Module._dragonwake_web_enqueue_character === 'function' &&
                typeof Module._dragonwake_web_enqueue_numpad_digit === 'function' &&
-               typeof Module._dragonwake_web_enqueue_enter === 'function' &&
-               typeof Module._dragonwake_web_enqueue_escape === 'function';
+               typeof Module._dragonwake_web_enqueue_touch_control === 'function';
+      }
+
+      function hapticTap() {
+        if (navigator.vibrate) {
+          navigator.vibrate(8);
+        }
       }
 
       function sendCharacter(ch) {
@@ -233,85 +472,208 @@
         focusCanvas();
       }
 
-      function sendSpecial(name) {
+      function sendControl(control) {
         if (!bridgeReady()) {
           return;
         }
-        if (name === 'enter') {
-          Module._dragonwake_web_enqueue_enter();
-        } else if (name === 'escape') {
-          Module._dragonwake_web_enqueue_escape();
-        }
+        Module._dragonwake_web_enqueue_touch_control(control);
         focusCanvas();
       }
 
-      function clearHold() {
-        if (holdState.startTimer) {
-          window.clearTimeout(holdState.startTimer);
-          holdState.startTimer = 0;
-        }
-        if (holdState.repeatTimer) {
-          window.clearInterval(holdState.repeatTimer);
-          holdState.repeatTimer = 0;
-        }
-      }
-
-      function beginRepeat(button, send) {
-        clearHold();
-        button.classList.add('is-held');
-        send();
-        holdState.startTimer = window.setTimeout(function () {
-          holdState.repeatTimer = window.setInterval(send, 150);
-        }, 280);
-      }
-
-      function endRepeat(button) {
+      function endButtonHold(button) {
         button.classList.remove('is-held');
-        clearHold();
       }
 
-      function bindTapButtons() {
-        document.querySelectorAll('[data-char]').forEach(function (button) {
-          button.addEventListener('click', function (event) {
+      function bindTapButton(button, send) {
+        button.addEventListener('pointerdown', function (event) {
+          event.preventDefault();
+          button.classList.add('is-held');
+          send();
+          hapticTap();
+          if (typeof button.setPointerCapture === 'function') {
+            try {
+              button.setPointerCapture(event.pointerId);
+            } catch (error) {
+            }
+          }
+        });
+
+        function release(event) {
+          if (event) {
             event.preventDefault();
+          }
+          endButtonHold(button);
+        }
+
+        button.addEventListener('pointerup', release);
+        button.addEventListener('pointercancel', release);
+        button.addEventListener('lostpointercapture', release);
+      }
+
+      function clearMoveRepeat() {
+        if (moveState.startTimer) {
+          window.clearTimeout(moveState.startTimer);
+          moveState.startTimer = 0;
+        }
+        if (moveState.repeatTimer) {
+          window.clearInterval(moveState.repeatTimer);
+          moveState.repeatTimer = 0;
+        }
+      }
+
+      function updateMoveIndicator(pad, digit) {
+        if (!digit) {
+          pad.classList.remove('is-active', 'is-waiting');
+          pad.style.removeProperty('--indicator-x');
+          pad.style.removeProperty('--indicator-y');
+          return;
+        }
+
+        if (digit === 5) {
+          pad.classList.remove('is-active');
+          pad.classList.add('is-waiting');
+          pad.style.removeProperty('--indicator-x');
+          pad.style.removeProperty('--indicator-y');
+          return;
+        }
+
+        const unit = indicatorUnit[digit];
+        if (!unit) {
+          pad.classList.remove('is-active', 'is-waiting');
+          return;
+        }
+
+        pad.classList.remove('is-waiting');
+        pad.classList.add('is-active');
+        pad.style.setProperty('--indicator-x', (unit.x * 31) + '%');
+        pad.style.setProperty('--indicator-y', (unit.y * 31) + '%');
+      }
+
+      function wrappedAngleDelta(left, right) {
+        let delta = Math.abs(left - right);
+        while (delta > Math.PI) {
+          delta = Math.abs(delta - TWO_PI);
+        }
+        return delta;
+      }
+
+      function isCardinalDigit(digit) {
+        return digit === 8 || digit === 4 || digit === 6 || digit === 2;
+      }
+
+      function digitForMovePadPoint(pad, clientX, clientY) {
+        const rect = pad.getBoundingClientRect();
+        const centerX = rect.left + rect.width * 0.5;
+        const centerY = rect.top + rect.height * 0.5;
+        const nx = (clientX - centerX) / Math.max(1, rect.width * 0.5);
+        const ny = (centerY - clientY) / Math.max(1, rect.height * 0.5);
+        const radius = Math.sqrt(nx * nx + ny * ny);
+
+        if (radius <= MOVE_WAIT_RADIUS) {
+          return 5;
+        }
+
+        const angle = Math.atan2(ny, nx);
+        const byPriority = [6, 8, 4, 2, 9, 7, 1, 3];
+        const cardinalHalfSector = HALF_SECTOR + MOVE_CARDINAL_BIAS;
+        const diagonalHalfSector = HALF_SECTOR - MOVE_CARDINAL_BIAS;
+        let bestDigit = 0;
+        let bestScore = 99;
+
+        for (const digit of byPriority) {
+          const halfSector =
+            (isCardinalDigit(digit) ? cardinalHalfSector : diagonalHalfSector) - MOVE_BOUNDARY_GAP;
+          const delta = wrappedAngleDelta(angle, digitAngle[digit]);
+          if (delta > halfSector) {
+            continue;
+          }
+
+          const score = delta / Math.max(0.001, halfSector);
+          if (score < bestScore) {
+            bestScore = score;
+            bestDigit = digit;
+          }
+        }
+
+        return bestDigit;
+      }
+
+      function endMovePad(pad, event) {
+        if (event) {
+          event.preventDefault();
+        }
+        moveState.pointerId = null;
+        moveState.digit = 0;
+        clearMoveRepeat();
+        updateMoveIndicator(pad, 0);
+      }
+
+      function bindMovePad() {
+        const hitbox = document.getElementById('move-pad-hitbox');
+        const pad = document.getElementById('move-pad');
+        if (!pad || !hitbox) {
+          return;
+        }
+
+        hitbox.addEventListener('pointerdown', function (event) {
+          if (moveState.pointerId !== null) {
+            return;
+          }
+          event.preventDefault();
+          const digit = digitForMovePadPoint(pad, event.clientX, event.clientY);
+          if (!digit) {
+            return;
+          }
+          moveState.pointerId = event.pointerId;
+          moveState.digit = digit;
+          updateMoveIndicator(pad, digit);
+          sendNumpadDigit(digit);
+          hapticTap();
+          if (typeof hitbox.setPointerCapture === 'function') {
+            try {
+              hitbox.setPointerCapture(event.pointerId);
+            } catch (error) {
+            }
+          }
+          moveState.startTimer = window.setTimeout(function () {
+            moveState.repeatTimer = window.setInterval(function () {
+              sendNumpadDigit(digit);
+            }, MOVE_REPEAT_INTERVAL_MS);
+          }, MOVE_REPEAT_DELAY_MS);
+        });
+
+        hitbox.addEventListener('pointerup', function (event) {
+          if (event.pointerId === moveState.pointerId) {
+            endMovePad(pad, event);
+          }
+        });
+        hitbox.addEventListener('pointercancel', function (event) {
+          if (event.pointerId === moveState.pointerId) {
+            endMovePad(pad, event);
+          }
+        });
+        hitbox.addEventListener('lostpointercapture', function () {
+          endMovePad(pad);
+        });
+      }
+
+      function bindButtons() {
+        document.querySelectorAll('[data-char]').forEach(function (button) {
+          bindTapButton(button, function () {
             sendCharacter(button.getAttribute('data-char'));
           });
         });
 
-        document.querySelectorAll('[data-special]').forEach(function (button) {
-          button.addEventListener('click', function (event) {
-            event.preventDefault();
-            sendSpecial(button.getAttribute('data-special'));
-          });
-        });
-      }
-
-      function bindDpad() {
-        document.querySelectorAll('[data-numpad]').forEach(function (button) {
-          const digit = Number(button.getAttribute('data-numpad'));
-          const send = function () {
-            sendNumpadDigit(digit);
-          };
-
-          button.addEventListener('pointerdown', function (event) {
-            event.preventDefault();
-            beginRepeat(button, send);
-          });
-          button.addEventListener('pointerup', function () {
-            endRepeat(button);
-          });
-          button.addEventListener('pointercancel', function () {
-            endRepeat(button);
-          });
-          button.addEventListener('pointerleave', function () {
-            endRepeat(button);
+        document.querySelectorAll('[data-control]').forEach(function (button) {
+          bindTapButton(button, function () {
+            sendControl(Number(button.getAttribute('data-control')));
           });
         });
       }
 
       document.addEventListener('DOMContentLoaded', function () {
-        bindTapButtons();
-        bindDpad();
+        bindButtons();
+        bindMovePad();
         focusCanvas();
       });
     })();
