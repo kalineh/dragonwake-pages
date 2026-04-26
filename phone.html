@@ -73,15 +73,42 @@
       overflow: hidden;
     }
 
+    .canvas-stack {
+      position: relative;
+      width: 100%;
+      background: #000;
+    }
+
     canvas {
       display: block;
       width: 100%;
       height: auto;
-      background: #000;
+      background: transparent;
       image-rendering: pixelated;
       image-rendering: crisp-edges;
       outline: none;
       touch-action: manipulation;
+    }
+
+    canvas.render-layer {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    canvas.base-layer {
+      position: relative;
+      z-index: 2;
+    }
+
+    canvas.sprite-layer {
+      z-index: 1;
+      opacity: 0;
+    }
+
+    canvas.sprite-layer[data-active="true"] {
+      opacity: 1;
     }
 
     .controller-band {
@@ -319,21 +346,24 @@
   <main class="phone-shell">
     <section class="screen-shell">
       <div class="canvas-wrap">
-        <canvas id="canvas" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+        <div class="canvas-stack" id="canvas-stack">
+          <canvas id="sprite-canvas" class="sprite-layer render-layer" aria-hidden="true"></canvas>
+          <canvas id="canvas" class="base-layer" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+        </div>
       </div>
     </section>
 
     <section class="controller-band" aria-label="Phone controls">
       <section class="number-row" aria-label="Menu shortcuts">
-        <button class="menu-button" data-char="1" title="Message log">1</button>
-        <button class="menu-button" data-char="2" title="Character">2</button>
-        <button class="menu-button" data-char="3" title="Equipment">3</button>
-        <button class="menu-button" data-char="4" title="Inventory">4</button>
-        <button class="menu-button" data-char="5" title="Spellbook">5</button>
-        <button class="menu-button" data-char="6" title="Quest log">6</button>
-        <button class="menu-button" data-char="7" title="Skills">7</button>
-        <button class="menu-button" data-char="8" title="Weapon skills">8</button>
-        <button class="menu-button" data-char="9" title="Options">9</button>
+        <button class="menu-button" data-menu="1" title="Message log">1</button>
+        <button class="menu-button" data-menu="2" title="Character">2</button>
+        <button class="menu-button" data-menu="3" title="Equipment">3</button>
+        <button class="menu-button" data-menu="4" title="Inventory">4</button>
+        <button class="menu-button" data-menu="5" title="Spellbook">5</button>
+        <button class="menu-button" data-menu="6" title="Quest log">6</button>
+        <button class="menu-button" data-menu="7" title="Skills">7</button>
+        <button class="menu-button" data-menu="8" title="Weapon skills">8</button>
+        <button class="menu-button" data-menu="9" title="Options">9</button>
       </section>
 
       <section class="controller-row">
@@ -445,8 +475,8 @@
       }
 
       function bridgeReady() {
-        return typeof Module._dragonwake_web_enqueue_character === 'function' &&
-               typeof Module._dragonwake_web_enqueue_numpad_digit === 'function' &&
+        return typeof Module._dragonwake_web_enqueue_direction === 'function' &&
+               typeof Module._dragonwake_web_enqueue_menu_shortcut === 'function' &&
                typeof Module._dragonwake_web_enqueue_touch_control === 'function';
       }
 
@@ -456,19 +486,19 @@
         }
       }
 
-      function sendCharacter(ch) {
+      function sendDirection(digit) {
         if (!bridgeReady()) {
           return;
         }
-        Module._dragonwake_web_enqueue_character(ch.charCodeAt(0));
+        Module._dragonwake_web_enqueue_direction(digit);
         focusCanvas();
       }
 
-      function sendNumpadDigit(digit) {
+      function sendMenuShortcut(slot) {
         if (!bridgeReady()) {
           return;
         }
-        Module._dragonwake_web_enqueue_numpad_digit(digit);
+        Module._dragonwake_web_enqueue_menu_shortcut(slot);
         focusCanvas();
       }
 
@@ -627,7 +657,7 @@
           moveState.pointerId = event.pointerId;
           moveState.digit = digit;
           updateMoveIndicator(pad, digit);
-          sendNumpadDigit(digit);
+          sendDirection(digit);
           hapticTap();
           if (typeof hitbox.setPointerCapture === 'function') {
             try {
@@ -637,7 +667,7 @@
           }
           moveState.startTimer = window.setTimeout(function () {
             moveState.repeatTimer = window.setInterval(function () {
-              sendNumpadDigit(digit);
+              sendDirection(digit);
             }, MOVE_REPEAT_INTERVAL_MS);
           }, MOVE_REPEAT_DELAY_MS);
         });
@@ -658,9 +688,9 @@
       }
 
       function bindButtons() {
-        document.querySelectorAll('[data-char]').forEach(function (button) {
+        document.querySelectorAll('[data-menu]').forEach(function (button) {
           bindTapButton(button, function () {
-            sendCharacter(button.getAttribute('data-char'));
+            sendMenuShortcut(Number(button.getAttribute('data-menu')));
           });
         });
 

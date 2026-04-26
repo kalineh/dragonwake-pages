@@ -1,0 +1,494 @@
+# Dragonwake base semantic preset pack.
+
+name=road_lead
+family=lead
+brightness=0.58
+hardness=0.38
+sustain=0.46
+warmth=0.66
+vibrato=light
+register=mid
+stereo_width=0.18
+air=0.05
+
+name=dark_pad
+family=pad
+brightness=0.28
+hardness=0.14
+sustain=0.92
+warmth=0.82
+vibrato=none
+register=mid
+stereo_width=0.36
+air=0.02
+
+name=low_drone
+family=drone
+brightness=0.20
+hardness=0.10
+sustain=0.96
+warmth=0.88
+vibrato=none
+register=low
+stereo_width=0.16
+
+name=camp_bass
+family=bass
+brightness=0.29
+hardness=0.30
+sustain=0.78
+warmth=0.80
+vibrato=none
+register=low
+stereo_width=0.05
+
+name=mist_bell
+family=bell
+brightness=0.78
+hardness=0.18
+sustain=0.06
+warmth=0.52
+vibrato=none
+register=high
+stereo_width=0.28
+air=0.10
+
+name=grave_reed
+family=reed
+brightness=0.34
+hardness=0.28
+sustain=0.64
+warmth=0.70
+vibrato=light
+register=mid
+stereo_width=0.12
+air=0.08
+
+name=road_pluck
+family=pluck
+brightness=0.56
+hardness=0.30
+sustain=0.24
+warmth=0.70
+vibrato=none
+register=mid
+stereo_width=0.22
+pluck=0.70
+
+name=road_piano
+family=pluck
+brightness=0.44
+hardness=0.14
+sustain=0.50
+warmth=0.86
+vibrato=none
+register=mid
+stereo_width=0.14
+air=0.03
+pluck=0.24
+
+name=frame_drum
+family=drumkit
+brightness=0.46
+hardness=0.62
+sustain=0.05
+warmth=0.60
+vibrato=none
+register=mid
+stereo_width=0.04
+air=0.26
+pluck=0.64
+
+name=world_reed
+family=reed
+brightness=0.48
+hardness=0.24
+sustain=0.62
+warmth=0.76
+vibrato=light
+register=mid
+stereo_width=0.18
+air=0.04
+
+name=world_pad
+family=pad
+brightness=0.34
+hardness=0.12
+sustain=0.94
+warmth=0.86
+vibrato=none
+register=mid
+stereo_width=0.38
+air=0.02
+
+name=world_bass
+family=bass
+brightness=0.25
+hardness=0.26
+sustain=0.82
+warmth=0.86
+vibrato=none
+register=low
+stereo_width=0.06
+
+name=harbor_bell
+family=bell
+brightness=0.70
+hardness=0.12
+sustain=0.04
+warmth=0.62
+vibrato=none
+register=high
+stereo_width=0.32
+air=0.10
+
+name=harbor_pluck
+family=pluck
+brightness=0.52
+hardness=0.26
+sustain=0.22
+warmth=0.74
+vibrato=none
+register=mid
+stereo_width=0.24
+pluck=0.74
+
+name=frontier_reed
+family=reed
+brightness=0.42
+hardness=0.24
+sustain=0.60
+warmth=0.76
+vibrato=light
+register=mid
+stereo_width=0.12
+air=0.06
+
+name=frontier_pad
+family=pad
+brightness=0.30
+hardness=0.12
+sustain=0.90
+warmth=0.84
+vibrato=none
+register=mid
+stereo_width=0.34
+
+name=goblin_pulse
+family=lead
+brightness=0.52
+hardness=0.52
+sustain=0.34
+warmth=0.46
+vibrato=none
+register=mid
+stereo_width=0.08
+air=0.02
+
+name=ember_pulse
+family=lead
+brightness=0.66
+hardness=0.54
+sustain=0.38
+warmth=0.42
+vibrato=none
+register=high
+stereo_width=0.10
+air=0.03
+
+name=tomb_bell
+family=bell
+brightness=0.56
+hardness=0.10
+sustain=0.04
+warmth=0.52
+vibrato=none
+register=high
+stereo_width=0.24
+air=0.08
+
+name=tomb_drone
+family=drone
+brightness=0.17
+hardness=0.10
+sustain=0.97
+warmth=0.88
+vibrato=none
+register=low
+stereo_width=0.18
+
+name=root_bowed
+family=bowed
+brightness=0.38
+hardness=0.18
+sustain=0.88
+warmth=0.76
+vibrato=light
+register=mid
+stereo_width=0.22
+air=0.05
+
+name=stone_horn
+family=horn
+brightness=0.36
+hardness=0.42
+sustain=0.70
+warmth=0.78
+vibrato=none
+register=mid
+stereo_width=0.10
+
+name=stone_bass
+family=bass
+brightness=0.22
+hardness=0.36
+sustain=0.80
+warmth=0.86
+vibrato=none
+register=low
+stereo_width=0.04
+
+name=city_bell
+family=bell
+brightness=0.82
+hardness=0.16
+sustain=0.04
+warmth=0.58
+vibrato=none
+register=high
+stereo_width=0.30
+air=0.08
+
+name=city_horn
+family=horn
+brightness=0.52
+hardness=0.36
+sustain=0.72
+warmth=0.76
+vibrato=none
+register=mid
+stereo_width=0.14
+
+name=seal_pad
+family=pad
+brightness=0.40
+hardness=0.10
+sustain=0.96
+warmth=0.76
+vibrato=none
+register=mid
+stereo_width=0.38
+air=0.08
+
+name=seal_bell
+family=bell
+brightness=0.86
+hardness=0.10
+sustain=0.04
+warmth=0.58
+vibrato=none
+register=high
+stereo_width=0.36
+air=0.14
+
+name=glass_reed
+family=reed
+brightness=0.56
+hardness=0.34
+sustain=0.60
+warmth=0.46
+vibrato=light
+register=mid
+stereo_width=0.14
+air=0.10
+
+name=elven_bowed
+family=bowed
+brightness=0.46
+hardness=0.14
+sustain=0.90
+warmth=0.78
+vibrato=light
+register=mid
+stereo_width=0.28
+air=0.04
+
+name=blackglass_pulse
+family=lead
+brightness=0.66
+hardness=0.68
+sustain=0.24
+warmth=0.26
+vibrato=none
+register=mid
+stereo_width=0.08
+air=0.14
+
+name=rogue_pluck
+family=pluck
+brightness=0.58
+hardness=0.42
+sustain=0.14
+warmth=0.52
+vibrato=none
+register=mid
+stereo_width=0.20
+pluck=0.88
+
+name=water_bell
+family=bell
+brightness=0.76
+hardness=0.10
+sustain=0.04
+warmth=0.62
+vibrato=none
+register=high
+stereo_width=0.34
+air=0.14
+
+name=water_pad
+family=pad
+brightness=0.38
+hardness=0.10
+sustain=0.94
+warmth=0.78
+vibrato=none
+register=mid
+stereo_width=0.34
+air=0.05
+
+name=march_horn
+family=horn
+brightness=0.48
+hardness=0.48
+sustain=0.66
+warmth=0.72
+vibrato=none
+register=mid
+stereo_width=0.10
+
+name=dragon_brass
+family=horn
+brightness=0.64
+hardness=0.66
+sustain=0.72
+warmth=0.48
+vibrato=none
+register=high
+stereo_width=0.12
+air=0.14
+
+name=iron_drum
+family=drumkit
+brightness=0.60
+hardness=0.82
+sustain=0.04
+warmth=0.46
+vibrato=none
+register=mid
+stereo_width=0.04
+air=0.34
+pluck=0.80
+
+name=depths_drone
+family=drone
+brightness=0.15
+hardness=0.18
+sustain=0.98
+warmth=0.70
+vibrato=none
+register=low
+stereo_width=0.16
+
+name=cottage_chime
+family=bell
+brightness=0.68
+hardness=0.10
+sustain=0.03
+warmth=0.44
+vibrato=none
+register=high
+stereo_width=0.22
+air=0.05
+
+name=burrow_pluck
+family=pluck
+brightness=0.68
+hardness=0.34
+sustain=0.14
+warmth=0.52
+vibrato=none
+register=mid
+stereo_width=0.16
+pluck=0.90
+# Goal: defeat screen cue; a hard first impact, then a short spent descent that thins out and leaves the loss hanging.
+tempo=72;
+meter=4/4;
+impact@0.84=march_horn| D4:2! A4:2! D5:4! F5:4! D5:4! | Eb5:2! C5:2! A4:4! F4:4! D4:4! | r:16 | r:16 | r:16 | r:16 | r:16 | r:16 | r:16 | r:16 | r:16 | r:16;
+lead@0.24=root_bowed| r:16 | r:16 | D5:8 A4:4 F4:4 | r:16 | F4:8 G4:4 A4:4 | r:16 | D5:4 C5:4 A4:4 F4:4 | r:16 | G4:12 E4:4 | r:16 | D4:8 C4:8 | r:16;
+pad@0.50=dark_pad| D3:16 | Bb2:16 | F3:16 | C3:16 | D3:16 | Bb2:16 | G2:16 | A2:16 | D3:16 | C3:16 | Bb2:16 | D3:16;
+bass@0.72=stone_bass| D2:8 A1:8 | Bb1:8 F1:8 | F2:8 C2:8 | C2:8 G1:8 | D2:8 A1:8 | Bb1:8 F1:8 | G1:8 D2:8 | A1:8 E2:8 | D2:8 A1:8 | C2:8 G1:8 | Bb1:8 F1:8 | D2:8 D2:8;
+bell@0.18=tomb_bell| r:16 | r:16 | r:12 D5:4 | r:16 | r:12 C5:4 | r:16 | r:12 F5:4 | r:16 | r:12 E5:4 | r:16 | r:12 D5:4 | r:16;
+drum@0.46=iron_drum| K:4! S:4! K:4! S:4! | K:4! T:4! S:4! H:4! | r:16 | r:16 | r:16 | r:16 | r:16 | r:16 | r:16 | r:16 | r:16 | r:16;
+# Goal: dragon attack and final boss; a fixed-intro blackglass threat cue with heavy brass, low churn, tom-heavy impact, and brief high shrieks that feel like something huge has dropped into the scene.
+tempo=64;
+meter=4/4;
+horn@0.62=dragon_brass| E4:2! B4:2! E5:4! G5:4! F#5:4! | E5:2! D5:2! B4:4! Bb4:4! G4:4! | E4:4 r:2 E4:2 G4:4 B4:4 | C5:6 B4:2 G4:4 E4:4 | F#4:4 r:2 A4:2 C5:4 F#5:4 | E5:4 D5:4 B4:4 G4:4 | A4:4 C5:4 E5:4 D5:4 | B4:4 A4:4 G4:4 E4:4 | E5:4 G5:4 B5:4 G5:4 | C6:4 B5:4 G5:4 E5:4 | F#5:4 E5:4 C5:4 A4:4 | B4:4 D5:4 F#5:4 E5:4 | G4:4 B4:4 D5:4 C5:4 | E5:4 D5:4 B4:4 G4:4 | A4:4 C5:4 E5:4 G5:4 | F#5:4 E5:4 D5:4 B4:4;
+shriek@0.20=blackglass_pulse| r:8 E6:4 r:4 | r:8 D6:4 r:4 | r:16 | B5:4 r:12 | r:8 C6:4 r:4 | r:16 | E6:4 r:12 | r:16 | r:8 B5:4 r:4 | r:8 G5:4 r:4 | r:16 | F#5:4 r:12 | r:8 D6:4 r:4 | r:16 | G5:4 r:12 | E5:4 r:12;
+drone@0.52=depths_drone| E3:16 | C3:16 | E3:16 | C3:16 | F#3:16 | E3:16 | A2:16 | E3:16 | E3:16 | C3:16 | F#3:16 | B2:16 | G2:16 | E3:16 | A2:16 | B2:16;
+bass@0.98=stone_bass| E2:8 B1:8 | C2:8 G1:8 | E2:8 B1:8 | C2:8 G1:8 | F#2:8 C2:8 | E2:8 B1:8 | A1:8 E2:8 | E2:8 B1:8 | E2:8 B1:8 | C2:8 G1:8 | F#2:8 C2:8 | B1:8 F#1:8 | G1:8 D2:8 | E2:8 B1:8 | A1:8 E2:8 | B1:8 F#1:8;
+drum@0.70=iron_drum| K:4! T:2 S:4 H:2 K:4 | K:4 H:2 S:4 H:2 T:4 | K:4! T:4 S:4 r:4 | K:4 H:2 S:4 H:2 r:4 | K:4! T:2 S:4 H:2 K:4 | K:4 H:4 S:4 T:4 | K:4! T:2 S:4 H:2 K:4 | K:4 H:2 S:4 H:2 r:4 | K:4! T:2 S:4 H:2 K:4 | K:4 H:4 S:4 T:4 | K:4! T:2 S:4 H:2 K:4 | K:4 H:2 S:4 H:2 r:4 | K:4! T:2 S:4 H:2 K:4 | K:4 H:4 S:4 T:4 | K:4! T:2 S:4 H:2 K:4 | K:4! T:4 S:4 r:4;
+# Goal: dungeon background; slow five-beat pressure, uneven plucked cells, low drone weight, and brief laments that surface then disappear.
+tempo=64;
+meter=5/4;
+lead@0.32=grave_reed| r:20 | r:20 | r:20 | r:20 | r:4 A4:8 G4:4 F4:4 | r:8 G4:4 E4:4 D4:4 | A4:4 G4:4 E4:8 r:4 | Bb4:8 A4:4 F4:4 r:4 | r:20 | r:20 | r:20 | r:20 | r:20 | r:4 G4:8 F4:4 E4:4 | r:8 E4:4 D4:4 C4:4 | F4:4 E4:4 D4:8 r:4 | G4:8 E4:4 D4:4 r:4 | r:20 | r:20 | r:20 | r:20 | r:20 | r:20 | r:20 | r:12 C4:4 D4:4 | r:4 F4:8 E4:4 D4:4 | A4:8 Bb4:4 A4:4 r:4 | G4:4 E4:4 D4:4 E4:4 r:4 | F4:8 E4:4 C4:4 r:4 | r:20 | r:20 | r:20 | r:20 | r:20 | r:4 G4:8 F4:4 E4:4 | r:8 E4:4 D4:4 C4:4 | F4:4 E4:4 D4:8 r:4 | r:4 A4:8 G4:4 E4:4 | G4:8 F4:4 E4:4 r:4 | E4:8 D4:4 C4:4 r:4;
+ost@0.36=rogue_pluck| E4:2 r:2 B3:2 E4:2 r:2 F4:2 E4:2 r:2 B3:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 A4:2 G4:2 r:2 E4:2 r:2 | F4:2 r:2 C4:2 F4:2 r:2 A4:2 G4:2 r:2 C4:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 G4:2 F4:2 r:2 B3:2 r:2 | C4:2 r:2 G3:2 C4:2 r:2 E4:2 D4:2 r:2 G3:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 G4:2 F4:2 r:2 B3:2 r:2 | F4:2 r:2 C4:2 F4:2 r:2 A4:2 G4:2 r:2 C4:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 G4:2 A4:2 r:2 E4:2 r:2 | G4:2 r:2 D4:2 G4:2 r:2 Bb4:2 A4:2 r:2 D4:2 r:2 | F4:2 r:2 C4:2 F4:2 r:2 A4:2 G4:2 r:2 C4:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 F4:2 E4:2 r:2 B3:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 A4:2 G4:2 r:2 E4:2 r:2 | F4:2 r:2 C4:2 F4:2 r:2 A4:2 G4:2 r:2 C4:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 G4:2 F4:2 r:2 B3:2 r:2 | C4:2 r:2 G3:2 C4:2 r:2 E4:2 D4:2 r:2 G3:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 G4:2 F4:2 r:2 B3:2 r:2 | F4:2 r:2 C4:2 F4:2 r:2 A4:2 G4:2 r:2 C4:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 G4:2 A4:2 r:2 E4:2 r:2 | G4:2 r:2 D4:2 G4:2 r:2 Bb4:2 A4:2 r:2 D4:2 r:2 | F4:2 r:2 C4:2 F4:2 r:2 A4:2 G4:2 r:2 C4:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 F4:2 E4:2 r:2 B3:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 A4:2 G4:2 r:2 E4:2 r:2 | F4:2 r:2 C4:2 F4:2 r:2 A4:2 G4:2 r:2 C4:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 G4:2 F4:2 r:2 B3:2 r:2 | C4:2 r:2 G3:2 C4:2 r:2 E4:2 D4:2 r:2 G3:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 G4:2 F4:2 r:2 B3:2 r:2 | F4:2 r:2 C4:2 F4:2 r:2 A4:2 G4:2 r:2 C4:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 G4:2 A4:2 r:2 E4:2 r:2 | G4:2 r:2 D4:2 G4:2 r:2 Bb4:2 A4:2 r:2 D4:2 r:2 | F4:2 r:2 C4:2 F4:2 r:2 A4:2 G4:2 r:2 C4:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 F4:2 E4:2 r:2 B3:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 A4:2 G4:2 r:2 E4:2 r:2 | F4:2 r:2 C4:2 F4:2 r:2 A4:2 G4:2 r:2 C4:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 G4:2 F4:2 r:2 B3:2 r:2 | C4:2 r:2 G3:2 C4:2 r:2 E4:2 D4:2 r:2 G3:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 G4:2 F4:2 r:2 B3:2 r:2 | F4:2 r:2 C4:2 F4:2 r:2 A4:2 G4:2 r:2 C4:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 G4:2 A4:2 r:2 E4:2 r:2 | G4:2 r:2 D4:2 G4:2 r:2 Bb4:2 A4:2 r:2 D4:2 r:2 | E4:2 r:2 B3:2 E4:2 r:2 F4:2 E4:2 r:2 B3:2 r:2;
+drone@0.60=tomb_drone| E3:20 | E3:20 | F3:20 | E3:20 | C3:20 | E3:20 | F3:20 | E3:20 | G3:20 | F3:20 | E3:20 | E3:20 | F3:20 | E3:20 | C3:20 | E3:20 | F3:20 | E3:20 | G3:20 | F3:20 | E3:20 | E3:20 | F3:20 | E3:20 | C3:20 | E3:20 | F3:20 | E3:20 | G3:20 | F3:20 | E3:20 | E3:20 | F3:20 | E3:20 | C3:20 | E3:20 | F3:20 | E3:20 | G3:20 | E3:20;
+bass@0.88=stone_bass| E2:10 B1:10 | E2:10 B1:10 | F2:10 C2:10 | E2:10 B1:10 | C2:10 G1:10 | E2:10 B1:10 | F2:10 C2:10 | E2:10 B1:10 | G1:10 D2:10 | F2:10 C2:10 | E2:10 B1:10 | E2:10 B1:10 | F2:10 C2:10 | E2:10 B1:10 | C2:10 G1:10 | E2:10 B1:10 | F2:10 C2:10 | E2:10 B1:10 | G1:10 D2:10 | F2:10 C2:10 | E2:10 B1:10 | E2:10 B1:10 | F2:10 C2:10 | E2:10 B1:10 | C2:10 G1:10 | E2:10 B1:10 | F2:10 C2:10 | E2:10 B1:10 | G1:10 D2:10 | F2:10 C2:10 | E2:10 B1:10 | E2:10 B1:10 | F2:10 C2:10 | E2:10 B1:10 | C2:10 G1:10 | E2:10 B1:10 | F2:10 C2:10 | E2:10 B1:10 | G1:10 D2:10 | E2:10 B1:10;
+bell@0.22=tomb_bell| r:20 | r:20 | r:20 | r:20 | r:18 D5:2 | r:20 | r:20 | r:20 | r:20 | r:20 | r:20 | r:20 | r:18 C5:2 | r:20 | r:20 | r:20 | r:20 | r:20 | r:18 Bb4:2 | r:20 | r:20 | r:20 | r:20 | r:20 | r:18 F5:2 | r:20 | r:20 | r:20 | r:20 | r:20 | r:20 | r:20 | r:18 D5:2 | r:20 | r:20 | r:20 | r:20 | r:20 | r:18 C5:2 | r:20;
+# Goal: fortress and hard-stone strongholds; clipped horn authority, guarded minor tread, and iron pulse with breath between commands.
+tempo=64;
+meter=4/4;
+horn@0.54=stone_horn| D4:3! r:1 D4:2 F4:4 D4:2 r:4 | C4:3 r:1 C4:2 Eb4:4 C4:2 r:4 | D4:4 F4:2 G4:4 F4:2 r:4 | A3:4 r:4 C4:4 A3:4 | Bb3:3 r:1 Bb3:2 D4:4 C4:2 r:4 | D4:4 r:4 F4:4 D4:4 | C4:3 r:1 Eb4:2 F4:4 Eb4:2 r:4 | A3:4 r:4 C4:4 A3:4 | r:4 D4:4 F4:4 G4:4 | C4:4 Bb3:4 A3:4 G3:4 | F3:4 A3:4 C4:4 A3:4 | D4:4! r:4 F4:4 D4:4 | r:16 | D4:4 F4:4 G4:4 A4:4 | C4:4 r:2 A3:2 C4:4 A3:4 | D4:4! r:4 A3:4 D4:4 | D4:3 r:1 D4:2 F4:4 D4:2 r:4 | C4:3 r:1 C4:2 Eb4:4 C4:2 r:4 | G4:4 F4:2 G4:4 A4:2 r:4 | C4:4 r:4 A3:4 C4:4 | Bb3:3 r:1 D4:2 C4:4 Bb3:2 r:4 | A3:4 r:4 C4:4 A3:4 | D4:4 F4:2 G4:4 F4:2 r:4 | C4:4 Bb3:4 A3:4 G3:4 | r:4 F3:4 A3:4 C4:4 | D4:4! r:4 F4:4 D4:4 | r:16 | G4:4 F4:4 D4:4 C4:4 | Bb3:4 D4:4 C4:4 Bb3:4 | A3:4 r:4 C4:4 A3:4 | D4:4 F4:2 G4:4 F4:2 r:4 | D4:4! r:4 A3:4 D4:4 | D4:3! r:1 D4:2 F4:4 D4:2 r:4 | C4:3 r:1 C4:2 Eb4:4 C4:2 r:4 | D4:4 F4:2 G4:4 F4:2 r:4 | A3:4 r:4 C4:4 A3:4 | Bb3:3 r:1 Bb3:2 D4:4 C4:2 r:4 | D4:4 r:4 F4:4 D4:4 | C4:3 r:1 Eb4:2 F4:4 Eb4:2 r:4 | A3:4 r:4 C4:4 A3:4 | r:4 D4:4 F4:4 G4:4 | C4:4 Bb3:4 A3:4 G3:4 | F3:4 A3:4 C4:4 A3:4 | D4:4! r:4 F4:4 D4:4 | C4:4 Bb3:4 A3:4 G3:4 | F3:4 A3:4 C4:4 A3:4 | D4:4! r:4 F4:4 D4:4 | D4:4! r:4 A3:4 D4:4;
+stone@0.24=dark_pad| D3:16 | r:16 | C3:16 | r:16 | Bb2:16 | D3:16 | C3:16 | A2:16 | D3:16 | C3:16 | F2:16 | D3:16 | r:16 | G2:16 | C3:16 | D3:16 | D3:16 | r:16 | G2:16 | C3:16 | Bb2:16 | A2:16 | D3:16 | C3:16 | F2:16 | D3:16 | r:16 | G2:16 | Bb2:16 | A2:16 | D3:16 | D3:16 | D3:16 | r:16 | C3:16 | r:16 | Bb2:16 | D3:16 | C3:16 | A2:16 | D3:16 | C3:16 | F2:16 | D3:16 | C3:16 | F2:16 | D3:16 | D3:16;
+bass@0.94=stone_bass| D2:8 A1:8 | C2:8 G1:8 | D2:8 A1:8 | A1:8 E2:8 | Bb1:8 F1:8 | D2:8 A1:8 | C2:8 G1:8 | A1:8 E2:8 | D2:8 A1:8 | C2:8 G1:8 | F1:8 C2:8 | D2:8 A1:8 | D2:8 A1:8 | G1:8 D2:8 | A1:8 E2:8 | D2:8 A1:8 | D2:8 A1:8 | C2:8 G1:8 | G1:8 D2:8 | A1:8 E2:8 | Bb1:8 F1:8 | A1:8 E2:8 | D2:8 A1:8 | C2:8 G1:8 | F1:8 C2:8 | D2:8 A1:8 | D2:8 A1:8 | G1:8 D2:8 | Bb1:8 F1:8 | A1:8 E2:8 | D2:8 A1:8 | D2:8 A1:8 | D2:8 A1:8 | C2:8 G1:8 | D2:8 A1:8 | A1:8 E2:8 | Bb1:8 F1:8 | D2:8 A1:8 | C2:8 G1:8 | A1:8 E2:8 | D2:8 A1:8 | C2:8 G1:8 | F1:8 C2:8 | D2:8 A1:8 | C2:8 G1:8 | F1:8 C2:8 | D2:8 A1:8 | D2:8 A1:8;
+drum@0.62=iron_drum| K:4! H:2 S:4 r:2 K:4 | K:4 H:2 S:4 H:2 r:4 | K:4! r:2 S:4 H:2 K:4 | K:4 H:4 S:4 r:4 | K:4! H:2 S:4 r:2 K:4 | K:4 r:4 S:4 H:4 | K:4 H:2 S:4 H:2 r:4 | K:4! H:4 S:4 r:4 | K:4! H:2 S:4 r:2 K:4 | K:4 H:2 S:4 H:2 r:4 | K:4 r:4 S:4 H:4 | K:4! H:4 S:4 r:4 | r:4 H:4 S:4 H:4 | K:4! H:2 S:4 r:2 K:4 | K:4 H:2 S:4 H:2 r:4 | K:4! r:4 S:4 r:4 | K:4! H:2 S:4 r:2 K:4 | K:4 H:2 S:4 H:2 r:4 | K:4! r:2 S:4 H:2 K:4 | K:4 H:4 S:4 r:4 | K:4! H:2 S:4 r:2 K:4 | K:4 r:4 S:4 H:4 | K:4 H:2 S:4 H:2 r:4 | K:4! H:4 S:4 r:4 | K:4 r:4 S:4 H:4 | K:4! H:4 S:4 r:4 | r:4 H:4 S:4 H:4 | K:4! H:2 S:4 r:2 K:4 | K:4 H:2 S:4 H:2 r:4 | K:4! r:4 S:4 r:4 | K:4! H:2 S:4 r:2 K:4 | K:4! H:4 S:4 r:4 | K:4! H:2 S:4 r:2 K:4 | K:4 H:2 S:4 H:2 r:4 | K:4! r:2 S:4 H:2 K:4 | K:4 H:4 S:4 r:4 | K:4! H:2 S:4 r:2 K:4 | K:4 r:4 S:4 H:4 | K:4 H:2 S:4 H:2 r:4 | K:4! H:4 S:4 r:4 | K:4! H:2 S:4 r:2 K:4 | K:4 H:2 S:4 H:2 r:4 | K:4 r:4 S:4 H:4 | K:4! H:4 S:4 r:4 | K:4! H:4 S:4 r:4 | K:4 H:4 S:4 H:4 | K:4! r:4 S:4 r:4 | K:4! r:4 S:4 r:4;
+# Goal: overworld travel; broad mounted-road motion in rolling 12/8, with open intervals, quieter piano color, and a low horizon that can tolerate random bar entry.
+tempo=48;
+meter=12/8;
+lead@0.32=road_piano| E5:6 B4:6 G4:6 r:6 | r:12 D5:6 E5:6 | G5:8 E5:4 D5:6 r:6 | r:24 | B4:6 D5:6 G5:6 E5:6 | A4:8 F#5:8 E5:8 | r:12 D5:6 B4:6 | G4:12 r:12 | E5:6 G5:6 B5:6 G5:6 | r:8 A5:4 G5:4 E5:8 | D5:6 B4:6 A4:6 r:6 | r:24 | C5:6 G4:6 E4:6 r:6 | A4:6 D5:6 F#5:6 E5:6 | B4:8 D5:4 G5:8 r:4 | r:24 | E5:12 D5:6 B4:6 | G4:8 B4:8 D5:8 | A4:6 C5:6 E5:6 D5:6 | r:12 F#5:6 E5:6 | B4:6 E5:6 G5:6 B5:6 | G5:8 E5:4 D5:6 r:6 | B4:6 D5:6 G5:6 E5:6 | r:6 A4:6 B4:6 E5:6;
+trail@0.24=road_pluck| E4:3 B3:3 E4:3 r:3 G4:3 B3:3 E4:3 r:3 | r:6 C4:3 G3:3 E4:3 G3:3 C4:3 r:3 | G4:3 D4:3 B3:3 r:3 D4:3 G4:3 B4:3 r:3 | r:6 D4:3 A3:3 F#4:3 A3:3 D4:3 r:3 | E4:3 B3:3 E4:3 r:3 G4:3 B3:3 E4:3 r:3 | r:6 C4:3 G3:3 E4:3 G3:3 C4:3 r:3 | G4:3 D4:3 B3:3 r:3 D4:3 G4:3 B4:3 r:3 | r:6 D4:3 A3:3 F#4:3 A3:3 D4:3 r:3 | E4:3 B3:3 E4:3 r:3 G4:3 B3:3 E4:3 r:3 | G3:3 D4:3 G4:3 r:3 B4:3 G4:3 D4:3 r:3 | A3:3 E4:3 A4:3 r:3 C5:3 A4:3 E4:3 r:3 | r:6 D4:3 A3:3 F#4:3 A3:3 D4:3 r:3 | C4:3 G3:3 E4:3 r:3 G4:3 E4:3 C4:3 r:3 | D4:3 A3:3 F#4:3 r:3 A4:3 F#4:3 D4:3 r:3 | E4:3 B3:3 G4:3 r:3 B4:3 G4:3 E4:3 r:3 | r:6 D4:3 A3:3 F#4:3 A3:3 D4:3 r:3 | C4:3 G3:3 E4:3 r:3 G4:3 E4:3 C4:3 r:3 | G4:3 D4:3 B3:3 r:3 D4:3 G4:3 B4:3 r:3 | A3:3 E4:3 A4:3 r:3 C5:3 A4:3 E4:3 r:3 | D4:3 A3:3 F#4:3 r:3 A4:3 F#4:3 D4:3 r:3 | C4:3 G3:3 E4:3 r:3 G4:3 E4:3 C4:3 r:3 | G4:3 D4:3 B3:3 r:3 D4:3 G4:3 B4:3 r:3 | r:6 D4:3 A3:3 F#4:3 A3:3 D4:3 r:3 | E4:3 B3:3 E4:3 r:3 G4:3 B3:3 E4:3 r:3;
+strings@0.20=elven_bowed| B4:12 r:12 | r:24 | D5:12 B4:12 | r:24 | G4:12 B4:12 | r:24 | D5:12 B4:12 | r:24 | E5:12 D5:12 | r:24 | C5:12 A4:12 | r:24 | G4:12 C5:12 | r:24 | D5:12 G5:12 | r:24 | E5:12 B4:12 | r:24 | C5:12 E5:12 | r:24 | B4:12 G4:12 | r:24 | D5:12 B4:12 | r:24;
+pad@0.46=world_pad| E4:24 | C4:24 | G3:24 | D4:24 | E4:24 | C4:24 | G3:24 | D4:24 | E4:24 | G3:24 | A3:24 | D4:24 | C4:24 | D4:24 | E4:24 | D4:24 | C4:24 | G3:24 | A3:24 | B3:24 | C4:24 | G3:24 | D4:24 | E4:24;
+bass@0.94=world_bass| E2:12 B1:12 | C2:12 G1:12 | G2:12 D2:12 | D2:12 A1:12 | E2:12 B1:12 | C2:12 G1:12 | G2:12 D2:12 | D2:12 A1:12 | E2:12 B1:12 | G1:12 D2:12 | A1:12 E2:12 | D2:12 A1:12 | C2:12 G1:12 | D2:12 A1:12 | E2:12 B1:12 | D2:12 A1:12 | C2:12 G1:12 | G2:12 D2:12 | A1:12 E2:12 | B1:12 F#1:12 | C2:12 G1:12 | G2:12 D2:12 | D2:12 A1:12 | E2:12 B1:12;
+# Goal: sacred and ruined places; tolling ritual harmony, suspended vertical stillness, and bowed phrases that rise, hang, and fall back into the stones.
+tempo=48;
+meter=3/4;
+bowed@0.36=root_bowed| r:12 | D5:8 A4:4 | F5:6 D5:6 | r:12 | C5:6 A4:6 | G4:4 A4:4 C5:4 | D5:8 C5:4 | r:12 | A4:6 F4:6 | E4:6 A4:6 | C5:8 A4:4 | D5:12 | r:12 | F5:6 D5:6 | A5:6 F5:6 | r:12 | G5:6 E5:6 | D5:8 C5:4 | A4:6 F4:6 | r:12 | E4:6 G4:6 | A4:8 C5:4 | D5:6 A4:6 | D5:12 | r:12 | D5:8 A4:4 | F5:6 D5:6 | r:12 | C5:6 A4:6 | Bb4:8 A4:4 | F4:6 D4:6 | r:12 | G4:6 Bb4:6 | A4:8 C5:4 | D5:6 F5:6 | E5:12 | r:12 | F5:6 D5:6 | G5:6 E5:6 | r:12 | A5:6 F5:6 | D5:8 C5:4 | A4:6 F4:6 | r:12 | E4:6 A4:6 | C5:8 A4:4 | D5:6 F5:6 | D5:12;
+pad@0.76=seal_pad| D4:12 | D4:12 | Bb3:12 | C4:12 | D4:12 | A3:12 | D4:12 | Bb3:12 | G3:12 | D4:12 | C4:12 | A3:12 | D4:12 | Bb3:12 | F4:12 | C4:12 | D4:12 | A3:12 | G3:12 | Bb3:12 | D4:12 | C4:12 | A3:12 | D4:12 | D4:12 | Bb3:12 | F4:12 | C4:12 | Bb3:12 | G3:12 | D4:12 | A3:12 | D4:12 | Bb3:12 | F4:12 | C4:12 | D4:12 | A3:12 | G3:12 | Bb3:12 | D4:12 | C4:12 | A3:12 | D4:12 | D4:12 | Bb3:12 | A3:12 | D4:12;
+drone@0.58=low_drone| D2:12 | D2:12 | Bb1:12 | C2:12 | D2:12 | A1:12 | D2:12 | Bb1:12 | G1:12 | D2:12 | C2:12 | A1:12 | D2:12 | Bb1:12 | F2:12 | C2:12 | D2:12 | A1:12 | G1:12 | Bb1:12 | D2:12 | C2:12 | A1:12 | D2:12 | D2:12 | Bb1:12 | F2:12 | C2:12 | Bb1:12 | G1:12 | D2:12 | A1:12 | D2:12 | Bb1:12 | F2:12 | C2:12 | D2:12 | A1:12 | G1:12 | Bb1:12 | D2:12 | C2:12 | A1:12 | D2:12 | D2:12 | Bb1:12 | A1:12 | D2:12;
+bell@0.44=seal_bell| D5:2 r:10 | r:12 | Bb4:2 r:10 | r:12 | A4:2 r:10 | r:12 | F5:2 r:10 | r:12 | G4:2 r:10 | D5:2 r:10 | r:12 | A4:2 r:10 | D5:2 r:10 | r:12 | F5:2 r:10 | E5:2 r:10 | D5:2 r:10 | r:12 | G4:2 r:10 | r:12 | A4:2 r:10 | D5:2 r:10 | r:12 | D5:2 r:10 | F5:2 r:10 | r:12 | Bb4:2 r:10 | r:12 | A4:2 r:10 | D5:2 r:10 | r:12 | G4:2 r:10 | A4:2 r:10 | r:12 | D5:2 r:10 | F5:2 r:10 | D5:2 r:10 | r:12 | G4:2 r:10 | r:12 | A4:2 r:10 | D5:2 r:10 | r:12 | F5:2 r:10 | E5:2 r:10 | D5:2 r:10 | r:12 | D5:2 r:10;
+# Goal: town and haven music; warm 6/8 human motion with plucked underfoot bustle, short reed answers, and enough rests to sit behind markets, docks, and safe roads.
+tempo=48;
+meter=6/8;
+reed@0.40=frontier_reed| r:12 | F#4:4 A4:2 B4:2 A4:2 r:2 | r:12 | D5:4 C#5:2 B4:2 A4:2 r:2 | B4:4 A4:2 G4:2 F#4:2 r:2 | r:12 | A4:4 C#5:2 E5:2 D5:2 r:2 | F#4:4 A4:2 D5:4 r:2 | r:12 | G4:4 B4:2 A4:2 F#4:2 r:2 | r:4 D5:4 C#5:2 B4:2 | A4:4 F#4:2 E4:2 D4:2 r:2 | r:12 | A4:4 B4:2 C#5:2 B4:2 r:2 | r:12 | D5:4 F#5:2 E5:2 D5:2 r:2 | B4:4 D5:2 B4:2 A4:2 r:2 | r:12 | F#5:4 E5:2 D5:2 B4:2 r:2 | A4:4 F#4:2 A4:4 r:2 | r:12 | E5:4 C#5:2 B4:2 A4:2 r:2 | r:4 G4:4 A4:2 B4:2 | A4:4 F#4:2 E4:2 D4:2 r:2 | r:12 | D5:4 B4:2 A4:2 G4:2 r:2 | r:12 | A4:4 C#5:2 B4:2 A4:2 r:2 | F#5:4 E5:2 D5:2 A4:2 r:2 | r:12 | B4:4 A4:2 G4:2 E4:2 r:2 | F#4:4 A4:2 D5:4 r:2 | r:12 | G4:4 A4:2 B4:2 A4:2 r:2 | r:4 D5:4 C#5:2 B4:2 | A4:4 F#4:2 E4:2 D4:2 r:2 | r:12 | F#4:4 A4:2 B4:2 A4:2 r:2 | r:12 | D5:4 C#5:2 B4:2 A4:2 r:2 | B4:4 D5:2 F#5:2 E5:2 r:2 | r:12 | E5:4 C#5:2 A4:2 F#4:2 r:2 | G4:4 B4:2 D5:4 r:2 | r:12 | A4:4 C#5:2 D5:2 C#5:2 r:2 | B4:4 A4:2 F#4:2 E4:2 r:2 | D4:4 F#4:2 A4:4 r:2;
+pluck@0.44=harbor_pluck| D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | G4:2 D4:2 G4:2 B4:2 A4:2 G4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | E4:2 C#4:2 E4:2 A4:2 G4:2 E4:2 | F#4:2 B3:2 D4:2 F#4:2 E4:2 D4:2 | G4:2 D4:2 G4:2 B4:2 A4:2 G4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | r:2 E4:2 C#4:2 E4:2 A4:2 G4:2 | G4:2 D4:2 G4:2 A4:2 G4:2 E4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | E4:2 C#4:2 E4:2 A4:2 G4:2 E4:2 | r:2 D4:2 A3:2 D4:2 F#4:2 E4:2 | F#4:2 B3:2 D4:2 F#4:2 E4:2 D4:2 | G4:2 D4:2 G4:2 B4:2 A4:2 G4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | E4:2 C#4:2 E4:2 A4:2 G4:2 E4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | A4:2 E4:2 A4:2 B4:2 A4:2 E4:2 | G4:2 D4:2 G4:2 A4:2 G4:2 D4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | E4:2 C#4:2 E4:2 A4:2 G4:2 E4:2 | F#4:2 B3:2 D4:2 F#4:2 E4:2 D4:2 | G4:2 D4:2 G4:2 B4:2 A4:2 G4:2 | r:2 D4:2 A3:2 D4:2 F#4:2 E4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | G4:2 D4:2 G4:2 B4:2 A4:2 G4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | E4:2 C#4:2 E4:2 A4:2 G4:2 E4:2 | F#4:2 B3:2 D4:2 F#4:2 E4:2 D4:2 | G4:2 D4:2 G4:2 B4:2 A4:2 G4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | r:2 E4:2 C#4:2 E4:2 A4:2 G4:2 | G4:2 D4:2 G4:2 A4:2 G4:2 E4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | E4:2 C#4:2 E4:2 A4:2 G4:2 E4:2 | r:2 D4:2 A3:2 D4:2 F#4:2 E4:2 | F#4:2 B3:2 D4:2 F#4:2 E4:2 D4:2 | G4:2 D4:2 G4:2 B4:2 A4:2 G4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | E4:2 C#4:2 E4:2 A4:2 G4:2 E4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | A4:2 E4:2 A4:2 B4:2 A4:2 E4:2 | G4:2 D4:2 G4:2 A4:2 G4:2 D4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2 | E4:2 C#4:2 E4:2 A4:2 G4:2 E4:2 | F#4:2 B3:2 D4:2 F#4:2 E4:2 D4:2 | G4:2 D4:2 G4:2 B4:2 A4:2 G4:2 | D4:2 A3:2 D4:2 F#4:2 E4:2 D4:2;
+pad@0.28=frontier_pad| D3:12 | G2:12 | D3:12 | A2:12 | B2:12 | G2:12 | D3:12 | A2:12 | G2:12 | D3:12 | A2:12 | D3:12 | B2:12 | G2:12 | D3:12 | A2:12 | D3:12 | A2:12 | G2:12 | D3:12 | A2:12 | B2:12 | G2:12 | D3:12 | D3:12 | G2:12 | D3:12 | A2:12 | B2:12 | G2:12 | D3:12 | A2:12 | G2:12 | D3:12 | A2:12 | D3:12 | B2:12 | G2:12 | D3:12 | A2:12 | D3:12 | A2:12 | G2:12 | D3:12 | A2:12 | B2:12 | G2:12 | D3:12;
+bass@0.78=camp_bass| D2:6 A1:6 | G1:6 D2:6 | D2:6 A1:6 | A1:6 E2:6 | B1:6 F#1:6 | G1:6 D2:6 | D2:6 A1:6 | A1:6 E2:6 | G1:6 D2:6 | D2:6 A1:6 | A1:6 E2:6 | D2:6 A1:6 | B1:6 F#1:6 | G1:6 D2:6 | D2:6 A1:6 | A1:6 E2:6 | D2:6 A1:6 | A1:6 E2:6 | G1:6 D2:6 | D2:6 A1:6 | A1:6 E2:6 | B1:6 F#1:6 | G1:6 D2:6 | D2:6 A1:6 | D2:6 A1:6 | G1:6 D2:6 | D2:6 A1:6 | A1:6 E2:6 | B1:6 F#1:6 | G1:6 D2:6 | D2:6 A1:6 | A1:6 E2:6 | G1:6 D2:6 | D2:6 A1:6 | A1:6 E2:6 | D2:6 A1:6 | B1:6 F#1:6 | G1:6 D2:6 | D2:6 A1:6 | A1:6 E2:6 | D2:6 A1:6 | A1:6 E2:6 | G1:6 D2:6 | D2:6 A1:6 | A1:6 E2:6 | B1:6 F#1:6 | G1:6 D2:6 | D2:6 A1:6;
+bell@0.24=harbor_bell| r:12 | r:12 | r:10 D5:2 | r:12 | r:12 | r:10 B4:2 | r:12 | r:12 | r:10 A4:2 | r:12 | r:12 | r:10 D5:2 | r:12 | r:12 | r:10 F#5:2 | r:12 | r:10 D5:2 | r:12 | r:12 | r:10 A4:2 | r:12 | r:12 | r:10 D5:2 | r:12 | r:12 | r:10 B4:2 | r:12 | r:12 | r:10 D5:2 | r:12 | r:12 | r:10 A4:2 | r:12 | r:12 | r:10 F#5:2 | r:12 | r:10 D5:2 | r:12 | r:12 | r:10 A4:2 | r:12 | r:12 | r:10 D5:2 | r:12 | r:12 | r:10 F#5:2 | r:12 | r:8 A4:2 D5:2;
+# Goal: title screen; a two-bar brass call that lands immediately, then a calmer piano-led noble theme with enough development to loop without feeling like a short jingle.
+tempo=72;
+meter=4/4;
+horn@0.54=city_horn| E4:2! B4:2! E5:4! G5:4! E5:4! | D5:2! B4:2! G4:4! A4:4! B4:4! | r:16 | r:16 | r:16 | B4:4! r:12 | r:16 | E5:4! r:12 | r:8 G4:4 B4:4 | r:16 | A4:4 C5:4 B4:4 r:4 | r:16 | B4:4! r:12 | r:16 | G4:4 B4:4 E5:4 D5:4 | E5:4! r:4 B4:4 E4:4;
+lead@0.40=road_piano| r:16 | r:16 | E5:4 G5:4 B5:4 G5:4 | D5:4 B4:4 A4:4 G4:4 | E5:4 B4:4 G4:4 E5:4 | G5:4 B5:4 D6:4 B5:4 | C6:4 B5:4 G5:4 E5:4 | B4:4 D5:4 G5:4 r:4 | E5:4 G5:4 B5:4 E6:4 | D6:4 B5:4 A5:4 G5:4 | A4:4 C5:4 E5:4 D5:4 | B4:8 A4:4 F#4:4 | E5:4 B4:4 G4:4 E5:4 | D5:4 E5:4 G5:4 B5:4 | A5:4 G5:4 E5:4 D5:4 | B4:4 G4:4 E4:4 r:4;
+bowed@0.24=elven_bowed| r:16 | r:16 | B4:8 D5:4 r:4 | A4:8 B4:4 r:4 | G5:8 E5:4 r:4 | E5:8 D5:4 r:4 | D5:8 B4:4 r:4 | r:16 | G5:8 B5:4 r:4 | E5:8 D5:4 r:4 | C5:8 A4:4 r:4 | r:16 | B4:8 D5:4 r:4 | A4:8 B4:4 r:4 | D5:8 G5:4 r:4 | E5:8 B4:4 r:4;
+pad@0.50=seal_pad| E3:16 | G2:16 | E3:16 | D3:16 | E3:16 | C3:16 | G2:16 | D3:16 | E3:16 | G2:16 | A2:16 | B2:16 | E3:16 | D3:16 | G2:16 | E3:16;
+bass@0.84=world_bass| E2:8 B1:8 | G1:8 D2:8 | E2:8 B1:8 | D2:8 A1:8 | E2:8 B1:8 | C2:8 G1:8 | G2:8 D2:8 | D2:8 A1:8 | E2:8 B1:8 | G1:8 D2:8 | A1:8 E2:8 | B1:8 F#1:8 | E2:8 B1:8 | D2:8 A1:8 | G2:8 D2:8 | E2:8 B1:8;
+bell@0.20=city_bell| E5:4! r:12 | B4:4! r:12 | r:16 | r:16 | D6:4 r:12 | r:16 | G5:4 r:12 | r:16 | E6:4 r:12 | r:16 | C5:4 r:12 | r:16 | B5:4 r:12 | r:16 | G5:4 r:12 | E5:4 r:12;
+# Goal: victory fanfare; a compact fixed-intro lift with clean brass confidence, a readable cadence, and no long tail after the result lands.
+tempo=80;
+meter=4/4;
+horn@0.72=march_horn| D4:2! A4:2! D5:4! F#5:4! A5:4! | G5:4 F#5:2 E5:2 D5:4 r:4 | B4:4 D5:4 G5:4 B5:4 | A5:4 F#5:4 D5:4 r:4 | F#5:4 A5:4 D6:4 A5:4 | G5:4 E5:4 B4:4 r:4 | A4:4 D5:4 F#5:4 A5:4 | B5:4 A5:4 G5:4 F#5:4 | E5:4 G5:4 B5:4 G5:4 | F#5:4 E5:4 D5:4 A4:4 | D5:4 F#5:4 A5:4 D6:4 | A5:4 F#5:4 D5:4 r:4;
+bass@0.84=world_bass| D2:8 A1:8 | G1:8 D2:8 | G1:8 D2:8 | D2:8 A1:8 | A1:8 E2:8 | B1:8 F#1:8 | A1:8 E2:8 | D2:8 A1:8 | E2:8 B1:8 | A1:8 E2:8 | D2:8 A1:8 | D2:8 A1:8;
+bell@0.32=city_bell| D5:4! r:12 | r:12 D5:4 | r:12 G5:4 | r:12 A5:4 | r:8 D6:4 A5:4 | r:12 G5:4 | r:12 A5:4 | r:12 F#5:4 | r:12 B5:4 | r:12 A5:4 | r:8 D6:4 A5:4 | D5:4 r:4 A5:4 D6:4;
+drum@0.48=iron_drum| K:4! r:4 S:4 r:4 | K:4 H:4 S:4 r:4 | K:4 r:4 S:4 r:4 | K:4 r:4 S:4 r:4 | K:4! H:4 S:4 r:4 | K:4 r:4 S:4 r:4 | K:4 H:4 S:4 r:4 | K:4 r:4 S:4 r:4 | K:4! r:4 S:4 r:4 | K:4 H:4 S:4 r:4 | K:4! H:4 S:4 r:4 | K:4 r:4 S:4 r:4;
