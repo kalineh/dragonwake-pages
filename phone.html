@@ -430,6 +430,8 @@
     (function () {
       const MOVE_REPEAT_DELAY_MS = 240;
       const MOVE_REPEAT_INTERVAL_MS = 60;
+      const MAP_DOUBLE_TAP_MS = 320;
+      const MAP_DOUBLE_TAP_DISTANCE_PX = 34;
       const MOVE_WAIT_RADIUS = 0.18;
       const MOVE_BOUNDARY_GAP = 0.0;
       const MOVE_CARDINAL_BIAS = 3 * Math.PI / 180;
@@ -462,6 +464,11 @@
         startTimer: 0,
         repeatTimer: 0,
       };
+      const mapTapState = {
+        time: 0,
+        x: 0,
+        y: 0,
+      };
 
       var Module = window.Module || {};
       Module.dragonwakeLayoutProfile = 'tall';
@@ -478,6 +485,10 @@
         return typeof Module._dragonwake_web_enqueue_direction === 'function' &&
                typeof Module._dragonwake_web_enqueue_menu_shortcut === 'function' &&
                typeof Module._dragonwake_web_enqueue_touch_control === 'function';
+      }
+
+      function zoomBridgeReady() {
+        return typeof Module._dragonwake_web_enqueue_world_zoom_cycle === 'function';
       }
 
       function hapticTap() {
@@ -508,6 +519,47 @@
         }
         Module._dragonwake_web_enqueue_touch_control(control);
         focusCanvas();
+      }
+
+      function sendWorldZoomCycle() {
+        if (!zoomBridgeReady()) {
+          return;
+        }
+        Module._dragonwake_web_enqueue_world_zoom_cycle();
+        focusCanvas();
+      }
+
+      function canvasPointForEvent(event) {
+        const canvas = Module.canvas;
+        if (!canvas) {
+          return null;
+        }
+
+        const rect = canvas.getBoundingClientRect();
+        if (rect.width <= 0 || rect.height <= 0 || canvas.width <= 0 || canvas.height <= 0) {
+          return null;
+        }
+
+        return {
+          x: (event.clientX - rect.left) * canvas.width / rect.width,
+          y: (event.clientY - rect.top) * canvas.height / rect.height,
+        };
+      }
+
+      function pointInMapArea(point) {
+        const renderer = Module.dragonwakeRenderer;
+        const viewport = renderer && renderer.worldViewport;
+        if (!viewport || !viewport.active) {
+          return false;
+        }
+
+        const x = Number.isFinite(viewport.x) ? viewport.x : 0;
+        const y = Number.isFinite(viewport.y) ? viewport.y : 0;
+        const width = Number.isFinite(viewport.width) ? viewport.width : 0;
+        const height = Number.isFinite(viewport.height) ? viewport.height : 0;
+        return width > 0 && height > 0 &&
+               point.x >= x && point.y >= y &&
+               point.x < x + width && point.y < y + height;
       }
 
       function endButtonHold(button) {
@@ -696,6 +748,43 @@
         });
       }
 
+      function bindMapDoubleTap() {
+        const stack = document.getElementById('canvas-stack');
+        if (!stack) {
+          return;
+        }
+
+        stack.addEventListener('pointerup', function (event) {
+          if (event.pointerType === 'mouse') {
+            return;
+          }
+
+          const point = canvasPointForEvent(event);
+          if (!point || !pointInMapArea(point)) {
+            mapTapState.time = 0;
+            return;
+          }
+
+          const now = window.performance.now();
+          const dx = event.clientX - mapTapState.x;
+          const dy = event.clientY - mapTapState.y;
+          if (mapTapState.time > 0 &&
+              now - mapTapState.time <= MAP_DOUBLE_TAP_MS &&
+              dx * dx + dy * dy <= MAP_DOUBLE_TAP_DISTANCE_PX * MAP_DOUBLE_TAP_DISTANCE_PX) {
+            mapTapState.time = 0;
+            event.preventDefault();
+            event.stopPropagation();
+            sendWorldZoomCycle();
+            hapticTap();
+            return;
+          }
+
+          mapTapState.time = now;
+          mapTapState.x = event.clientX;
+          mapTapState.y = event.clientY;
+        }, { capture: true });
+      }
+
       function bindButtons() {
         document.querySelectorAll('[data-menu]').forEach(function (button) {
           bindTapButton(button, function () {
@@ -713,6 +802,7 @@
       document.addEventListener('DOMContentLoaded', function () {
         bindButtons();
         bindMovePad();
+        bindMapDoubleTap();
         focusCanvas();
       });
     })();
