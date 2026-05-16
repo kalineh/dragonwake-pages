@@ -551,6 +551,15 @@
         }
       }
 
+      window.dragonwakeClearInputRepeat = function () {
+        const pad = document.getElementById('move-pad');
+        moveState.digit = 0;
+        clearMoveRepeat();
+        if (pad) {
+          updateMoveIndicator(pad, 0);
+        }
+      };
+
       function updateMoveIndicator(pad, digit) {
         if (!digit) {
           pad.classList.remove('is-active', 'is-waiting');
