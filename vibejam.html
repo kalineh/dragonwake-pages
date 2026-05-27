@@ -36,7 +36,10 @@
         radial-gradient(circle at top, rgba(215, 178, 109, 0.16), transparent 34%),
         linear-gradient(180deg, #1a1612 0%, var(--page-bg) 100%);
       color: var(--text-main);
-      font-family: Consolas, "Lucida Console", "Cascadia Mono", "Iosevka Term", monospace;
+      font-family: ui-monospace, "SFMono-Regular", "Cascadia Mono", Consolas, "Liberation Mono",
+        "Lucida Console", "Noto Sans Mono CJK SC", "Noto Sans CJK SC", "Microsoft YaHei UI",
+        "Microsoft YaHei", "Yu Gothic UI", "Meiryo", "Malgun Gothic", "Apple SD Gothic Neo",
+        "PingFang SC", "PingFang TC", "Hiragino Sans", "Noto Sans CJK KR", monospace;
     }
 
     .page {
@@ -273,10 +276,7 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 18px;
-    }
-
-    .details .panel {
-      height: 100%;
+      align-items: start;
     }
 
     .bullets {
@@ -616,13 +616,11 @@
         <h2>Quick Play Guide</h2>
         <ul class="bullets">
           <li><strong>Every action is a turn.</strong> Move one step, attack, rest, or interact, then nearby enemies act.</li>
-          <li><strong>Press <code>enter</code> to interact or confirm.</strong> The in-game footer also shows scheme-specific shortcuts like <code>e</code> or <code>b</code>.</li>
-          <li><strong>Default controls are built around numpad movement.</strong> Dragonwake uses 8-direction movement, so the intended default layout is the numpad.</li>
-          <li><strong>Laptop-friendly layout alternatives are in Options.</strong> If you do not want to use numpad movement, switch to one of the alternate control schemes there.</li>
-          <li><strong><code>Shift</code> + arrows is configurable in Options.</strong> Use <code>Diagonal Mode</code> for release-to-step laptop movement or <code>Fast Walk</code> to keep moving until interrupted.</li>
+          <li><strong>Press <code>enter</code> to interact or confirm.</strong> The in-game footer shows key shortcuts contextually.</li>
+          <li><strong>8-way movement.</strong> Use the numpad for full 8-way movement, or hold <code>shift</code> to move diagonally with arrow keys.</li>
           <li><strong>Useful keys:</strong> <code>esc</code> for menus and back, number-row shortcuts for the in-game menus, <code>x</code> to look, and <code>F1</code> or <code>?</code> for help.</li>
           <li><strong>Early route:</strong> buy some travel supplies at the docks, then head inland toward Havenford for the first real town and quest hub.</li>
-          <li><strong>If you are new to roguelikes:</strong> play slow, inspect things, retreat from bad fights, and treat survival as progress.</li>
+          <li><strong>If you are new to roguelikes:</strong> play slow, inspect things, retreat from bad fights, and use first aid to stay healthy.</li>
         </ul>
       </section>
 
