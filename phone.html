@@ -307,6 +307,19 @@
       font-weight: 700;
     }
 
+    .shoulder-button {
+      min-height: 3.15rem;
+      width: 115%;
+    }
+
+    .aux-column-left .shoulder-button {
+      align-self: flex-start;
+    }
+
+    .aux-column-right .shoulder-button {
+      align-self: flex-end;
+    }
+
     .menu-button {
       min-height: 2.58rem;
       font-size: 1rem;
@@ -386,7 +399,7 @@
 
         <div class="action-panel">
           <div class="aux-column aux-column-left" aria-label="Left utility buttons">
-            <button class="aux-button" data-control="5" title="Auto walk">L1</button>
+            <button class="aux-button shoulder-button" data-control="5" title="Auto walk">L1</button>
             <button class="aux-button" data-control="7" title="Class actions">L2</button>
             <button class="aux-button" data-control="9" title="Look">SEL</button>
           </div>
@@ -420,7 +433,7 @@
           </div>
 
           <div class="aux-column aux-column-right" aria-label="Right utility buttons">
-            <button class="aux-button" data-control="6" title="Cast ready spell">R1</button>
+            <button class="aux-button shoulder-button" data-control="6" title="Cast ready spell">R1</button>
             <button class="aux-button" data-control="8" title="Shoot">R2</button>
             <button class="aux-button" data-control="10" title="Game menu">START</button>
           </div>
