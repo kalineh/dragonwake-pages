@@ -425,7 +425,7 @@
               </svg>
             </button>
             <button class="face-button face-circle" data-control="2"
-                    title="Back or cancel" aria-label="Back or cancel">
+                    title="Wait" aria-label="Wait">
               <svg viewBox="0 0 100 100" aria-hidden="true">
                 <circle cx="50" cy="50" r="28"></circle>
               </svg>
@@ -448,7 +448,7 @@
       const MOVE_REPEAT_INTERVAL_MS = 100;
       const MAP_DOUBLE_TAP_MS = 320;
       const MAP_DOUBLE_TAP_DISTANCE_PX = 34;
-      const MOVE_WAIT_RADIUS = 0.18;
+      const MOVE_DEAD_ZONE_RADIUS = 0.18;
       const MOVE_BOUNDARY_GAP = 0.0;
       const MOVE_CARDINAL_BIAS = 3 * Math.PI / 180;
       const TWO_PI = Math.PI * 2;
@@ -676,8 +676,8 @@
         const ny = (centerY - clientY) / Math.max(1, rect.height * 0.5);
         const radius = Math.sqrt(nx * nx + ny * ny);
 
-        if (radius <= MOVE_WAIT_RADIUS) {
-          return 5;
+        if (radius <= MOVE_DEAD_ZONE_RADIUS) {
+          return 0;
         }
 
         const angle = Math.atan2(ny, nx);
