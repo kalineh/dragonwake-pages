@@ -121677,8 +121677,8 @@ COMBAT_MONSTER_ATTACK_MISS|72|monster melee miss message, placeholder 0 is monst
 COMBAT_MONSTER_ATTACK_MISS_PARTY|96|monster melee miss against an inactive party member, placeholders 0 monster name without article, 1 party member name, 2 optional roll text with leading space|The {0} misses {1}{2}.
 COMBAT_MONSTER_ATTACK_HIT|88|monster melee hit message, placeholder 0 is attacker phrase, 1 is optional roll text with leading space, 2 is damage amount|{0} hits you{1} for {2} damage.
 COMBAT_MONSTER_ATTACK_HIT_PARTY|112|monster melee hit against an inactive party member, placeholders 0 attacker phrase, 1 party member name, 2 optional roll text with leading space, 3 damage amount|{0} hits {1}{2} for {3} damage.
-COMBAT_MONSTER_ATTACK_NO_DAMAGE|88|monster melee hit that deals no damage, placeholder 0 is attacker phrase, 1 is optional roll text with leading space|{0} hits you{1}, but deals no damage.
-COMBAT_MONSTER_ATTACK_NO_DAMAGE_PARTY|112|monster melee hit against an inactive party member that deals no damage, placeholders 0 attacker phrase, 1 party member name, 2 optional roll text with leading space|{0} hits {1}{2}, but deals no damage.
+COMBAT_MONSTER_ATTACK_NO_DAMAGE|88|monster melee hit that glances from armor, placeholder 0 is attacker phrase, 1 is optional roll text with leading space|{0} hits you{1}, but the blow glances off.
+COMBAT_MONSTER_ATTACK_NO_DAMAGE_PARTY|112|monster melee hit against an inactive party member that glances from armor, placeholders 0 attacker phrase, 1 party member name, 2 optional roll text with leading space|{0} hits {1}{2}, but the blow glances off.
 COMBAT_PLAYER_DIES|24|sentence appended when a monster attack kills the player|You die.
 COMBAT_WAKE_NEAR_MISS||combat message when a missed hostile attack wakes the player|A near miss jolts you awake.
 COMBAT_WAKE_ATTACK||combat message when a hostile attack wakes the player|The attack jolts you awake.
@@ -121750,14 +121750,14 @@ COMBAT_OFFHAND_HIT||player off-hand hit message, placeholder 0 is monster name, 
 COMBAT_MONSTER_BREATH_COVER||monster breath misses due to cover, placeholder 0 is monster name, 1 is breath action text|The {0} {1}, but cover breaks the blast.
 COMBAT_MONSTER_BREATH_IMMUNE||player immunity blocks monster breath, placeholder 0 is resistance name, 1 is monster name|Your {0} immunity leaves the {1}'s breath harmless.
 COMBAT_MONSTER_BREATH_DIVINE_SHIELD||player divine shield blocks monster breath, placeholder 0 is monster name|The {0}'s breath breaks harmlessly against your divine shield.
-COMBAT_MONSTER_BREATH_NO_HARM||debug invincibility blocks monster breath, placeholder 0 is monster name|The {0}'s breath cannot harm you.
+COMBAT_MONSTER_BREATH_NO_HARM||monster breath glances from armor or debug invincibility blocks it, placeholder 0 is monster name|The {0}'s breath hits you but glances off.
 COMBAT_MONSTER_BREATH_DAMAGE||monster breath damage message, placeholder 0 is monster name, 1 is breath action text, 2 is damage amount|The {0} {1} for {2} damage.
 COMBAT_MONSTER_BREATH_SAVE_SUFFIX||suffix appended when player saves against monster breath| You save against the worst of it.
 COMBAT_MONSTER_BREATH_GALE_PUSH_SUFFIX||suffix appended when forest dragon breath pushes player| The gale throws you back.
 COMBAT_MONSTER_BREATH_COVER_PARTY||monster breath misses inactive party member due to cover, placeholders 0 monster name, 1 breath action text, 2 target name|The {0} {1}, but cover shields {2} from the blast.
 COMBAT_MONSTER_BREATH_IMMUNE_PARTY||inactive party member immunity blocks monster breath, placeholders 0 resistance name, 1 monster name, 2 target name|{2}'s {0} immunity leaves the {1}'s breath harmless.
 COMBAT_MONSTER_BREATH_DIVINE_SHIELD_PARTY||inactive party member divine shield blocks monster breath, placeholders 0 monster name, 1 target name|The {0}'s breath breaks harmlessly against {1}'s divine shield.
-COMBAT_MONSTER_BREATH_NO_HARM_PARTY||debug invincibility blocks monster breath against inactive party member, placeholders 0 monster name, 1 target name|The {0}'s breath cannot harm {1}.
+COMBAT_MONSTER_BREATH_NO_HARM_PARTY||monster breath glances from an inactive party member's armor or debug invincibility blocks it, placeholders 0 monster name, 1 target name|The {0}'s breath hits {1} but glances off.
 COMBAT_MONSTER_BREATH_DAMAGE_PARTY||monster breath damage against inactive party member, placeholders 0 monster name, 1 breath action text, 2 damage amount, 3 target name|The {0} {1}, hitting {3} for {2} damage.
 COMBAT_MONSTER_BREATH_SAVE_SUFFIX_PARTY||suffix when inactive party member saves against monster breath, placeholder 0 target name| {0} saves against the worst of it.
 COMBAT_MONSTER_BREATH_GALE_PUSH_SUFFIX_PARTY||suffix when forest dragon breath pushes inactive party member, placeholder 0 target name| The gale throws {0} back.
@@ -121879,7 +121879,7 @@ COMBAT_MONSTER_ACTION_MISS||monster action miss message, placeholder 0 is monste
 COMBAT_MONSTER_DEATH_WARD_BLOCK||death ward blocks monster death magic, placeholder 0 is monster name|Your death ward turns the {0}'s death magic aside.
 COMBAT_MONSTER_ACTION_IMMUNE||player immunity blocks monster action, placeholder 0 is resistance name, 1 is monster name|Your {0} immunity leaves the {1}'s attack harmless.
 COMBAT_MONSTER_ACTION_DIVINE_SHIELD||divine shield blocks monster action, placeholder 0 is monster name, 1 is action fragment|The {0}'s {1} breaks harmlessly against your divine shield.
-COMBAT_MONSTER_ACTION_NO_HARM||debug invincibility blocks monster action, placeholder 0 is monster name, 1 is action fragment|The {0}'s {1} cannot harm you.
+COMBAT_MONSTER_ACTION_NO_HARM||monster action glances from armor or debug invincibility blocks it, placeholder 0 is monster name, 1 is action fragment|The {0} {1} at you, but the attack glances off.
 COMBAT_MONSTER_ACTION_DAMAGE||monster action damage message, placeholder 0 is monster name, 1 is action fragment, 2 is damage amount|The {0} {1} for {2} damage.
 COMBAT_MONSTER_ACTION_CONFUSION_SUFFIX||suffix appended when monster action confuses player| The impact rattles your thoughts.
 COMBAT_MONSTER_ACTION_SICKNESS_SUFFIX||suffix appended when monster action sickens player| A dead chill settles into you.
@@ -121888,7 +121888,7 @@ COMBAT_MONSTER_ACTION_MISS_PARTY||monster action misses inactive party member, p
 COMBAT_MONSTER_DEATH_WARD_BLOCK_PARTY||inactive party member death ward blocks monster death magic, placeholders 0 monster name, 1 target name|{1}'s death ward turns the {0}'s death magic aside.
 COMBAT_MONSTER_ACTION_IMMUNE_PARTY||inactive party member immunity blocks monster action, placeholders 0 resistance name, 1 monster name, 2 target name|{2}'s {0} immunity leaves the {1}'s attack harmless.
 COMBAT_MONSTER_ACTION_DIVINE_SHIELD_PARTY||inactive party member divine shield blocks monster action, placeholders 0 monster name, 1 action fragment, 2 target name|The {0}'s {1} breaks harmlessly against {2}'s divine shield.
-COMBAT_MONSTER_ACTION_NO_HARM_PARTY||debug invincibility blocks monster action against inactive party member, placeholders 0 monster name, 1 action fragment, 2 target name|The {0}'s {1} cannot harm {2}.
+COMBAT_MONSTER_ACTION_NO_HARM_PARTY||monster action glances from an inactive party member's armor or debug invincibility blocks it, placeholders 0 monster name, 1 action fragment, 2 target name|The {0} {1} at {2}, but the attack glances off.
 COMBAT_MONSTER_ACTION_DAMAGE_PARTY||monster action damages inactive party member, placeholders 0 monster name, 1 action fragment, 2 damage amount, 3 target name|The {0} {1}, hitting {3} for {2} damage.
 COMBAT_MONSTER_ACTION_CONFUSION_SUFFIX_PARTY||suffix when monster action confuses inactive party member, placeholder 0 target name| The impact rattles {0}'s thoughts.
 COMBAT_MONSTER_ACTION_SICKNESS_SUFFIX_PARTY||suffix when monster action sickens inactive party member, placeholder 0 target name| A dead chill settles into {0}.
@@ -121957,6 +121957,7 @@ COMBAT_MONSTER_DOOR_SMASH||monster smashes door open, placeholder 0 is monster n
 COMBAT_MONSTER_VS_MONSTER_MISS||monster attacks another monster and misses, placeholder 0 is attacker name, 1 is target name|{0} lashes out at {1}, but misses.
 COMBAT_MONSTER_VS_MONSTER_KILL||monster kills another monster, placeholder 0 is attacker name, 1 is target name, 2 is damage amount|{0} hits {1} for {2} damage, killing it.
 COMBAT_MONSTER_VS_MONSTER_HIT||monster hits another monster, placeholder 0 is attacker name, 1 is target name, 2 is damage amount|{0} hits {1} for {2} damage.
+COMBAT_MONSTER_VS_MONSTER_GLANCE||monster hits another monster but armor turns the blow, placeholders 0 attacker name, 1 target name|{0} hits {1}, but the blow glances off.
 COMBAT_MONSTER_MELEE_SLIP||monster melee attack fails on slippery surface, placeholder 0 is monster name, 1 is surface name, 2 is log-only DEX save roll text|{0} slips on the {1} and falls prone {2}.
 COMBAT_MONSTER_STAND_UP||monster stands up from prone, placeholder 0 is monster name|{0} stands up.
 COMBAT_MONSTER_STAND_UP_SLIPPERY||monster passes the save to stand and act on slippery terrain, placeholders 0 monster name, 1 surface name, 2 optional save roll text with leading space|{0} stands up on the {1}{2}.
