@@ -9879,10 +9879,10 @@ DIALOGUE_NERRIK_DRAUGHT_FINAL|Good. The perfect draught holds together. Drink it
 DIALOGUE_NERRIK_DRAUGHT_NEED_OINTMENT|You need preservation ointment before hunting the next sample. Maveth sometimes sells jars, and curio shelves may have them.
 DIALOGUE_NERRIK_DRAUGHT_USE_OINTMENT|Use the ointment before rot starts. Rub it into the fresh corpse I named, or throw the jar at that creature before the kill.
 DIALOGUE_NERRIK_DRAUGHT_TARGET|Next sample: preserve a {0} corpse and bring it back to me.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved adult dragon corpse and one blackglass shard. Young dragons will not do.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|An adult dragon sample and a blackglass shard. Good. That is enough body and enough bite for the final mix.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved elder or ancient dragon corpse and one blackglass shard. An adult dragon will not do.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|A sample from an elder dragon or older, and a blackglass shard. Good. That is enough body and enough bite for the final mix.
 DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SHARD|The dragon sample is usable. Now bring one blackglass shard; the final draught needs something hard enough to hold the change.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an adult dragon or older. Preserve the corpse and bring it here with one blackglass shard.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an elder or ancient dragon. Preserve the corpse and bring it here with one blackglass shard.
 DIALOGUE_AELRION_THREAD_DONE|Der moonwell stRings are holding. Der upgraded rack is stocked. Keep finished Bogens dry, oder buy another stRing.
 DIALOGUE_AELRION_THREAD_TURNIN|Sechs Faeden, keiner ausgefranst. Gut. Die halten einen Kriegsbogen.\nNehmt diesen Lohn und diesen Bogen. Den Rest drehe ich in den verbesserten Staender.
 DIALOGUE_AELRION_THREAD_REMINDER|Moonwell Observatory hat noch, was ich brauche. Bringt sechs Faeden von Kulttoten, aus Spukraeumen oder gefangenen Faeden nahe dem alten Rahmen.
@@ -11140,9 +11140,9 @@ QUEST_LOG_MOONWELL_THREAD_OBJECTIVE_COUNT|Sammle Moonwell-Fäden. ({0}/6)
 QUEST_LOG_PERFECT_DRAUGHT_DETAIL|Sample {0} of {1}: Nerrik wants a preserved {2} corpse. I should use preservation ointment on a fresh corpse, or throw a jar at the monster before killing it.
 QUEST_LOG_PERFECT_DRAUGHT_RETURN_DETAIL|Sample {1} of {2}: I have the preserved {0} corpse. I should bring it back to Nerrik in Highmark.
 QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_OBJECTIVE|Bring the dragon sample and shard to Nerrik.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved adult dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved adult dragon corpse and a blackglass shard.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an adult dragon or older, plus one blackglass shard to hold the mixture steady. Young dragons do not count.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved elder or ancient dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved elder or ancient dragon corpse and a blackglass shard.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an elder or ancient dragon, plus one blackglass shard to hold the mixture steady. Adult dragons do not count.
 QUEST_LOG_NORTHERN_WATCH_I_OBJECTIVE_COUNT|Töte Harpyien in den nördlichen Hügeln. ({0}/12)
 QUEST_LOG_NORTHERN_WATCH_II_OBJECTIVE_COUNT|Töte Oger im nördlichen Gelände. ({0}/8)
 QUEST_LOG_NORTHERN_WATCH_III_OBJECTIVE_COUNT|Töte Hügelriesen im Norden. ({0}/2)
@@ -22370,10 +22370,10 @@ DIALOGUE_NERRIK_DRAUGHT_FINAL|Good. The perfect draught holds together. Drink it
 DIALOGUE_NERRIK_DRAUGHT_NEED_OINTMENT|You need preservation ointment before hunting the next sample. Maveth sometimes sells jars, and curio shelves may have them.
 DIALOGUE_NERRIK_DRAUGHT_USE_OINTMENT|Use the ointment before rot starts. Rub it into the fresh corpse I named, or throw the jar at that creature before the kill.
 DIALOGUE_NERRIK_DRAUGHT_TARGET|Next sample: preserve a {0} corpse and bring it back to me.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved adult dragon corpse and one blackglass shard. Young dragons will not do.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|An adult dragon sample and a blackglass shard. Good. That is enough body and enough bite for the final mix.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved elder or ancient dragon corpse and one blackglass shard. An adult dragon will not do.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|A sample from an elder dragon or older, and a blackglass shard. Good. That is enough body and enough bite for the final mix.
 DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SHARD|The dragon sample is usable. Now bring one blackglass shard; the final draught needs something hard enough to hold the change.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an adult dragon or older. Preserve the corpse and bring it here with one blackglass shard.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an elder or ancient dragon. Preserve the corpse and bring it here with one blackglass shard.
 DIALOGUE_AELRION_THREAD_DONE|Le corde di moonwell tengono. La rastrelliera migliorata e' rifornita. Tieni asciutti gli archi finiti, o compra un'altra corda.
 DIALOGUE_AELRION_THREAD_TURNIN|Seis hebras, ninguna deshilachada. Bien. Estas aguantaran un arco de guerra.\nToma esta paga y este arco. Trenzare el resto para el estante mejorado.
 DIALOGUE_AELRION_THREAD_REMINDER|Moonwell Observatory ha ancora cio' che mi serve. Porta sei fili da cultisti morti, stanze di spettri o filo impigliato vicino al vecchio telaio.
@@ -23620,9 +23620,9 @@ QUEST_LOG_MOONWELL_THREAD_OBJECTIVE_COUNT|Recoge hilos de Moonwell. ({0}/6)
 QUEST_LOG_PERFECT_DRAUGHT_DETAIL|Sample {0} of {1}: Nerrik wants a preserved {2} corpse. I should use preservation ointment on a fresh corpse, or throw a jar at the monster before killing it.
 QUEST_LOG_PERFECT_DRAUGHT_RETURN_DETAIL|Sample {1} of {2}: I have the preserved {0} corpse. I should bring it back to Nerrik in Highmark.
 QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_OBJECTIVE|Bring the dragon sample and shard to Nerrik.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved adult dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved adult dragon corpse and a blackglass shard.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an adult dragon or older, plus one blackglass shard to hold the mixture steady. Young dragons do not count.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved elder or ancient dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved elder or ancient dragon corpse and a blackglass shard.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an elder or ancient dragon, plus one blackglass shard to hold the mixture steady. Adult dragons do not count.
 QUEST_LOG_NORTHERN_WATCH_I_OBJECTIVE_COUNT|Elimina arpías de las colinas del norte. ({0}/12)
 QUEST_LOG_NORTHERN_WATCH_II_OBJECTIVE_COUNT|Elimina ogros del terreno del norte. ({0}/8)
 QUEST_LOG_NORTHERN_WATCH_III_OBJECTIVE_COUNT|Elimina gigantes de colina del norte. ({0}/2)
@@ -35257,10 +35257,10 @@ DIALOGUE_NERRIK_DRAUGHT_FINAL|Good. The perfect draught holds together. Drink it
 DIALOGUE_NERRIK_DRAUGHT_NEED_OINTMENT|You need preservation ointment before hunting the next sample. Maveth sometimes sells jars, and curio shelves may have them.
 DIALOGUE_NERRIK_DRAUGHT_USE_OINTMENT|Use the ointment before rot starts. Rub it into the fresh corpse I named, or throw the jar at that creature before the kill.
 DIALOGUE_NERRIK_DRAUGHT_TARGET|Next sample: preserve a {0} corpse and bring it back to me.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved adult dragon corpse and one blackglass shard. Young dragons will not do.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|An adult dragon sample and a blackglass shard. Good. That is enough body and enough bite for the final mix.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved elder or ancient dragon corpse and one blackglass shard. An adult dragon will not do.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|A sample from an elder dragon or older, and a blackglass shard. Good. That is enough body and enough bite for the final mix.
 DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SHARD|The dragon sample is usable. Now bring one blackglass shard; the final draught needs something hard enough to hold the change.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an adult dragon or older. Preserve the corpse and bring it here with one blackglass shard.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an elder or ancient dragon. Preserve the corpse and bring it here with one blackglass shard.
 DIALOGUE_AELRION_THREAD_DONE|Le moonwell strings sont holding. Le upgraded rack est stocked. Garde finished bows dry, ou buy another string.
 DIALOGUE_AELRION_THREAD_TURNIN|Six brins, aucun effiloche. Bien. Ceux-la tiendront un arc de guerre.\nPrends cette paie et cet arc. Je torsaderai le reste pour le ratelier ameliore.
 DIALOGUE_AELRION_THREAD_REMINDER|Moonwell Observatory calme a what Je besoin de. Apporte six strands de cult mort, specter rooms, ou caught thread near le vieux frame.
@@ -36101,9 +36101,9 @@ QUEST_LOG_MOONWELL_THREAD_OBJECTIVE_COUNT|Récoltez des fils de Moonwell. ({0}/6
 QUEST_LOG_PERFECT_DRAUGHT_DETAIL|Sample {0} of {1}: Nerrik wants a preserved {2} corpse. I should use preservation ointment on a fresh corpse, or throw a jar at the monster before killing it.
 QUEST_LOG_PERFECT_DRAUGHT_RETURN_DETAIL|Sample {1} of {2}: I have the preserved {0} corpse. I should bring it back to Nerrik in Highmark.
 QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_OBJECTIVE|Bring the dragon sample and shard to Nerrik.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved adult dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved adult dragon corpse and a blackglass shard.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an adult dragon or older, plus one blackglass shard to hold the mixture steady. Young dragons do not count.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved elder or ancient dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved elder or ancient dragon corpse and a blackglass shard.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an elder or ancient dragon, plus one blackglass shard to hold the mixture steady. Adult dragons do not count.
 QUEST_LOG_NORTHERN_WATCH_I_OBJECTIVE_COUNT|Éliminez les harpies des collines du nord. ({0}/12)
 QUEST_LOG_NORTHERN_WATCH_II_OBJECTIVE_COUNT|Éliminez les ogres des terres du nord. ({0}/8)
 QUEST_LOG_NORTHERN_WATCH_III_OBJECTIVE_COUNT|Éliminez les géants des collines au nord. ({0}/2)
@@ -47619,10 +47619,10 @@ DIALOGUE_NERRIK_DRAUGHT_FINAL|Good. The perfect draught holds together. Drink it
 DIALOGUE_NERRIK_DRAUGHT_NEED_OINTMENT|You need preservation ointment before hunting the next sample. Maveth sometimes sells jars, and curio shelves may have them.
 DIALOGUE_NERRIK_DRAUGHT_USE_OINTMENT|Use the ointment before rot starts. Rub it into the fresh corpse I named, or throw the jar at that creature before the kill.
 DIALOGUE_NERRIK_DRAUGHT_TARGET|Next sample: preserve a {0} corpse and bring it back to me.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved adult dragon corpse and one blackglass shard. Young dragons will not do.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|An adult dragon sample and a blackglass shard. Good. That is enough body and enough bite for the final mix.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved elder or ancient dragon corpse and one blackglass shard. An adult dragon will not do.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|A sample from an elder dragon or older, and a blackglass shard. Good. That is enough body and enough bite for the final mix.
 DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SHARD|The dragon sample is usable. Now bring one blackglass shard; the final draught needs something hard enough to hold the change.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an adult dragon or older. Preserve the corpse and bring it here with one blackglass shard.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an elder or ancient dragon. Preserve the corpse and bring it here with one blackglass shard.
 DIALOGUE_AELRION_THREAD_DONE|Le corde di moonwell tengono. La rastrelliera migliorata e' rifornita. Tieni asciutti gli archi finiti, o compra un'altra corda.
 DIALOGUE_AELRION_THREAD_TURNIN|Sei fili, nessuno sfilacciato. Bene. Questi reggeranno un arco da guerra.\nPrendi questa paga e questo arco. Intreccero il resto nel supporto migliorato.
 DIALOGUE_AELRION_THREAD_REMINDER|Moonwell Observatory ha ancora cio' che mi serve. Porta sei fili da cultisti morti, stanze di spettri o filo impigliato vicino al vecchio telaio.
@@ -48578,9 +48578,9 @@ QUEST_LOG_MOONWELL_THREAD_OBJECTIVE_COUNT|Raccogli fili moonwell. ({0}/6)
 QUEST_LOG_PERFECT_DRAUGHT_DETAIL|Sample {0} of {1}: Nerrik wants a preserved {2} corpse. I should use preservation ointment on a fresh corpse, or throw a jar at the monster before killing it.
 QUEST_LOG_PERFECT_DRAUGHT_RETURN_DETAIL|Sample {1} of {2}: I have the preserved {0} corpse. I should bring it back to Nerrik in Highmark.
 QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_OBJECTIVE|Bring the dragon sample and shard to Nerrik.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved adult dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved adult dragon corpse and a blackglass shard.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an adult dragon or older, plus one blackglass shard to hold the mixture steady. Young dragons do not count.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved elder or ancient dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved elder or ancient dragon corpse and a blackglass shard.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an elder or ancient dragon, plus one blackglass shard to hold the mixture steady. Adult dragons do not count.
 QUEST_LOG_NORTHERN_WATCH_I_OBJECTIVE_COUNT|Ripulisci le arpie dalle colline settentrionali. ({0}/12)
 QUEST_LOG_NORTHERN_WATCH_II_OBJECTIVE_COUNT|Ripulisci gli ogre dai terreni settentrionali. ({0}/8)
 QUEST_LOG_NORTHERN_WATCH_III_OBJECTIVE_COUNT|Ripulisci i giganti delle colline dal nord. ({0}/2)
@@ -59844,10 +59844,10 @@ DIALOGUE_NERRIK_DRAUGHT_FINAL|Good. The perfect draught holds together. Drink it
 DIALOGUE_NERRIK_DRAUGHT_NEED_OINTMENT|You need preservation ointment before hunting the next sample. Maveth sometimes sells jars, and curio shelves may have them.
 DIALOGUE_NERRIK_DRAUGHT_USE_OINTMENT|Use the ointment before rot starts. Rub it into the fresh corpse I named, or throw the jar at that creature before the kill.
 DIALOGUE_NERRIK_DRAUGHT_TARGET|Next sample: preserve a {0} corpse and bring it back to me.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved adult dragon corpse and one blackglass shard. Young dragons will not do.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|An adult dragon sample and a blackglass shard. Good. That is enough body and enough bite for the final mix.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved elder or ancient dragon corpse and one blackglass shard. An adult dragon will not do.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|A sample from an elder dragon or older, and a blackglass shard. Good. That is enough body and enough bite for the final mix.
 DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SHARD|The dragon sample is usable. Now bring one blackglass shard; the final draught needs something hard enough to hold the change.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an adult dragon or older. Preserve the corpse and bring it here with one blackglass shard.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an elder or ancient dragon. Preserve the corpse and bring it here with one blackglass shard.
 DIALOGUE_AELRION_THREAD_DONE|その件について話す。
 DIALOGUE_AELRION_THREAD_TURNIN|六筋、ほつれなし。よし。これなら戦弓を支えられる。\nこの報酬と弓を持っていけ。残りは改良した棚に撚り込んでおく。
 DIALOGUE_AELRION_THREAD_REMINDER|その件について話す。
@@ -61041,9 +61041,9 @@ QUEST_LOG_MOONWELL_THREAD_OBJECTIVE_COUNT|moonwell 糸を集める。({0}/6)
 QUEST_LOG_PERFECT_DRAUGHT_DETAIL|Sample {0} of {1}: Nerrik wants a preserved {2} corpse. I should use preservation ointment on a fresh corpse, or throw a jar at the monster before killing it.
 QUEST_LOG_PERFECT_DRAUGHT_RETURN_DETAIL|Sample {1} of {2}: I have the preserved {0} corpse. I should bring it back to Nerrik in Highmark.
 QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_OBJECTIVE|Bring the dragon sample and shard to Nerrik.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved adult dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved adult dragon corpse and a blackglass shard.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an adult dragon or older, plus one blackglass shard to hold the mixture steady. Young dragons do not count.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved elder or ancient dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved elder or ancient dragon corpse and a blackglass shard.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an elder or ancient dragon, plus one blackglass shard to hold the mixture steady. Adult dragons do not count.
 QUEST_LOG_NORTHERN_WATCH_I_OBJECTIVE_COUNT|北の丘から harpy を片付ける。({0}/12)
 QUEST_LOG_NORTHERN_WATCH_II_OBJECTIVE_COUNT|北の地から ogre を片付ける。({0}/8)
 QUEST_LOG_NORTHERN_WATCH_III_OBJECTIVE_COUNT|北から hill giant を片付ける。({0}/2)
@@ -72287,10 +72287,10 @@ DIALOGUE_NERRIK_DRAUGHT_FINAL|Good. The perfect draught holds together. Drink it
 DIALOGUE_NERRIK_DRAUGHT_NEED_OINTMENT|You need preservation ointment before hunting the next sample. Maveth sometimes sells jars, and curio shelves may have them.
 DIALOGUE_NERRIK_DRAUGHT_USE_OINTMENT|Use the ointment before rot starts. Rub it into the fresh corpse I named, or throw the jar at that creature before the kill.
 DIALOGUE_NERRIK_DRAUGHT_TARGET|Next sample: preserve a {0} corpse and bring it back to me.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved adult dragon corpse and one blackglass shard. Young dragons will not do.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|An adult dragon sample and a blackglass shard. Good. That is enough body and enough bite for the final mix.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved elder or ancient dragon corpse and one blackglass shard. An adult dragon will not do.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|A sample from an elder dragon or older, and a blackglass shard. Good. That is enough body and enough bite for the final mix.
 DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SHARD|The dragon sample is usable. Now bring one blackglass shard; the final draught needs something hard enough to hold the change.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an adult dragon or older. Preserve the corpse and bring it here with one blackglass shard.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an elder or ancient dragon. Preserve the corpse and bring it here with one blackglass shard.
 DIALOGUE_AELRION_THREAD_DONE|moonwell 줄은 버티고 있다. 업그레이드 선반도 채워졌다. 완성된 활은 말려 두거나, 줄을 하나 더 사라.
 DIALOGUE_AELRION_THREAD_TURNIN|여섯 가닥, 닳은 것 없음. 좋아. 이것들이라면 전쟁활도 버틴다.\n이 보수와 이 활을 가져가라. 나머지는 upgraded rack에 꼬아 넣겠다.
 DIALOGUE_AELRION_THREAD_REMINDER|Moonwell Observatory 에는 아직 내가 필요한 것이 있다. cult dead, specter 방, 또는 오래된 틀 근처에 걸린 실에서 여섯 가닥을 가져와라.
@@ -73528,9 +73528,9 @@ QUEST_LOG_MOONWELL_THREAD_OBJECTIVE_COUNT|moonwell 실을 모은다. ({0}/6)
 QUEST_LOG_PERFECT_DRAUGHT_DETAIL|Sample {0} of {1}: Nerrik wants a preserved {2} corpse. I should use preservation ointment on a fresh corpse, or throw a jar at the monster before killing it.
 QUEST_LOG_PERFECT_DRAUGHT_RETURN_DETAIL|Sample {1} of {2}: I have the preserved {0} corpse. I should bring it back to Nerrik in Highmark.
 QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_OBJECTIVE|Bring the dragon sample and shard to Nerrik.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved adult dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved adult dragon corpse and a blackglass shard.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an adult dragon or older, plus one blackglass shard to hold the mixture steady. Young dragons do not count.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved elder or ancient dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved elder or ancient dragon corpse and a blackglass shard.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an elder or ancient dragon, plus one blackglass shard to hold the mixture steady. Adult dragons do not count.
 QUEST_LOG_NORTHERN_WATCH_I_OBJECTIVE_COUNT|북쪽 언덕에서 harpy를 소탕한다. ({0}/12)
 QUEST_LOG_NORTHERN_WATCH_II_OBJECTIVE_COUNT|북쪽 지대에서 ogre를 소탕한다. ({0}/8)
 QUEST_LOG_NORTHERN_WATCH_III_OBJECTIVE_COUNT|북쪽에서 hill giant를 소탕한다. ({0}/2)
@@ -84766,10 +84766,10 @@ DIALOGUE_NERRIK_DRAUGHT_FINAL|Good. The perfect draught holds together. Drink it
 DIALOGUE_NERRIK_DRAUGHT_NEED_OINTMENT|You need preservation ointment before hunting the next sample. Maveth sometimes sells jars, and curio shelves may have them.
 DIALOGUE_NERRIK_DRAUGHT_USE_OINTMENT|Use the ointment before rot starts. Rub it into the fresh corpse I named, or throw the jar at that creature before the kill.
 DIALOGUE_NERRIK_DRAUGHT_TARGET|Next sample: preserve a {0} corpse and bring it back to me.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved adult dragon corpse and one blackglass shard. Young dragons will not do.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|An adult dragon sample and a blackglass shard. Good. That is enough body and enough bite for the final mix.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved elder or ancient dragon corpse and one blackglass shard. An adult dragon will not do.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|A sample from an elder dragon or older, and a blackglass shard. Good. That is enough body and enough bite for the final mix.
 DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SHARD|The dragon sample is usable. Now bring one blackglass shard; the final draught needs something hard enough to hold the change.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an adult dragon or older. Preserve the corpse and bring it here with one blackglass shard.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an elder or ancient dragon. Preserve the corpse and bring it here with one blackglass shard.
 DIALOGUE_AELRION_THREAD_DONE|Nici moonwell trzymaja. Ulepszony stojak jest zaopatrzony. Trzymaj gotowe luki suche albo kup nowa cieciwe.
 DIALOGUE_AELRION_THREAD_TURNIN|Sześć pasm, żadne niestrzępione. Dobrze. Utrzymają łuk wojenny.\nWeź tę zapłatę i ten łuk. Resztę skręcę do ulepszonego stojaka.
 DIALOGUE_AELRION_THREAD_REMINDER|Moonwell Observatory wciąż ma to, czego potrzebuję. Przynieś sześć pasm z martwych kultystów, sal widm albo uwięzionej nici przy starej ramie.
@@ -86008,9 +86008,9 @@ QUEST_LOG_MOONWELL_THREAD_OBJECTIVE_COUNT|Zbierz nici moonwell. ({0}/6)
 QUEST_LOG_PERFECT_DRAUGHT_DETAIL|Sample {0} of {1}: Nerrik wants a preserved {2} corpse. I should use preservation ointment on a fresh corpse, or throw a jar at the monster before killing it.
 QUEST_LOG_PERFECT_DRAUGHT_RETURN_DETAIL|Sample {1} of {2}: I have the preserved {0} corpse. I should bring it back to Nerrik in Highmark.
 QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_OBJECTIVE|Bring the dragon sample and shard to Nerrik.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved adult dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved adult dragon corpse and a blackglass shard.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an adult dragon or older, plus one blackglass shard to hold the mixture steady. Young dragons do not count.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved elder or ancient dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved elder or ancient dragon corpse and a blackglass shard.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an elder or ancient dragon, plus one blackglass shard to hold the mixture steady. Adult dragons do not count.
 QUEST_LOG_NORTHERN_WATCH_I_OBJECTIVE_COUNT|Oczyść północne wzgórza z harpii. ({0}/12)
 QUEST_LOG_NORTHERN_WATCH_II_OBJECTIVE_COUNT|Oczyść północny teren z ogrów. ({0}/8)
 QUEST_LOG_NORTHERN_WATCH_III_OBJECTIVE_COUNT|Oczyść północ z wzgórzowych olbrzymów. ({0}/2)
@@ -97362,10 +97362,10 @@ DIALOGUE_NERRIK_DRAUGHT_FINAL|Good. The perfect draught holds together. Drink it
 DIALOGUE_NERRIK_DRAUGHT_NEED_OINTMENT|You need preservation ointment before hunting the next sample. Maveth sometimes sells jars, and curio shelves may have them.
 DIALOGUE_NERRIK_DRAUGHT_USE_OINTMENT|Use the ointment before rot starts. Rub it into the fresh corpse I named, or throw the jar at that creature before the kill.
 DIALOGUE_NERRIK_DRAUGHT_TARGET|Next sample: preserve a {0} corpse and bring it back to me.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved adult dragon corpse and one blackglass shard. Young dragons will not do.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|An adult dragon sample and a blackglass shard. Good. That is enough body and enough bite for the final mix.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved elder or ancient dragon corpse and one blackglass shard. An adult dragon will not do.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|A sample from an elder dragon or older, and a blackglass shard. Good. That is enough body and enough bite for the final mix.
 DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SHARD|The dragon sample is usable. Now bring one blackglass shard; the final draught needs something hard enough to hold the change.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an adult dragon or older. Preserve the corpse and bring it here with one blackglass shard.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an elder or ancient dragon. Preserve the corpse and bring it here with one blackglass shard.
 DIALOGUE_AELRION_THREAD_DONE|O moonwell strings are holding. O upgraded suporte is stocked. Keep finished bows seco, ou buy another string.
 DIALOGUE_AELRION_THREAD_TURNIN|Seis fios, nenhum desfiado. Bom. Eles vão sustentar um arco de guerra.\nPegue este pagamento e este arco. Vou torcer o resto para a prateleira melhorada.
 DIALOGUE_AELRION_THREAD_REMINDER|Moonwell Observatory still has what Preciso. Traga seis strands de cult morto, specter salas, ou caught thread perto do velho moldura.
@@ -98487,9 +98487,9 @@ QUEST_LOG_MOONWELL_THREAD_OBJECTIVE_COUNT|Colete fios moonwell. ({0}/6)
 QUEST_LOG_PERFECT_DRAUGHT_DETAIL|Sample {0} of {1}: Nerrik wants a preserved {2} corpse. I should use preservation ointment on a fresh corpse, or throw a jar at the monster before killing it.
 QUEST_LOG_PERFECT_DRAUGHT_RETURN_DETAIL|Sample {1} of {2}: I have the preserved {0} corpse. I should bring it back to Nerrik in Highmark.
 QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_OBJECTIVE|Bring the dragon sample and shard to Nerrik.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved adult dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved adult dragon corpse and a blackglass shard.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an adult dragon or older, plus one blackglass shard to hold the mixture steady. Young dragons do not count.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved elder or ancient dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved elder or ancient dragon corpse and a blackglass shard.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an elder or ancient dragon, plus one blackglass shard to hold the mixture steady. Adult dragons do not count.
 QUEST_LOG_NORTHERN_WATCH_I_OBJECTIVE_COUNT|Limpe as harpias das colinas do norte. ({0}/12)
 QUEST_LOG_NORTHERN_WATCH_II_OBJECTIVE_COUNT|Limpe os ogros do terreno do norte. ({0}/8)
 QUEST_LOG_NORTHERN_WATCH_III_OBJECTIVE_COUNT|Limpe os gigantes das colinas do norte. ({0}/2)
@@ -107824,10 +107824,10 @@ DIALOGUE_NERRIK_DRAUGHT_FINAL|Good. The perfect draught holds together. Drink it
 DIALOGUE_NERRIK_DRAUGHT_NEED_OINTMENT|You need preservation ointment before hunting the next sample. Maveth sometimes sells jars, and curio shelves may have them.
 DIALOGUE_NERRIK_DRAUGHT_USE_OINTMENT|Use the ointment before rot starts. Rub it into the fresh corpse I named, or throw the jar at that creature before the kill.
 DIALOGUE_NERRIK_DRAUGHT_TARGET|Next sample: preserve a {0} corpse and bring it back to me.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved adult dragon corpse and one blackglass shard. Young dragons will not do.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|An adult dragon sample and a blackglass shard. Good. That is enough body and enough bite for the final mix.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved elder or ancient dragon corpse and one blackglass shard. An adult dragon will not do.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|A sample from an elder dragon or older, and a blackglass shard. Good. That is enough body and enough bite for the final mix.
 DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SHARD|The dragon sample is usable. Now bring one blackglass shard; the final draught needs something hard enough to hold the change.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an adult dragon or older. Preserve the corpse and bring it here with one blackglass shard.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an elder or ancient dragon. Preserve the corpse and bring it here with one blackglass shard.
 DIALOGUE_AELRION_THREAD_DONE|моонwелл стрингс аре держит. упградед ракк ис стоккед. Keep финишед боwс дры, или буы анотхер стринг.
 DIALOGUE_AELRION_THREAD_TURNIN|Шесть нитей, ни одна не растрепана. Хорошо. Они выдержат боевой лук.\nВозьми эту плату и этот лук. Остальное я скручу для улучшенной стойки.
 DIALOGUE_AELRION_THREAD_REMINDER|Moonwell Observatory стилл хас wхат I нужно. Принесите сиx страндс из култ мертв, спектер роомс, или каугхт тхреад возле старый фраме.
@@ -110965,9 +110965,9 @@ QUEST_LOG_MOONWELL_THREAD_OBJECTIVE_COUNT|Собери нити лунного �
 QUEST_LOG_PERFECT_DRAUGHT_DETAIL|Sample {0} of {1}: Nerrik wants a preserved {2} corpse. I should use preservation ointment on a fresh corpse, or throw a jar at the monster before killing it.
 QUEST_LOG_PERFECT_DRAUGHT_RETURN_DETAIL|Sample {1} of {2}: I have the preserved {0} corpse. I should bring it back to Nerrik in Highmark.
 QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_OBJECTIVE|Bring the dragon sample and shard to Nerrik.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved adult dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved adult dragon corpse and a blackglass shard.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an adult dragon or older, plus one blackglass shard to hold the mixture steady. Young dragons do not count.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved elder or ancient dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved elder or ancient dragon corpse and a blackglass shard.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an elder or ancient dragon, plus one blackglass shard to hold the mixture steady. Adult dragons do not count.
 QUEST_LOG_NORTHERN_WATCH_I_OBJECTIVE_COUNT|Очисти северные холмы от гарпий. ({0}/12)
 QUEST_LOG_NORTHERN_WATCH_II_OBJECTIVE_COUNT|Очисти северные земли от огров. ({0}/8)
 QUEST_LOG_NORTHERN_WATCH_III_OBJECTIVE_COUNT|Очисти север от холмовых великанов. ({0}/2)
@@ -114345,8 +114345,12 @@ STORY_MSG_BOSS_GLASSROOT_DRAKE_SLAIN|160|Glassroot Hollow boss kill message for 
 STORY_XP_BOSS_GLASSROOT_DRAKE_SLAIN|88|special XP event for killing the Glassroot Hollow blackglass drake|The blackglass drake in Glassroot Hollow falls
 STORY_MSG_BOSS_VHAROX_SLAIN|144|Blackglass Cavern boss kill message for Vharox|Vharox breaks against the blackglass. The lower caverns fall quiet.
 STORY_XP_BOSS_VHAROX_SLAIN|64|special XP event for killing Vharox|Vharox, the Blackglass Drake is slain
-STORY_MSG_BOSS_PRIMORDIAL_SLAIN|136|Starfall Core final boss kill message|The primordial dragon shudders, collapses into white-black light, and the calling voice stops.
-STORY_VICTORY_PRIMORDIAL|56|victory outcome text after final boss is defeated|prevailed over the primordial dragon
+STORY_VOICE_STARFALL_APEX_OPENING||fullscreen opening narration for the final Starfall Core arena|Beyond a wall of blackglass, a colossal dragon lies bound in the broken machinery of Istaris. Its eyes open as the Lightglass star answers in your hand. An ancient dragon drops from the vault while six warped spawn drag themselves from the stone. The prisoner does not rise. It watches them come for you.
+STORY_VOICE_STARFALL_APEX_RELEASE||fullscreen speech when the Ancient Primordial Dragon enters the final battle|The last blackglass spires split apart. The dragon rises, tearing old chains from the floor.\n\n"At last, blood of my jailers. Istaris cut its wonders from my living power, and your line kept the knife at my throat. You carry their Lightglass key back to me as though it were a weapon. Come, then. Let the last seal learn which of us it was made to bind."
+STORY_MSG_STARFALL_APEX_ELDER_RELEASED||combat message when an elder dragon joins the final battle|A side wall bursts open. Another elder dragon surges into the arena.
+STORY_DIALOGUE_STARFALL_APEX_VICTORY_TITLE|24|fullscreen title after Azhurath is slain|THE LAST SEAL
+STORY_MSG_BOSS_PRIMORDIAL_SLAIN|240|fullscreen Starfall Core aftermath after Azhurath is slain|Azhurath crashes down amid the broken chains. White-black fire races through the old Istarian engines, then dies. The Lightglass star cools against your chest, and the voice that followed you from Starfall Burrow is gone.
+STORY_VICTORY_PRIMORDIAL|96|victory outcome text after final boss is defeated|slew Azhurath, the Ancient Primordial Dragon, and ended the power beneath Istaris
 STORY_XP_STORM_LANDING|32|special XP event after safely reaching Valoria|You arrived safely
 STORY_ACHIEVEMENT_AMULET_AWAKENED|40|Discord achievement text when the story amulet awakens|has awakened the star amulet!
 STORY_ACHIEVEMENT_OPENING_WORDS|64|legacy Discord achievement text when final blood seal aid is learned|has readied the final blood seal working!
@@ -114464,6 +114468,7 @@ OBITUARY_GHOST_NAME|80|one-use obituary ghost display name, placeholder 0 prior 
 NAMED_MONSTER_ABBOT_VEYR_NAME|32|named monster proper name for Abbot Veyr|Abbot Veyr
 NAMED_MONSTER_ARVAELOS_NAME|32|named monster proper name for Arvaelos|Arvaelos
 NAMED_MONSTER_AURALITH_NAME|32|named monster proper name for Auralith|Auralith
+NAMED_MONSTER_AZHURATH_NAME|32|named monster proper name for Azhurath|Azhurath
 NAMED_MONSTER_AZRAN_NAME|32|named monster proper name for Azran|Azran
 NAMED_MONSTER_BRAM_NAME|32|named monster proper name for Bram|Bram
 NAMED_MONSTER_BROND_NAME|32|named monster proper name for Brond|Brond
@@ -117344,14 +117349,16 @@ DIALOGUE_NERRIK_TABLE_WARNING||Researcher Nerrik low-level table warning|No. The
 DIALOGUE_NERRIK_DRAUGHT_START||Researcher Nerrik Perfect Draught first offer|You. Good, careful hands. I am working toward a perfect draught, but I need preserved monster samples first.\nTake these jars of preservation ointment. Use one on a fresh corpse, or throw one at the creature before you kill it.\nBring me the samples and I can make them into elixirs. With these samples I can slowly perfect the recipe.
 DIALOGUE_NERRIK_DRAUGHT_SAMPLE||Researcher Nerrik Perfect Draught sample hand-in, placeholder 0 monster type|A preserved {0} corpse. Good. Still tight, still useful. I can cut a clean sample from this.
 DIALOGUE_NERRIK_DRAUGHT_BATCH||Researcher Nerrik Perfect Draught step reward, placeholder 0 attribute name|This sample settles the {0} mixture. Take the elixir; I only need a shaving for the next draft.
+DIALOGUE_NERRIK_DRAUGHT_RESEARCH||Researcher Nerrik chatter while the next Perfect Draught step is level-gated|I am still studying the last sample. The next elixir is not ready yet.
 DIALOGUE_NERRIK_DRAUGHT_FINAL||Researcher Nerrik Perfect Draught final turn-in|Good. The perfect draught holds together. Drink it here while the blackglass is still quiet.
 DIALOGUE_NERRIK_DRAUGHT_NEED_OINTMENT||Researcher Nerrik Perfect Draught reminder without ointment|You need preservation ointment before hunting the next sample. Maveth sometimes sells jars, and curio shelves may have them.
 DIALOGUE_NERRIK_DRAUGHT_USE_OINTMENT||Researcher Nerrik Perfect Draught preservation reminder|Use the ointment before rot starts. Rub it into the fresh corpse I named, or throw the jar at that creature before the kill.
 DIALOGUE_NERRIK_DRAUGHT_TARGET||Researcher Nerrik Perfect Draught target line, placeholder 0 monster type|Next sample: preserve a {0} corpse and bring it back to me.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET||Researcher Nerrik Perfect Draught final target line|For the last draught, bring me a preserved adult dragon corpse and one blackglass shard. Young dragons will not do.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE||Researcher Nerrik Perfect Draught final sample hand-in|An adult dragon sample and a blackglass shard. Good. That is enough body and enough bite for the final mix.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET||Researcher Nerrik Perfect Draught final target line|For the last draught, bring me a preserved elder or ancient dragon corpse and one blackglass shard. An adult dragon will not do.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE||Researcher Nerrik Perfect Draught final sample hand-in|A sample from an elder dragon or older, and a blackglass shard. Good. That is enough body and enough bite for the final mix.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_ADULT_SAMPLE||Researcher Nerrik rejection of an adult dragon sample for Perfect Draught VII|This came from an adult dragon. It is not old enough for the final draught. Bring me an elder or ancient dragon.
 DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SHARD||Researcher Nerrik Perfect Draught final sample missing shard line|The dragon sample is usable. Now bring one blackglass shard; the final draught needs something hard enough to hold the change.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE||Researcher Nerrik Perfect Draught final sample reminder|The last sample must come from an adult dragon or older. Preserve the corpse and bring it here with one blackglass shard.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE||Researcher Nerrik Perfect Draught final sample reminder|The last sample must come from an elder or ancient dragon. Preserve the corpse and bring it here with one blackglass shard.
 DIALOGUE_AELRION_THREAD_DONE||Bowyer Aelrion post-Moonwell Thread shop chatter|Second String is out of my hands, and the better rack is stocked. Keep finished bows dry, or buy another string.
 DIALOGUE_AELRION_THREAD_TURNIN||Bowyer Aelrion Moonwell Thread turn-in|Six strands, none frayed. Good. These will hold.\nTake this pay, and take Second String. I will twist the rest into the better rack.
 DIALOGUE_AELRION_THREAD_REMINDER||Bowyer Aelrion Moonwell Thread reminder|Did you find the threads yet? Moonwell Observatory catches them near the old frame, and cult dead or specter rooms sometimes carry strands away.
@@ -117616,9 +117623,9 @@ QUEST_LOG_PERFECT_DRAUGHT_DETAIL||quest log detail for Perfect Draught, placehol
 QUEST_LOG_PERFECT_DRAUGHT_RETURN_OBJECTIVE||quest log objective for Perfect Draught when carrying target corpse|Bring the preserved corpse to Nerrik.
 QUEST_LOG_PERFECT_DRAUGHT_RETURN_DETAIL||quest log detail for Perfect Draught when carrying target corpse, placeholders 0 monster type, 1 current sample, 2 total samples|Sample {1} of {2}: I have the preserved {0} corpse. I should bring it back to Nerrik in Highmark.
 QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_OBJECTIVE||quest log objective for Perfect Draught VII when materials are ready|Bring the dragon sample and shard to Nerrik.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL||quest log detail for Perfect Draught VII when materials are ready|I have a preserved adult dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE||quest log objective for Perfect Draught VII|Bring Nerrik a preserved adult dragon corpse and a blackglass shard.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL||quest log detail for Perfect Draught VII|Nerrik's final draught needs a preserved corpse from an adult dragon or older, plus one blackglass shard to hold the mixture steady. Young dragons do not count.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL||quest log detail for Perfect Draught VII when materials are ready|I have a preserved elder or ancient dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE||quest log objective for Perfect Draught VII|Bring Nerrik a preserved elder or ancient dragon corpse and a blackglass shard.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL||quest log detail for Perfect Draught VII|Nerrik's final draught needs a preserved corpse from an elder or ancient dragon, plus one blackglass shard to hold the mixture steady. Adult dragons do not count.
 QUEST_LOG_ORDERS_FOR_KESTREL_OBJECTIVE||quest log objective for Orders For Kestrel|Carry the message to the commander at Camp Kestrel.
 QUEST_LOG_ORDERS_FOR_KESTREL_DETAIL||quest log detail for Orders For Kestrel|A Silver Lancer says Camp Kestrel needs to know which west roads are open. I should carry the message to the camp and put it in the commander's hand.
 QUEST_LOG_NORTHERN_WATCH_I_OBJECTIVE_COUNT||quest log objective for Northern Watch I, placeholder 0 harpy kill count|Clear harpies from the northern hills. ({0}/12)
@@ -121750,14 +121757,14 @@ COMBAT_OFFHAND_HIT||player off-hand hit message, placeholder 0 is monster name, 
 COMBAT_MONSTER_BREATH_COVER||monster breath misses due to cover, placeholder 0 is monster name, 1 is breath action text|The {0} {1}, but cover breaks the blast.
 COMBAT_MONSTER_BREATH_IMMUNE||player immunity blocks monster breath, placeholder 0 is resistance name, 1 is monster name|Your {0} immunity leaves the {1}'s breath harmless.
 COMBAT_MONSTER_BREATH_DIVINE_SHIELD||player divine shield blocks monster breath, placeholder 0 is monster name|The {0}'s breath breaks harmlessly against your divine shield.
-COMBAT_MONSTER_BREATH_NO_HARM||monster breath glances from armor or debug invincibility blocks it, placeholder 0 is monster name|The {0}'s breath hits you but glances off.
+COMBAT_MONSTER_BREATH_NO_HARM||monster breath glances from armor or debug invincibility blocks it, placeholder 0 is monster name|The {0}'s breath hits you, but glances off.
 COMBAT_MONSTER_BREATH_DAMAGE||monster breath damage message, placeholder 0 is monster name, 1 is breath action text, 2 is damage amount|The {0} {1} for {2} damage.
 COMBAT_MONSTER_BREATH_SAVE_SUFFIX||suffix appended when player saves against monster breath| You save against the worst of it.
 COMBAT_MONSTER_BREATH_GALE_PUSH_SUFFIX||suffix appended when forest dragon breath pushes player| The gale throws you back.
 COMBAT_MONSTER_BREATH_COVER_PARTY||monster breath misses inactive party member due to cover, placeholders 0 monster name, 1 breath action text, 2 target name|The {0} {1}, but cover shields {2} from the blast.
 COMBAT_MONSTER_BREATH_IMMUNE_PARTY||inactive party member immunity blocks monster breath, placeholders 0 resistance name, 1 monster name, 2 target name|{2}'s {0} immunity leaves the {1}'s breath harmless.
 COMBAT_MONSTER_BREATH_DIVINE_SHIELD_PARTY||inactive party member divine shield blocks monster breath, placeholders 0 monster name, 1 target name|The {0}'s breath breaks harmlessly against {1}'s divine shield.
-COMBAT_MONSTER_BREATH_NO_HARM_PARTY||monster breath glances from an inactive party member's armor or debug invincibility blocks it, placeholders 0 monster name, 1 target name|The {0}'s breath hits {1} but glances off.
+COMBAT_MONSTER_BREATH_NO_HARM_PARTY||monster breath glances from an inactive party member's armor or debug invincibility blocks it, placeholders 0 monster name, 1 target name|The {0}'s breath hits {1}, but glances off.
 COMBAT_MONSTER_BREATH_DAMAGE_PARTY||monster breath damage against inactive party member, placeholders 0 monster name, 1 breath action text, 2 damage amount, 3 target name|The {0} {1}, hitting {3} for {2} damage.
 COMBAT_MONSTER_BREATH_SAVE_SUFFIX_PARTY||suffix when inactive party member saves against monster breath, placeholder 0 target name| {0} saves against the worst of it.
 COMBAT_MONSTER_BREATH_GALE_PUSH_SUFFIX_PARTY||suffix when forest dragon breath pushes inactive party member, placeholder 0 target name| The gale throws {0} back.
@@ -125607,8 +125614,8 @@ MONSTER_BLACKGLASS_DRAKE_NAME|64|monster display name for Blackglass Drake|black
 MONSTER_BLACKGLASS_DRAKE_DESC||monster description for Blackglass Drake|A mature drake with razor-edged black scales, dark glasslike blackglass ridges, and a low stalking gait. It advances steadily, using its armored body to shove prey into claw range.
 MONSTER_DEEP_BLACKGLASS_DRAKE_NAME|64|monster display name for Deep Blackglass Drake|deep blackglass drake
 MONSTER_DEEP_BLACKGLASS_DRAKE_DESC||monster description for Deep Blackglass Drake|A huge old drake with blackglass crystal plates fused over the shoulders, jaw, and tail. It absorbs punishment with patient confidence and counters with bone-crushing bites.
-MONSTER_PRIMORDIAL_DRAGON_NAME|64|monster display name for Primordial Dragon|primordial dragon
-MONSTER_PRIMORDIAL_DRAGON_DESC||monster description for Primordial Dragon|A colossal dragon-shaped monster with black scales, fused blackglass crystal armor, a horned skull, and wings that crowd the chamber. It uses claws, teeth, tail, and body weight to dominate every side of the fight.
+MONSTER_PRIMORDIAL_DRAGON_NAME|64|monster display name for Ancient Primordial Dragon|ancient primordial dragon
+MONSTER_PRIMORDIAL_DRAGON_DESC||monster description for Ancient Primordial Dragon|A colossal ancient dragon with black scales, fused blackglass crystal armor, a horned skull, and wings that crowd the chamber. Old Istarian chains still hang from its body. It uses claws, teeth, tail, and crushing weight to dominate every side of the fight.
 MONSTER_BLACKGLASS_KOBOLD_NAME|64|monster display name for Blackglass Kobold|blackglass kobold
 MONSTER_BLACKGLASS_KOBOLD_DESC||monster description for Blackglass Kobold|A small reptilian kobold with dark glasslike blackglass splinters in its knife, belt, and scales. It darts through gaps, slashing quickly before a slower opponent can pin it.
 MONSTER_BLACKGLASS_BAT_NAME|64|monster display name for Blackglass Bat|blackglass bat
@@ -135767,10 +135774,10 @@ DIALOGUE_NERRIK_DRAUGHT_FINAL|Good. The perfect draught holds together. Drink it
 DIALOGUE_NERRIK_DRAUGHT_NEED_OINTMENT|You need preservation ointment before hunting the next sample. Maveth sometimes sells jars, and curio shelves may have them.
 DIALOGUE_NERRIK_DRAUGHT_USE_OINTMENT|Use the ointment before rot starts. Rub it into the fresh corpse I named, or throw the jar at that creature before the kill.
 DIALOGUE_NERRIK_DRAUGHT_TARGET|Next sample: preserve a {0} corpse and bring it back to me.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved adult dragon corpse and one blackglass shard. Young dragons will not do.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|An adult dragon sample and a blackglass shard. Good. That is enough body and enough bite for the final mix.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved elder or ancient dragon corpse and one blackglass shard. An adult dragon will not do.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|A sample from an elder dragon or older, and a blackglass shard. Good. That is enough body and enough bite for the final mix.
 DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SHARD|The dragon sample is usable. Now bring one blackglass shard; the final draught needs something hard enough to hold the change.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an adult dragon or older. Preserve the corpse and bring it here with one blackglass shard.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an elder or ancient dragon. Preserve the corpse and bring it here with one blackglass shard.
 DIALOGUE_AELRION_THREAD_DONE|对话：The moonwell strings are holding。 The upgraded rack is stocked。 Keep finished bows dry， 或 buy another string。
 DIALOGUE_AELRION_THREAD_TURNIN|六股线，没有一股磨散。很好。这些能撑住一张战弓。\n拿上这笔钱和这张弓。剩下的我会拧进升级货架。
 DIALOGUE_AELRION_THREAD_REMINDER|对话：Moonwell Observatory still has what I need。 带回 six strands 从 cult dead， specter rooms， 或 caught 线 near old frame。
@@ -137008,9 +137015,9 @@ QUEST_LOG_MOONWELL_THREAD_OBJECTIVE_COUNT|收集 moonwell 线。({0}/6)
 QUEST_LOG_PERFECT_DRAUGHT_DETAIL|Sample {0} of {1}: Nerrik wants a preserved {2} corpse. I should use preservation ointment on a fresh corpse, or throw a jar at the monster before killing it.
 QUEST_LOG_PERFECT_DRAUGHT_RETURN_DETAIL|Sample {1} of {2}: I have the preserved {0} corpse. I should bring it back to Nerrik in Highmark.
 QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_OBJECTIVE|Bring the dragon sample and shard to Nerrik.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved adult dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved adult dragon corpse and a blackglass shard.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an adult dragon or older, plus one blackglass shard to hold the mixture steady. Young dragons do not count.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved elder or ancient dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved elder or ancient dragon corpse and a blackglass shard.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an elder or ancient dragon, plus one blackglass shard to hold the mixture steady. Adult dragons do not count.
 QUEST_LOG_NORTHERN_WATCH_I_OBJECTIVE_COUNT|清除北部丘陵的 harpy。({0}/12)
 QUEST_LOG_NORTHERN_WATCH_II_OBJECTIVE_COUNT|清除北部地面的 ogre。({0}/8)
 QUEST_LOG_NORTHERN_WATCH_III_OBJECTIVE_COUNT|清除北方的 hill giant。({0}/2)
@@ -146164,10 +146171,10 @@ DIALOGUE_NERRIK_DRAUGHT_FINAL|Good. The perfect draught holds together. Drink it
 DIALOGUE_NERRIK_DRAUGHT_NEED_OINTMENT|You need preservation ointment before hunting the next sample. Maveth sometimes sells jars, and curio shelves may have them.
 DIALOGUE_NERRIK_DRAUGHT_USE_OINTMENT|Use the ointment before rot starts. Rub it into the fresh corpse I named, or throw the jar at that creature before the kill.
 DIALOGUE_NERRIK_DRAUGHT_TARGET|Next sample: preserve a {0} corpse and bring it back to me.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved adult dragon corpse and one blackglass shard. Young dragons will not do.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|An adult dragon sample and a blackglass shard. Good. That is enough body and enough bite for the final mix.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_TARGET|For the last draught, bring me a preserved elder or ancient dragon corpse and one blackglass shard. An adult dragon will not do.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_SAMPLE|A sample from an elder dragon or older, and a blackglass shard. Good. That is enough body and enough bite for the final mix.
 DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SHARD|The dragon sample is usable. Now bring one blackglass shard; the final draught needs something hard enough to hold the change.
-DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an adult dragon or older. Preserve the corpse and bring it here with one blackglass shard.
+DIALOGUE_NERRIK_DRAUGHT_FINAL_NEED_SAMPLE|The last sample must come from an elder or ancient dragon. Preserve the corpse and bring it here with one blackglass shard.
 DIALOGUE_AELRION_THREAD_DONE|對話：The moonwell strings are holding。 The upgraded rack is stocked。 Keep finished bows dry， 或 buy another string。
 DIALOGUE_AELRION_THREAD_TURNIN|六股線，沒有一股磨散。很好。這些能撐住一張戰弓。\n拿上這筆錢和這張弓。剩下的我會擰進升級貨架。
 DIALOGUE_AELRION_THREAD_REMINDER|對話：Moonwell Observatory still has what I need。 帶回 six strands 從 cult dead， specter rooms， 或 caught 線 near old frame。
@@ -149484,9 +149491,9 @@ QUEST_LOG_MOONWELL_THREAD_OBJECTIVE_COUNT|收集 moonwell 線。({0}/6)
 QUEST_LOG_PERFECT_DRAUGHT_DETAIL|Sample {0} of {1}: Nerrik wants a preserved {2} corpse. I should use preservation ointment on a fresh corpse, or throw a jar at the monster before killing it.
 QUEST_LOG_PERFECT_DRAUGHT_RETURN_DETAIL|Sample {1} of {2}: I have the preserved {0} corpse. I should bring it back to Nerrik in Highmark.
 QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_OBJECTIVE|Bring the dragon sample and shard to Nerrik.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved adult dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved adult dragon corpse and a blackglass shard.
-QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an adult dragon or older, plus one blackglass shard to hold the mixture steady. Young dragons do not count.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_RETURN_DETAIL|I have a preserved elder or ancient dragon corpse and a blackglass shard. Nerrik can finish the perfect draught in Highmark.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_OBJECTIVE|Bring Nerrik a preserved elder or ancient dragon corpse and a blackglass shard.
+QUEST_LOG_PERFECT_DRAUGHT_FINAL_DETAIL|Nerrik's final draught needs a preserved corpse from an elder or ancient dragon, plus one blackglass shard to hold the mixture steady. Adult dragons do not count.
 QUEST_LOG_NORTHERN_WATCH_I_OBJECTIVE_COUNT|清除北部丘陵的 harpy。({0}/12)
 QUEST_LOG_NORTHERN_WATCH_II_OBJECTIVE_COUNT|清除北部地面的 ogre。({0}/8)
 QUEST_LOG_NORTHERN_WATCH_III_OBJECTIVE_COUNT|清除北方的 hill giant。({0}/2)
