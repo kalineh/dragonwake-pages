@@ -10,6 +10,12 @@ Deployment is intentionally simple:
 - deploy from the main repo with `bash ./deploy_web.sh`
 - that script copies `builds/web-ascii/` into this repo, renames `dragonwake.html` to `index.html`, commits, and pushes
 
+Stable public pages that are not replaced by game deployment:
+
+- `privacy.html` - Android privacy policy used by Google Play and the in-app link
+- `support.html` - public support contact and basic troubleshooting
+- `legal.css` - shared styling for those pages
+
 Portal behavior on the page:
 
 - the page loads the Vibe Jam widget from `https://vibejam.cc/2026/widget.js`
