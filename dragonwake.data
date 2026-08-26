@@ -112941,6 +112941,7 @@ TITLE_MENU_NEW_GAME_NAME|20|title menu option label|New Game
 TITLE_MENU_LOAD_GAME_NAME|20|title menu option label|Load Game
 TITLE_MENU_OPTIONS_NAME|20|title menu option label|Options
 TITLE_MENU_OBITUARIES_NAME|20|title menu option label|Obituaries
+TITLE_MENU_PRIVACY_POLICY_NAME|20|title menu option label opening the public policy|Privacy Policy
 TITLE_MENU_QUIT_NAME|20|title menu option label|Quit
 GAME_OVER_MENU_RELOAD_LAST_SAVE_NAME|24|game over menu option label|Reload Last Save
 GAME_OVER_MENU_PLAY_NEW_CHARACTER_NAME|24|game over menu option label|Play New Character
@@ -118206,7 +118207,11 @@ PARTY_AI_PICKS_UP|80|party AI loose-loot message, placeholders 0 character name 
 PARTY_AI_BEGINS_EATING|96|visible party member begins eating, placeholders 0 character name and 1 item name|{0} begins eating {1}.
 PARTY_AI_FINISHES_EATING|96|visible party member finishes eating, placeholders 0 character name and 1 item name|{0} finishes eating {1}.
 PARTY_AI_STOPS_EATING|72|visible party member's eating is interrupted, placeholder 0 character name|{0} stops eating.
+PARTY_AI_BEGINS_FIELD_DRESSING|112|visible party member begins using a field dressing, placeholders 0 character name and 1 item name|{0} begins tending their wounds with {1}.
+PARTY_AI_FINISHES_FIELD_DRESSING|96|visible party member finishes using a field dressing, placeholder 0 character name|{0} finishes tending their wounds.
+PARTY_AI_STOPS_FIELD_DRESSING|80|visible party member's field dressing is interrupted, placeholder 0 character name|{0} stops tending their wounds.
 PARTY_AI_BUYS_ITEM|80|visible party member buys an item, placeholders 0 character name and 1 item name|{0} buys {1}.
+PARTY_AI_SHOPS_AT_VENDOR|100|party member shops after player closes vendor, placeholders 0 character name and 1 vendor name|{0} buys some things from {1}.
 PARTY_AI_SELLS_ITEM|80|visible party member sells an item, placeholders 0 character name and 1 item name|{0} sells {1}.
 ITEM_USE_INFINITY_CRYSTAL_INERT|48|message when an Infinity Crystal is used outside the Infinite Dungeon|Nothing happens.
 ITEM_USE_INFINITY_CRYSTAL_RETURN|112|message when an Infinity Crystal returns the party from the Infinite Dungeon|Light swirls through the crystal. Space bends around you, and the dungeon falls away.
@@ -118283,6 +118288,7 @@ PARTY_MEMBER_CHAT_GENERAL_2||general party member greeting|Where to next?
 PARTY_MEMBER_CHAT_GENERAL_3||general party member greeting|Let's keep moving.
 PARTY_ACTION_HIRE|16|direct conversation action for recruiting an inn adventurer|hire
 PARTY_ACTION_SWAP|16|direct conversation action for taking control of a party member|swap
+UI_ACTION_SWAP_TO_PARTY_MEMBER|48|actions menu entry for taking control of another party member, placeholder 0 character name|Swap to {0}
 PARTY_ACTION_FIRE|16|direct conversation action for dismissing a party member|fire
 PARTY_HIRE_FULL||feedback when the party is full|Your party is full.
 PARTY_HIRE_UNAVAILABLE|80|feedback when an inn adventurer can no longer be recruited|That adventurer is no longer available.
@@ -118859,6 +118865,10 @@ UI_OPTIONS_HEADER_SYSTEM|16|options menu system section header|System
 UI_OPTIONS_INPUT_METHOD_LABEL|18|options menu row label for keyboard layout|Input
 UI_OPTIONS_LAYOUT_LABEL|18|options menu row label for screen layout|Layout
 UI_OPTIONS_TOUCH_SHOULDERS_LABEL|24|options menu row label for Android shoulder buttons|Shoulder Buttons
+UI_OPTIONS_TOUCH_HUD_LABEL|16|options menu row label for touch HUD visibility|Touch HUD
+UI_OPTIONS_TOUCH_HUD_TITLE|32|options detail title for touch HUD visibility|Touch HUD
+UI_OPTIONS_TOUCH_HUD_DESC_1|128|options touch HUD automatic behavior description|Auto shows the Android-style controls when a touch-first screen is detected.
+UI_OPTIONS_TOUCH_HUD_DESC_2|128|options touch HUD manual behavior description|On enables controls on touch PCs; Off is offered only when another pointer is available.
 UI_OPTIONS_DISPLAY_MODE_LABEL|18|options menu row label for native display mode|Display
 UI_OPTIONS_SHIFT_MODE_LABEL|18|options menu row label for shift movement behavior|Shift Key
 UI_OPTIONS_GAMEPAD_DISPLAY_LABEL|24|options menu row label for controller button label style|Gamepad Display
@@ -119128,6 +119138,7 @@ UI_OPTIONS_TUTORIAL_PROMPT_DESC_1|88|options tutorial prompt description line 1|
 UI_OPTIONS_TUTORIAL_PROMPT_DESC_ASK|72|options tutorial prompt enabled description|New games ask whether to play the tutorial.
 UI_OPTIONS_TUTORIAL_PROMPT_DESC_SKIP|80|options tutorial skip behavior|Skip starts at the boat arrival.
 UI_OPTIONS_WEBHOOK_REPORTS_DESC_1|112|options Discord run report description|Posts run starts, achievements, and deaths to Dragonwake's Discord logs.
+UI_OPTIONS_WEBHOOK_REPORTS_ANDROID_DESC_1|120|Android options Discord run report description|Posts gameplay events without your character name or a device identifier. You can turn this off at any time.
 UI_OPTIONS_WEBHOOK_REPORTS_DESC_DISABLED|80|options webhook reports disabled description|Webhook reports are disabled for this player profile.
 UI_OPTIONS_WEBHOOK_REPORTS_DESC_ENABLED|88|options webhook reports enabled description|Webhook reports are enabled and fail silently if unavailable.
 UI_OPTIONS_RACE_RESTRICTIONS_DESC_1|120|options race/class restriction description|Allows any race to choose any class otherwise available in this build.
@@ -121072,6 +121083,7 @@ ITEM_ARCANA_MISFIRE_WAND||item-use failure when unidentified wand misfires|The w
 ITEM_ARCANA_MISFIRE_SCRIPT||item-use failure when unidentified magical script misfires|The magical script twists away from your grasp before it will answer.
 ITEM_EAT_TOO_FULL||eat/use failure when player is bloated|You are too full to eat any more.
 ITEM_EAT_HUMAN_REFUSAL||eat corpse failure when a human player refuses human flesh|You cannot bring yourself to eat human flesh.
+ITEM_EAT_PALADIN_UNDEAD_REFUSAL||eat corpse failure when a paladin refuses undead remains|You refuse to consume remains tainted by undeath.
 ITEM_EAT_ROTTEN_CORPSE||rotten corpse eating result, placeholder 0 is corpse item name|You choke down the {0}. The meat is putrid, soft, and sour.
 ITEM_CORPSE_EAT_FALLBACK||generic corpse eating result fallback|You eat it.
 ITEM_CORPSE_GENERIC_EAT||generic corpse eating result, placeholder 0 is corpse item name|You eat the {0}. Tough meat, old blood, and gristle.
