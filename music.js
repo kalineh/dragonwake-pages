@@ -206,7 +206,8 @@
     music.trackId = trackId;
     music.randomEntry = !!randomEntry;
     music.generation += 1;
-    clearScheduled(music, true);
+    // Keep the existing queue audible while the worker switches tracks. Clearing it here creates
+    // a large synchronous refill burst at the same moment the game enters a new scene.
     music.worker.postMessage({
       type: 'set-track',
       trackId: trackId,

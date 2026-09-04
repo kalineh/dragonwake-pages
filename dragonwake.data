@@ -112941,7 +112941,6 @@ TITLE_MENU_NEW_GAME_NAME|20|title menu option label|New Game
 TITLE_MENU_LOAD_GAME_NAME|20|title menu option label|Load Game
 TITLE_MENU_OPTIONS_NAME|20|title menu option label|Options
 TITLE_MENU_OBITUARIES_NAME|20|title menu option label|Obituaries
-TITLE_MENU_PRIVACY_POLICY_NAME|20|title menu option label opening the public policy|Privacy Policy
 TITLE_MENU_QUIT_NAME|20|title menu option label|Quit
 GAME_OVER_MENU_RELOAD_LAST_SAVE_NAME|24|game over menu option label|Reload Last Save
 GAME_OVER_MENU_PLAY_NEW_CHARACTER_NAME|24|game over menu option label|Play New Character
@@ -112949,7 +112948,11 @@ GAME_OVER_MENU_RESTART_SAME_CHARACTER_NAME|28|game over menu option label|Restar
 GAME_OVER_MENU_MESSAGE_LOG_NAME|20|game over menu option label|Message Log
 GAME_OVER_MENU_BACK_NAME|12|game over menu option label|Back
 FRONTEND_TITLE_NEW_GAME_MODE|28|character creation screen title|NEW GAME / MODE
+FRONTEND_TITLE_NEW_GAME_WORLD|28|new-game world selection screen title|NEW GAME / WORLD
+FRONTEND_TITLE_NEW_GAME_SAVE_RULE|32|new-game save rule selection screen title|NEW GAME / SAVE RULE
 FRONTEND_TITLE_NEW_GAME_DIFFICULTY|32|character creation screen title|NEW GAME / DIFFICULTY
+FRONTEND_TITLE_RUN_SETUP|24|new-game run setup summary screen title|NEW GAME / START
+FRONTEND_TITLE_CUSTOMIZE_GAME|28|new-game modifier selection screen title|NEW GAME / CUSTOMIZE
 FRONTEND_TITLE_NEW_GAME_VISUALS|32|character creation screen title|NEW GAME / VISUALS
 FRONTEND_TITLE_NEW_GAME_SEX|28|character creation screen title|NEW GAME / SEX
 FRONTEND_TITLE_NEW_GAME_RACE|28|character creation screen title|NEW GAME / RACE
@@ -113140,7 +113143,7 @@ FRONTEND_ROW_SEX|32|character creation summary row, placeholder 0 sex name|Sex: 
 FRONTEND_ROW_CLASS|40|character creation summary row, placeholder 0 class name|Class: {0}
 FRONTEND_ROW_WIZARD_SCHOOL|40|character creation summary row, placeholder 0 school name|School: {0}
 FRONTEND_ROW_DIVINE_DEITY|56|character creation summary row, placeholder 0 deity name|Deity: {0}
-FRONTEND_ROW_MODE|40|character creation summary row, placeholder 0 mode name|Mode: {0}
+FRONTEND_ROW_MODE|80|character creation summary row, placeholder 0 run configuration|Run: {0}
 FRONTEND_ROW_DIFFICULTY|48|character creation summary row, placeholder 0 difficulty name|Difficulty: {0}
 FRONTEND_ROW_STARTING_SPELL|56|character creation summary row, placeholder 0 spell name|Starting spell: {0}
 FRONTEND_ROW_NAME_INPUT|40|character creation name input row, placeholder 0 typed name|Name: {0}
@@ -113229,6 +113232,15 @@ FRONTEND_INTRO_STORY_06||opening story paragraph shown after character creation|
 FRONTEND_INTRO_STORY_07||opening story paragraph shown after character creation|You came ashore at Reedwater Docks half frozen, salt-sick, and still wearing the amulet under your shirt.
 FRONTEND_INTRO_STORY_08||opening story paragraph shown after character creation|Time to give thanks to the captain, take a rest at the inn, and then take the road out to Havenford.
 FRONTEND_INTRO_STORY_09||opening story paragraph shown after character creation|Someone there may know what the amulet is, and why dragon sightings are being reported inland.
+FRONTEND_EXPEDITION_STORY_01||Expedition opening story paragraph|The Crown of the Sea-King rests aboard Thauld's ship, its seven empty settings cut into dark silver.
+FRONTEND_EXPEDITION_STORY_02||Expedition opening story paragraph|The drowned sorcerer who wore it once commanded wind and current across the Wandering Isles.
+FRONTEND_EXPEDITION_STORY_03||Expedition opening story paragraph|After his fleet broke apart, the crown's jewels were torn free and carried to seven different islands.
+FRONTEND_EXPEDITION_STORY_04||Expedition opening story paragraph|The empty crown pulls toward the first lost jewel. Thauld believes each jewel will lead the ship toward the next.
+FRONTEND_EXPEDITION_STORY_05||Expedition opening story paragraph|The jewels ring like clear bells when someone draws near. Follow the sound below ground and bring each one back to the ship.
+FRONTEND_EXPEDITION_STORY_06||Expedition opening story paragraph|Seven islands wait ahead. Beyond them lies whatever the Sea-King died trying to reach.
+FRONTEND_EXPEDITION_PROLOGUE_STORY_01||Expedition prologue story paragraph|You wake in a berth aboard Captain Thauld's ship, head pounding after a hard night's drinking.
+FRONTEND_EXPEDITION_PROLOGUE_STORY_02||Expedition prologue story paragraph|The ship lies moored at Tidecross. Last night's drink has done nothing to change the work ahead: recover the Crown of the Sea-King.
+FRONTEND_EXPEDITION_PROLOGUE_STORY_03||Expedition prologue story paragraph|Travel supplies wait in the sleeping quarters. Thauld is on deck.
 FRONTEND_STORMWRECK_STORY_01||tutorial departure story beat|The storm hit before dawn. Wind tore the rigging loose and drove black water over the deck.
 FRONTEND_STORMWRECK_STORY_02||tutorial departure story beat|Thauld kept the boat afloat until it struck a reef. You came to on a narrow island with wreckage washing in behind you.
 FRONTEND_STORMWRECK_STORY_03||tutorial departure story beat|The captain is signaling from a sheltered cove across the island. Reach him before the storm turns again.
@@ -113244,6 +113256,214 @@ CREATION_MODE_ROGUELIKE_NAME|20|new-game mode option name|Roguelike
 CREATION_MODE_ROGUELIKE_SUMMARY_A|112|new-game mode option summary|A traditional roguelike playthrough, with no reloading upon death. Beating the game is a monumental achievement.
 CREATION_MODE_ROGUELIKE_SUMMARY_B|64|new-game mode option summary|Saves resume the same run only. Death is permanent.
 CREATION_MODE_ROGUELIKE_SUMMARY_C|40|new-game mode option summary|Not recommended for new players.
+CREATION_MODE_DUNGEONDIVE_NAME|24|new-game mode option name|Dungeon Dive
+CREATION_MODE_DUNGEONDIVE_SUMMARY_A|96|new-game mode option summary|A forward-only descent through the Infinite Dungeon, beginning at level 1.
+CREATION_MODE_DUNGEONDIVE_SUMMARY_B|96|new-game mode option summary|Upward stairs are sealed. Monsters grant double experience.
+CREATION_MODE_DUNGEONDIVE_SUMMARY_C|64|new-game mode option summary|Death is permanent. See how deep you can go.
+CREATION_WORLD_MAINCAMPAIGN_NAME|24|new-game world option name|Campaign
+CREATION_WORLD_MAINCAMPAIGN_SUMMARY_A|96|new-game world option summary|Explore Valoria and follow the story of the blackglass star amulet.
+CREATION_WORLD_MAINCAMPAIGN_SUMMARY_B|40|new-game world option summary|Recommended for new players.
+CREATION_WORLD_EXPEDITION_NAME|20|new-game world option name|Expedition
+CREATION_WORLD_EXPEDITION_SUMMARY_A|72|new-game world option summary|Explore the Wandering Isles beyond Valoria.
+CREATION_WORLD_EXPEDITION_SUMMARY_B|112|new-game world option summary|Each run builds a different world of islands, settlements, dungeons, and wilderness sites.
+CREATION_WORLD_EXPEDITION_SUMMARY_C|112|new-game world option summary|Follow the routes and opportunities you find rather than the Campaign story.
+CREATION_WORLD_DUNGEONDIVE_NAME|24|new-game world option name|Dungeon Dive
+CREATION_WORLD_DUNGEONDIVE_SUMMARY_A|96|new-game world option summary|A forward-only descent through the Infinite Dungeon, beginning at level 1.
+CREATION_WORLD_DUNGEONDIVE_SUMMARY_B|96|new-game world option summary|Upward stairs are sealed. Monsters grant double experience.
+CREATION_WORLD_DUNGEONDIVE_SUMMARY_C|48|new-game world option summary|See how deep you can go.
+CREATION_SAVE_RULE_ADVENTURE_NAME|20|new-game save rule option name|Adventure
+CREATION_SAVE_RULE_ADVENTURE_SUMMARY_A|88|new-game save rule option summary|Sleeping at an inn or camping creates a checkpoint.
+CREATION_SAVE_RULE_ADVENTURE_SUMMARY_B|88|new-game save rule option summary|If you die, you can reload from your last checkpoint.
+CREATION_SAVE_RULE_ADVENTURE_SUMMARY_C|40|new-game save rule option summary|Recommended for new players.
+CREATION_SAVE_RULE_IRONMAN_NAME|20|new-game save rule option name|Ironman
+CREATION_SAVE_RULE_IRONMAN_SUMMARY_A|80|new-game save rule option summary|Saves only resume the current run. Death is permanent.
+CREATION_SAVE_RULE_IRONMAN_SUMMARY_B|72|new-game save rule option summary|Completing the game is a major achievement.
+CREATION_SAVE_RULE_IRONMAN_SUMMARY_C|40|new-game save rule option summary|Not recommended for new players.
+CREATION_MODIFIER_PARTYMODE_NAME|24|new-game modifier option name|Party Mode
+CREATION_MODIFIER_PARTYMODE_SUMMARY_A|64|new-game modifier option summary|Recruit adventurers at inns.
+CREATION_MODIFIER_PARTYMODE_SUMMARY_B|88|new-game modifier option summary|Switch between up to three adventurers while the others follow and fight.
+CREATION_MODIFIER_PARTYMODE_SUMMARY_C|64|new-game modifier option summary|Experimental and unbalanced; for fun only.
+CREATION_MODIFIER_BOUNTIES_NAME|24|new-game modifier option name|Bounties
+CREATION_MODIFIER_BOUNTIES_SUMMARY_A|72|new-game modifier option summary|Take recurring contracts from bounty hunters.
+CREATION_MODIFIER_BOUNTIES_SUMMARY_B|96|new-game modifier option summary|Track named enemies across the world for gold, experience, and their loot.
+CREATION_MODIFIER_BOUNTIES_SUMMARY_C|80|new-game modifier option summary|Available in the Campaign and Expedition worlds.
+CREATION_MODIFIER_ARENA_NAME|24|new-game modifier option name|Arena
+CREATION_MODIFIER_ARENA_SUMMARY_A|80|new-game modifier option summary|Enter three escalating combat arenas across the world.
+CREATION_MODIFIER_ARENA_SUMMARY_B|104|new-game modifier option summary|Win ten bouts at each arena for gold, weapon practice, and champion gear.
+CREATION_MODIFIER_ARENA_SUMMARY_C|80|new-game modifier option summary|Available in the Campaign and Expedition worlds.
+ZONE_SOUTHERN_ARENA_NAME|32|zone name for the first arena|Havenford Arena
+ZONE_CROSSROADS_ARENA_NAME|32|zone name for the second arena|Crossroads Arena
+ZONE_HIGHMARK_ARENA_NAME|32|zone name for the third arena|Highmark Arena
+ARENA_ACTION_SIGN_UP|16|conversation action for accepting an arena challenge|Sign up
+ARENA_ACTION_FIGHT|16|conversation action for starting the next arena bout|Fight
+DIALOGUE_ARENA_MASTER_INTRO|240|arena master introduction before signing up|"Looking to fight? Sign your name and you get ten bouts. You may recover between them, but once that gate closes, it stays closed until the ring is clear."
+DIALOGUE_ARENA_MASTER_SIGNUP|120|arena master follow-up while signing up|"Come talk to me when you're ready for your first fight, then."
+DIALOGUE_ARENA_MASTER_FIRST_BOUT|96|arena master dialogue before the first bout|"Bout 1 is ready when you are."
+DIALOGUE_ARENA_MASTER_PROGRESS|160|arena master dialogue after some bouts, placeholders 0 bouts won and 1 next bout|"{0:%d} won. Bout {1:%d} is ready when you are."
+DIALOGUE_ARENA_MASTER_CHAMPION_READY|160|arena master warning before the champion bout|"Nine won. The next gate brings out our champion."
+DIALOGUE_ARENA_MASTER_CHAMPION_CONFIRM|200|arena master second warning before the champion bout|"This is the last bout, and it is nothing like the first nine. Speak to me again if you are not ready."
+DIALOGUE_ARENA_MASTER_ACTIVE|120|arena master dialogue during an active bout|"The gate opens when the ring is clear."
+DIALOGUE_ARENA_MASTER_CHAMPION|160|arena master dialogue after all ten bouts|"You beat every challenger we put before you. This arena has nothing left to prove."
+DIALOGUE_ARENA_MASTER_CHAMPION_REWARD|160|arena master dialogue when handing over the champion reward|"You beat every challenger we put before you. Take this. You earned it."
+DIALOGUE_ARENA_SUPPLIER|160|arena provisioner greeting|Bandages, potions, food, ammunition. Take what you need before you enter the ring.
+DIALOGUE_ARENA_INNKEEPER|160|arena innkeeper greeting|The sleeping quarters are ready. Rest while the ring is quiet.
+DIALOGUE_ARENA_ARMORER_LOCKED|160|arena armorer dialogue before the local champion is defeated|Beat all ten bouts here. Then you may buy from the champion's racks.
+DIALOGUE_ARENA_ARMORER_OPEN|160|arena armorer dialogue after the local champion is defeated|You earned the right to this stock. Champion's prices, too.
+DIALOGUE_CHOICE_PROMPT_BROWSE_CHAMPIONS_STOCK|80|arena champion shop choice prompt|Browse the champion's stock?
+ARENA_BOUT_BEGIN|96|message when a normal arena bout starts, placeholder 0 bout number|The arena gate crashes shut. Bout {0:%d} begins!
+ARENA_CHAMPION_BOUT_BEGIN|120|message when the tenth arena bout starts, placeholder 0 bout number|The arena gate crashes shut. Bout {0:%d}: the champion's bout!
+ARENA_CHAMPION_INTRO|160|arena champion speech when first encountered|The arena champion raises a weapon. "You have earned this fight. Now earn your victory."
+ARENA_BOUT_VICTORY|96|message when an arena bout is won, placeholder 0 bout number|Bout {0:%d} won. The arena gate opens.
+ARENA_CHAMPION_VICTORY|112|message when the tenth arena bout is won, placeholder 0 bout number|The arena champion falls. Bout {0:%d} won!
+ARENA_GOLD_REWARD|64|arena victory gold reward, placeholder 0 gold|You receive {0:%d} gold.
+ARENA_CHAMPION_REWARD_WAITING|112|message after winning the champion bout before claiming its item reward|The arena master holds your champion's prize aloft.
+ARENA_CHAMPION_SHOP_UNLOCKED|96|message after defeating a local arena champion|The champion's equipment shop is now open.
+ARENA_GATE_SEALED|96|message when trying to open the arena gate during a bout|The arena gate is sealed until the bout is won.
+ARENA_GATE_REMAINS_OPEN|80|message when trying to close the arena gate between bouts|The arena gate remains open between bouts.
+QUEST_ARENA_HAVENFORD_NAME|32|quest title for the Havenford arena|Havenford Arena
+QUEST_ARENA_CROSSROADS_NAME|32|quest title for the Crossroads arena|Crossroads Arena
+QUEST_ARENA_HIGHMARK_NAME|32|quest title for the Highmark arena|Highmark Arena
+QUEST_LOG_ARENA_OBJECTIVE|80|arena quest journal objective, placeholder 0 arena name|Become champion of the {0}.
+QUEST_LOG_ARENA_DETAIL|160|arena quest journal detail, placeholder 0 bouts won|Win ten bouts. You may leave and recover between fights. Bouts won: {0:%d}/10.
+DOOR_RUNED_STEEL_REMAINS_OPEN|80|message when inspecting an open runed steel door|The runed steel door stays open.
+CREATION_MODIFIER_RESTLESSDEAD_NAME|24|new-game modifier option name|Restless Dead
+CREATION_MODIFIER_RESTLESSDEAD_SUMMARY_A|72|new-game modifier option summary|The dead rise throughout the world.
+CREATION_MODIFIER_RESTLESSDEAD_SUMMARY_B|96|new-game modifier option summary|Face undead warbands on the roads and restless dead in most hostile places.
+CREATION_MODIFIER_RESTLESSDEAD_SUMMARY_C|80|new-game modifier option summary|Available in the Campaign and Expedition worlds.
+CREATION_MODIFIER_NEMESIS_NAME|24|new-game modifier option name|Nemesis
+CREATION_MODIFIER_NEMESIS_SUMMARY_A|72|new-game modifier option summary|A rival adventurer hunts you across the world.
+CREATION_MODIFIER_NEMESIS_SUMMARY_B|96|new-game modifier option summary|Defeat them repeatedly as their class and abilities grow alongside you.
+CREATION_MODIFIER_NEMESIS_SUMMARY_C|80|new-game modifier option summary|Available in the Campaign and Expedition worlds.
+CREATION_MODIFIER_SCARCITY_NAME|24|new-game modifier option name|Scarcity
+CREATION_MODIFIER_SCARCITY_SUMMARY_A|72|new-game modifier option summary|Gold and supplies are harder to come by.
+CREATION_MODIFIER_SCARCITY_SUMMARY_B|112|new-game modifier option summary|Shops carry half as much, enemies drop half as much gold, and inns cost 50% more.
+CREATION_MODIFIER_SCARCITY_SUMMARY_C|56|new-game modifier option summary|Available in every world.
+CREATION_MODIFIER_LOSTRELICS_NAME|24|new-game modifier option name|Lost Relics
+CREATION_MODIFIER_LOSTRELICS_SUMMARY_A|72|new-game modifier option summary|Explorers offer voyages to small, dangerous islands.
+CREATION_MODIFIER_LOSTRELICS_SUMMARY_B|112|new-game modifier option summary|Delve into their ruins for enchanted equipment and rare artifacts.
+CREATION_MODIFIER_LOSTRELICS_SUMMARY_C|56|new-game modifier option summary|Available in the Campaign.
+CREATION_MODIFIER_FORBIDDENDEPTHS_NAME|28|new-game modifier option name|Forbidden Depths
+CREATION_MODIFIER_FORBIDDENDEPTHS_SUMMARY_A|88|new-game modifier option summary|Ancient maps reveal sealed Istarian sanctums beneath existing dungeons.
+CREATION_MODIFIER_FORBIDDENDEPTHS_SUMMARY_B|96|new-game modifier option summary|Open three escalating challenge depths and confront the magisters within.
+CREATION_MODIFIER_FORBIDDENDEPTHS_SUMMARY_C|56|new-game modifier option summary|Available in the Campaign.
+CREATION_MODIFIER_TEEMINGHORDES_NAME|24|new-game modifier option name|Teeming Hordes
+CREATION_MODIFIER_TEEMINGHORDES_SUMMARY_A|72|new-game modifier option summary|The world teems with weaker enemies.
+CREATION_MODIFIER_TEEMINGHORDES_SUMMARY_B|112|new-game modifier option summary|Ordinary encounters contain 50% more creatures drawn from two levels lower.
+CREATION_MODIFIER_TEEMINGHORDES_SUMMARY_C|56|new-game modifier option summary|Available in every world.
+CREATION_MODIFIER_LETHALCOMBAT_NAME|24|new-game modifier option name|Lethal Combat
+CREATION_MODIFIER_LETHALCOMBAT_SUMMARY_A|72|new-game modifier option summary|Every battle is swift and deadly.
+CREATION_MODIFIER_LETHALCOMBAT_SUMMARY_B|112|new-game modifier option summary|You, your allies, and hostile creatures deal 50% more damage to one another.
+CREATION_MODIFIER_LETHALCOMBAT_SUMMARY_C|56|new-game modifier option summary|Available in every world.
+CREATION_MODIFIER_OBVIOUSTRAPS_NAME|24|new-game modifier option name|Obvious Traps
+CREATION_MODIFIER_OBVIOUSTRAPS_SUMMARY_A|72|new-game modifier option summary|Dungeons are crowded with conspicuous traps.
+CREATION_MODIFIER_OBVIOUSTRAPS_SUMMARY_B|112|new-game modifier option summary|Ordinary traps are 2.5 times as common, but much easier to spot and disarm.
+CREATION_MODIFIER_OBVIOUSTRAPS_SUMMARY_C|56|new-game modifier option summary|Available in every world.
+CREATION_MODIFIER_GATEKEEPERS_NAME|24|new-game modifier option name|Gatekeepers
+CREATION_MODIFIER_GATEKEEPERS_SUMMARY_A|72|new-game modifier option summary|Elite creatures guard the way deeper.
+CREATION_MODIFIER_GATEKEEPERS_SUMMARY_B|112|new-game modifier option summary|Every usable downward dungeon stair is occupied by a waiting elite.
+CREATION_MODIFIER_GATEKEEPERS_SUMMARY_C|56|new-game modifier option summary|Available in every world.
+FORBIDDEN_DEPTH_MAP_CHEST_FOUND|120|message when an ancient map appears in an opened treasure chest|Arcane lines flare across a brittle map hidden among the treasure.
+ZONE_FORBIDDEN_DEPTHS_NAME|40|zone name for the optional Istarian challenge sanctums|Forbidden Depths
+FORBIDDEN_DEPTH_MAGISTER_NAME|64|generated Istarian boss name, placeholder 0 personal name|Magister {0}
+FORBIDDEN_DEPTH_QUEST_TITLE|80|generated forbidden-depth quest title, placeholder 0 host dungeon|The Depths Beneath {0}
+FORBIDDEN_DEPTH_QUEST_SUMMARY|160|generated forbidden-depth quest summary, placeholder 0 host dungeon|An ancient Istarian map reveals a sealed sanctum beneath {0}.
+FORBIDDEN_DEPTH_QUEST_OBJECTIVE_FIND|160|generated forbidden-depth objective before entering, placeholder 0 host dungeon|Find the Istarian portal in {0}.
+FORBIDDEN_DEPTH_QUEST_OBJECTIVE_KILL|120|generated forbidden-depth objective after entering, placeholder 0 boss name|Defeat {0} in the sanctum below.
+FORBIDDEN_DEPTH_QUEST_COMPLETED|120|completed forbidden-depth quest text|The ancient sanctum has fallen silent.
+FORBIDDEN_DEPTH_MAP_REVEALED|200|message when an ancient map reveals a host dungeon, placeholders 0 dungeon and 1 displayed floor|The map settles into a fixed shape. It marks an Istarian portal on floor {1:%d} of {0}.
+FORBIDDEN_DEPTH_MAP_NEARBY|120|proximity reminder for a map left in an opened chest|You feel the hum of ancient Istarian magic from the nearby chest.
+FORBIDDEN_DEPTH_PORTAL_OPENED|160|message on first descent into a mapped Istarian sanctum|The ancient portal flares. Space folds, and the forbidden halls of Istaris open before you.
+FEATURE_FORBIDDEN_DEPTH_PORTAL_NAME|80|name of the portal leading into a Forbidden Depth|Istarian Portal
+FEATURE_FORBIDDEN_DEPTH_ALTAR_NAME|80|name of the one-use reward altar in a Forbidden Depth|Istarian Altar
+FORBIDDEN_DEPTH_SANCTUM_TITLE|48|title shown on entering a Forbidden Depth final sanctum|The Final Sanctum
+FORBIDDEN_DEPTH_SANCTUM_ENTRY|220|description shown on entering a Forbidden Depth final sanctum|The worn stone gives way to flawless marble. Beyond a silent altar, an Istarian magister waits beneath the gaze of imperial statues.
+FORBIDDEN_DEPTH_MAGISTER_SPEECH|220|delayed boss speech when an Istarian magister encounters the player|The magister turns to face you. "The dust of your age has no claim here. Kneel, and I may preserve your name among the ruins."
+FORBIDDEN_DEPTH_VICTORY_TITLE|64|title of the Forbidden Depth boss defeat popup|The Sanctum Falls
+FORBIDDEN_DEPTH_MAGISTER_DEFEATED|180|first page of Forbidden Depth boss defeat popup, placeholder 0 boss name|{0} falls. The spells that preserved the sanctum gutter out, leaving six thousand years of silence behind.
+FORBIDDEN_DEPTH_ALTAR_AWAKENS|180|second page of Forbidden Depth boss defeat popup|One working enchantment remains. Light gathers across the altar, waiting to be bound into a weapon or piece of equipment.
+FORBIDDEN_DEPTH_ALTAR_DORMANT|140|message from the Forbidden Depth reward altar before its boss is defeated|The altar is cold. Layers of Istarian wards bind it to the magister.
+FORBIDDEN_DEPTH_ALTAR_SPENT|100|message from a Forbidden Depth reward altar after use|The altar's light is gone.
+FORBIDDEN_DEPTH_ALTAR_CHOOSE|160|prompt before selecting an item for the Forbidden Depth altar|The altar answers your touch. Choose one non-artifact item to improve.
+FORBIDDEN_DEPTH_ALTAR_INVALID_TARGET|180|disabled or invalid item message for the Forbidden Depth altar|The altar can only improve one non-artifact weapon or piece of equipment that can still hold a stronger enchantment.
+FORBIDDEN_DEPTH_ALTAR_NO_LONGER_AVAILABLE|120|message if an active Forbidden Depth altar selection becomes invalid|The altar no longer answers.
+FORBIDDEN_DEPTH_ALTAR_IMPROVED|140|message after the Forbidden Depth altar improves an item, placeholder 0 improved item name|Istarian light settles into {0}, strengthening its enchantment.
+UI_RENDER_TITLE_ISTARIAN_ALTAR_TARGET|32|item target panel title for the Forbidden Depth altar|ISTARIAN ALTAR
+ITEM_ANCIENT_ISTARIAN_MAP_NAME|40|generated item name for Ancient Istarian Map|Ancient Istarian Map
+ITEM_ANCIENT_ISTARIAN_MAP_DESC|160|generated item description for Ancient Istarian Map|A brittle map traced with arcane geometry. Its ink shifts toward a buried sanctum.
+MONSTER_ISTARIAN_MAGUS_NAME|40|generated monster name for Istarian Magus|Istarian Magus
+MONSTER_ISTARIAN_MAGUS_DESC|200|generated monster description for Istarian Magus|An ancient imperial mage in a formal robe, sustained by the wards of a buried sanctum. It answers intrusion with a broad and disciplined command of battle magic.
+MONSTER_ISTARIAN_ARCHMAGE_NAME|40|generated monster name for Istarian Archmage|Istarian Archmage
+MONSTER_ISTARIAN_ARCHMAGE_DESC|200|generated monster description for Istarian Archmage|A high magister of fallen Istaria, preserved behind layered wards and flawless marble. It commands destructive, binding, and transmuting magic without hesitation.
+NEMESIS_ENCOUNTER_INTRO|64|message when the recurring rival encounter begins|You are ambushed by an unknown figure!
+NEMESIS_SPEECH_TIER_1|160|delayed first confrontation speech, placeholder 0 rival name|{0} studies you for a moment. "Every road I take, I hear your name. Let's see if you've earned it."
+NEMESIS_SPEECH_TIER_2|160|delayed second confrontation speech, placeholder 0 rival name|{0} smiles without warmth. "Now they know me as the one who survived you. I mean to change that."
+NEMESIS_SPEECH_TIER_3|160|delayed third confrontation speech, placeholder 0 rival name|"I have won battles you will never hear of," {0} says. "Still, it is your name they remember."
+NEMESIS_SPEECH_TIER_4|144|delayed final confrontation speech, placeholder 0 rival name|{0} draws his weapon. "No more roads. No more stories. One of us ends here."
+NEMESIS_ESCAPE|120|message when the recurring rival escapes a non-final defeat, placeholder 0 name|{0} drops some things and vanishes before you can stop him.
+NEMESIS_FINAL_DEFEAT|120|message when the recurring rival is finally defeated, placeholder 0 name|{0} falls at last. This time, there will be no escape.
+NEMESIS_ACTION|120|message when the recurring rival uses a class action, placeholders 0 name and 1 action|{0} uses {1}.
+NEMESIS_POISON_HIT|120|message when the recurring rogue poisons the player, placeholder 0 name|{0}'s poisoned weapon bites deep.
+FRONTEND_RUN_SETUP_WORLD|16|run setup summary row label|World
+FRONTEND_RUN_SETUP_SAVE_RULE|16|run setup summary row label|Save Rule
+FRONTEND_RUN_SETUP_DIFFICULTY|16|run setup summary row label|Difficulty
+FRONTEND_RUN_SETUP_MODIFIERS|16|run setup summary row label|Modifiers
+FRONTEND_RUN_SETUP_EXPEDITION_SEED|20|run setup Expedition seed row label|Seed
+FRONTEND_RUN_SETUP_ROW|64|run setup summary row, placeholders 0 label and 1 value|{0}: {1}
+FRONTEND_RUN_SETUP_START_GAME|20|run setup menu option|Start Game
+FRONTEND_RUN_SETUP_CUSTOMIZE_GAME|24|run setup menu option|Customize Game
+FRONTEND_RUN_SETUP_START_DETAIL|48|run setup Start Game option detail|Continue to character creation.
+FRONTEND_RUN_SETUP_CUSTOMIZE_DETAIL|56|run setup Customize Game option detail|Change optional rules for this run.
+FRONTEND_CUSTOMIZE_TOGGLE_ROW|40|customize game toggle row, placeholders 0 modifier and 1 state|{0}: {1}
+FRONTEND_CUSTOMIZE_STATE_LABEL|16|modifier state label shown in customize game detail|State:
+FRONTEND_CUSTOMIZE_ENABLED|16|enabled modifier state shown in customize game detail|Enabled
+FRONTEND_CUSTOMIZE_DISABLED|16|disabled modifier state shown in customize game detail|Disabled
+FRONTEND_CUSTOMIZE_MODIFIER_COUNT|24|customize game enabled modifier count, placeholders 0 enabled and 1 available|{0}/{1} Modifiers
+FRONTEND_CUSTOMIZE_EXPEDITION_SEED_NAME|24|customize game Expedition seed option|Seed
+FRONTEND_CUSTOMIZE_EXPEDITION_SEED_DETAIL|112|customize game Expedition seed detail|Enter a positive number to share the same seven-island route, or leave it blank for a random route.
+FRONTEND_EXPEDITION_SEED_DIALOG_TITLE|28|system text input title for Expedition seed|Seed
+FRONTEND_EXPEDITION_SEED_DIALOG_MESSAGE|96|system text input prompt for Expedition seed|Enter a positive number, or leave blank for a random route.
+DUNGEON_DIVE_START|96|message on beginning Dungeon Dive|Stone grinds shut behind you. There is nowhere to go but down.
+EXPEDITION_START|72|message on beginning Expedition, placeholder 0 first island name|You arrive at {0}.
+EXPEDITION_PROLOGUE_START|88|message on beginning the Expedition prologue|You wake aboard Captain Thauld's ship, moored at Tidecross.
+EXPEDITION_PROLOGUE_DEPARTURE_BLOCKED|88|message when trying to leave Tidecross without the Crown of the Sea-King|Thauld cannot set a course without the Crown of the Sea-King.
+EXPEDITION_PROLOGUE_CROWN_RECOVERED|384|message after recovering the Crown of the Sea-King|You lift the Crown of the Sea-King from its bed of bones. The dark silver is cold and heavier than it looks, its seven empty settings crusted with salt. As your hands close around it, the cave trembles with the slow crash of distant surf. You should take it back to Captain Thauld aboard the expedition ship.
+EXPEDITION_SEED_MESSAGE|56|message reporting the current Expedition route seed|Expedition seed: {0}.
+EXPEDITION_RELIC_RECOVERED|96|message after claiming an Expedition crown jewel, placeholder 0 jewel name|You lift the {0} from its resting place. Its ringing falls silent.
+EXPEDITION_RELIC_ALREADY_RECOVERED|72|message when inspecting an already claimed Expedition objective, placeholder 0 jewel name|You have already recovered the {0}.
+EXPEDITION_DEPARTURE_BLOCKED|72|message when Expedition departure is attempted before its objective, placeholder 0 jewel name|You have not yet recovered the {0}.
+EXPEDITION_FINAL_ISLAND_REACHED|72|message when attempting to sail beyond the seventh Expedition island|There is nowhere farther to sail.
+EXPEDITION_ARRIVE_ISLAND|64|message after advancing to another Expedition island, placeholder 0 island name|You reach {0}.
+LOST_RELIC_VOYAGE_ARRIVAL|72|message after sailing to a Lost Relics island, placeholder 0 island name|You make landfall on {0}. The explorer's boat rests by the shore.
+LOST_RELIC_VOYAGE_RETURNED|72|message after returning from a completed Lost Relics voyage|You return to Valoria with the relic.
+LOST_RELIC_VOYAGE_RETURNED_EARLY|96|message after leaving an unfinished Lost Relics voyage|You return to Valoria. The explorer can take you back when you are ready.
+LOST_RELIC_QUEST_TITLE|64|generated Lost Relics quest title, placeholder 0 island name|Lost Relic of {0}
+LOST_RELIC_QUEST_SUMMARY|128|generated Lost Relics quest summary, placeholder 0 island name|An explorer has taken you to {0}, where a valuable relic lies somewhere among the island's ruins.
+LOST_RELIC_QUEST_OBJECTIVE|96|generated Lost Relics quest objective|Search the island's dungeons and recover the lost relic.
+LOST_RELIC_QUEST_OFFER|96|generated Lost Relics quest offer, placeholder 0 island name|Sail to {0} and search its ruins for the lost relic.
+LOST_RELIC_QUEST_REMINDER|96|generated Lost Relics quest reminder, placeholder 0 island name|The lost relic is still somewhere in the ruins of {0}.
+LOST_RELIC_QUEST_COMPLETE|80|generated Lost Relics quest completion text|The relic has been recovered.
+LOST_RELIC_RECOVERED|80|message when the Lost Relics reward is claimed|You see the relic on the altar and take it.
+LOST_RELIC_ALTAR_EMPTY|48|message when revisiting an emptied Lost Relics altar|The altar is empty.
+EXPEDITION_ISLAND_REACHED_EVENT|72|event text before an Expedition island-arrival XP award|The expedition reaches a new island.
+EXPEDITION_JEWEL_DUNGEON_SIGNAL|112|message on entering an Expedition objective dungeon, placeholder 0 jewel name|A clear note trembles through the stone. The {0} lies somewhere below.
+EXPEDITION_JEWEL_RELIC_FLOOR|112|message on reaching an Expedition jewel floor, placeholder 0 jewel name|The ringing swells until the stone itself seems to sing. The {0} is close.
+EXPEDITION_JEWEL_RELIC_PULSE|96|periodic message while searching an Expedition jewel floor, placeholder 0 jewel name|The {0} rings again, sharp and near.
+FEATURE_STORY_EXPEDITION_RELIC_NAME|32|display name for the Expedition island objective|Crown Jewel
+EXPEDITION_JEWEL_QUEST_TITLE|64|generated Expedition main quest title, placeholder 0 jewel name|The {0}
+EXPEDITION_JEWEL_QUEST_SUMMARY|128|generated Expedition main quest summary, placeholders 0 jewel name and 1 island name|Captain Thauld believes the {0} is hidden somewhere on {1}.
+EXPEDITION_JEWEL_QUEST_OBJECTIVE|128|generated Expedition main quest objective, placeholders 0 jewel name and 1 island name|Find the {0} on {1}.
+EXPEDITION_JEWEL_QUEST_OFFER||Thauld offers an Expedition island jewel quest, placeholders 0 jewel name, 1 island name, and 2 broad hint|The crown is pulling toward the {0}, somewhere on {1}. {2} Find it and bring it back to the ship.
+EXPEDITION_JEWEL_QUEST_REMINDER||Thauld reminds the player about an Expedition island jewel, placeholders 0 jewel name, 1 island name, and 2 broad hint|The {0} is still somewhere on {1}. {2} Listen for its ringing when you draw near.
+EXPEDITION_JEWEL_QUEST_TURN_IN|96|unused fallback dialogue for turning in an Expedition island jewel, placeholder 0 jewel name|You found the {0}. Good. Bring it here and let us see where the crown points next.
+EXPEDITION_JEWEL_QUEST_COMPLETED|96|Thauld's completed Expedition island jewel dialogue, placeholder 0 jewel name|The {0} sits in the crown. It is already pulling toward open water.
+EXPEDITION_JEWEL_HINT_UNKNOWN|144|broad Expedition jewel hint when Thauld has no useful clue|Unfortunately, the old charts tell us nothing useful. We will have to search the whole island.
+EXPEDITION_JEWEL_HINT_CAVES|112|broad Expedition jewel hint for a cave objective|The old charts suggest it was hidden deep in natural caves.
+EXPEDITION_JEWEL_HINT_MINE|112|broad Expedition jewel hint for a mine objective|The old charts suggest it lies below abandoned mine workings.
+EXPEDITION_JEWEL_HINT_DUNGEON|112|broad Expedition jewel hint for a stone dungeon objective|The old charts mention buried stone chambers, but give no direction.
+EXPEDITION_JEWEL_HINT_FORTRESS|112|broad Expedition jewel hint for a fortress objective|The old charts mention a ruined stronghold, but give no direction.
+EXPEDITION_JEWEL_HINT_TOWER|112|broad Expedition jewel hint for a tower objective|The old charts mention an old tower, but give no direction.
+DUNGEON_DIVE_ASCENT_SEALED|80|message when Dungeon Dive blocks backward travel|The stairway is sealed. There is no way back.
+FEATURE_DUNGEON_DIVE_SEALED_STAIRS_NAME|32|name for Dungeon Dive upward stairs|Sealed Stairs
 CREATION_DIFFICULTY_RELAXED_NAME|20|new-game difficulty option name|Relaxed
 CREATION_DIFFICULTY_RELAXED_SUMMARY_A|104|new-game difficulty option summary|The difficulty is reduced slightly across the board, making the run a bit less punishing overall.
 CREATION_DIFFICULTY_RELAXED_SUMMARY_B|40|new-game difficulty option summary|Recommended for new players.
@@ -113264,6 +113484,14 @@ CREATION_START_SKIP_TUTORIAL_NAME|24|new-game tutorial option name|Skip Tutorial
 CREATION_START_SKIP_TUTORIAL_SUMMARY_A|72|new-game tutorial option summary|Start as the boat arrives and jump straight into the open world.
 CREATION_START_SKIP_TUTORIAL_SUMMARY_B|48|new-game tutorial option summary|Assumes familiarity with the interface.
 CREATION_START_SKIP_TUTORIAL_SUMMARY_C|40|new-game tutorial option summary|No guidance or tutorial steps.
+CREATION_PROLOGUE_PLAY_PROLOGUE_NAME|24|new-game Expedition opening option name|Play Prologue
+CREATION_PROLOGUE_PLAY_PROLOGUE_SUMMARY_A|88|new-game Expedition opening option summary|Begin in a small port town and uncover the route to the Wandering Isles.
+CREATION_PROLOGUE_PLAY_PROLOGUE_SUMMARY_B|80|new-game Expedition opening option summary|Explore nearby ruins, gather supplies, and meet Captain Thauld.
+CREATION_PROLOGUE_PLAY_PROLOGUE_SUMMARY_C|48|new-game Expedition opening option summary|Recommended for a level 1 Expedition.
+CREATION_PROLOGUE_SKIP_PROLOGUE_NAME|24|new-game Expedition opening option name|Skip Prologue
+CREATION_PROLOGUE_SKIP_PROLOGUE_SUMMARY_A|72|new-game Expedition opening option summary|Begin aboard Thauld's ship at the first island.
+CREATION_PROLOGUE_SKIP_PROLOGUE_SUMMARY_B|72|new-game Expedition opening option summary|Receive a small experience head start for the skipped journey.
+CREATION_PROLOGUE_SKIP_PROLOGUE_SUMMARY_C|48|new-game Expedition opening option summary|Jump straight into the Wandering Isles.
 CREATION_SEX_MALE_NAME|16|new-game sex option name|Male
 CREATION_SEX_MALE_SUMMARY_A|64|new-game sex option summary|Improved starting Strength rolls.
 CREATION_SEX_MALE_SUMMARY_B|64|new-game sex option summary|Reduced starting Dexterity rolls.
@@ -113336,6 +113564,7 @@ UI_COMMON_CONTINUE|14|generic continue button label|Continue
 UI_COMMON_BACK|10|generic back/navigation label|Back
 UI_COMMON_DETAIL|12|generic detail panel title or action label|Detail
 UI_COMMON_NONE|10|generic none value|None
+UI_COMMON_RANDOM_CAP|10|generic random value|Random
 UI_COMMON_ON|8|generic enabled value|On
 UI_COMMON_OFF|8|generic disabled value|Off
 UI_COMMON_DELETE|12|generic delete action label|Delete
@@ -113553,6 +113782,11 @@ UI_STATUS_LOCATION_TUTORIAL_ROAD|10|status bar compact current-location tag for 
 UI_STATUS_LOCATION_TUTORIAL_TOWN|10|status bar compact current-location tag for Brindle Quay|[BQ]
 UI_STATUS_LOCATION_STORMWRECK_ISLE|10|status bar compact current-location tag for Stormwreck Isle|[SI]
 UI_STATUS_LOCATION_INFINITE_DUNGEON|16|status bar compact current-location tag for Infinite Dungeon, placeholder 0 current floor|[I{0:%d}]
+UI_STATUS_LOCATION_EXPEDITION_SHIP|12|status bar compact current-location tag for the Expedition ship|[ES]
+UI_STATUS_LOCATION_LOST_RELIC_BOAT|12|status bar compact current-location tag for a Lost Relics boat|[LB]
+UI_STATUS_LOCATION_EXPEDITION_WRECK|12|status bar compact current-location tag for the Expedition finale wreck|[EW]
+UI_STATUS_LOCATION_EXPEDITION_SETTLEMENT|12|status bar compact current-location tag for an Expedition settlement|[IS]
+UI_STATUS_LOCATION_EXPEDITION_OBJECTIVE|16|status bar compact current-location tag for an Expedition objective dungeon, placeholder 0 current floor|[ED{0:%d}]
 UI_STATUS_LOCATION_DOCKS|10|status bar compact current-location tag for Reedwater Docks|[RD]
 UI_STATUS_LOCATION_TIDEHOOK_DOCKS|10|status bar compact current-location tag for Tidehook docks|[TD]
 UI_STATUS_LOCATION_TRAVELLERS_REST|10|status bar compact current-location tag for Traveller's Rest|[TR]
@@ -113622,6 +113856,10 @@ UI_STATUS_LOCATION_TELWYND|10|status bar compact current-location tag for Telwyn
 UI_STATUS_LOCATION_ISTARIAN_TUNNELS|10|status bar compact current-location tag for Istarian Tunnels, placeholder 0 floor number|[IT{0:%d}]
 UI_STATUS_LOCATION_ELVEN_PASSAGEWAYS|10|status bar compact current-location tag for Elven Passageways, placeholder 0 floor number|[EP{0:%d}]
 UI_STATUS_LOCATION_ISTARIAN_SANCTUM|10|status bar compact current-location tag for Istarian Sanctum, placeholder 0 floor number|[IS{0:%d}]
+UI_STATUS_LOCATION_FORBIDDEN_DEPTHS|10|status bar compact current-location tag for Forbidden Depths, placeholder 0 floor number|[FD{0:%d}]
+UI_STATUS_LOCATION_SOUTHERN_ARENA|8|status bar compact current-location tag for Havenford Arena|[AR1]
+UI_STATUS_LOCATION_CROSSROADS_ARENA|8|status bar compact current-location tag for Crossroads Arena|[AR2]
+UI_STATUS_LOCATION_HIGHMARK_ARENA|8|status bar compact current-location tag for Highmark Arena|[AR3]
 UI_STATUS_LOCATION_SUNDERING_DEPTHS|10|status bar compact current-location tag for Sundering Depths, placeholder 0 floor number|[SD{0:%d}]
 UI_STATUS_LOCATION_STARFALL_CORE|10|status bar compact current-location tag for Starfall Core, placeholder 0 floor number|[SF{0:%d}]
 UI_STATUS_LOCATION_WILDERNESS|10|status bar compact current-location tag for wilderness zone, placeholder 0 depth number|[WL{0:%d}]
@@ -114025,6 +114263,8 @@ DIALOGUE_CHOICE_PROMPT_OPEN_THE_LIGHTGLASS_PURIFIERS_WORKTABLE|80|NPC dialogue c
 DIALOGUE_CHOICE_PROMPT_RENT_A_BED|80|NPC dialogue choice prompt before shop, inn, or boat suffix is added|Rent a bed
 DIALOGUE_CHOICE_PROMPT_RENT_A_ROOM|80|NPC dialogue choice prompt before shop, inn, or boat suffix is added|Rent a room
 DIALOGUE_CHOICE_PROMPT_SAIL_TO_REEDWATER_DOCKS|80|NPC dialogue choice prompt before shop, inn, or boat suffix is added|Sail to Reedwater Docks
+DIALOGUE_CHOICE_PROMPT_SAIL_TO_NEXT_ISLAND|64|Expedition captain dialogue choice prompt before free boat suffix is added|Sail to the next island
+DIALOGUE_CHOICE_PROMPT_SAIL_HOME|64|Expedition captain dialogue choice prompt after restoring the Crown of the Sea-King|Set sail for home
 DIALOGUE_CHOICE_PROMPT_CONTINUE_TO_REEDWATER_DOCKS|80|NPC dialogue choice prompt before boat suffix is added|Continue to Reedwater Docks
 DIALOGUE_CHOICE_PROMPT_TAKE_A_BUNK|80|NPC dialogue choice prompt before shop, inn, or boat suffix is added|Take a bunk
 DIALOGUE_CHOICE_PROMPT_TAKE_A_GUEST_ROOM|80|NPC dialogue choice prompt before shop, inn, or boat suffix is added|Take a guest room
@@ -114465,6 +114705,7 @@ STORY_FEATURE_OPENED_ROYAL_SARCOPHAGUS|40|story prop name after the royal sarcop
 STORY_FEATURE_BRIAR_SAINT_ALTAR|32|story prop name after the Briar Saint altar reward is claimed|Briar Saint altar
 STORY_FEATURE_MOSS_WORN_STATUE|28|story prop name after the Mossvale statue reward is claimed|moss-worn statue
 NAMED_MONSTER_DISPLAY_NAME|80|named monster procedural display name, placeholder 0 proper name, placeholder 1 monster type|{0}, the {1}
+NAMED_MONSTER_THAULD_DROWNED_EMPEROR_NAME|64|custom display name for the possessed Expedition captain|Thauld, the Drowned Emperor
 OBITUARY_GHOST_NAME|80|one-use obituary ghost display name, placeholder 0 prior character name|Ghost of {0}
 NAMED_MONSTER_ABBOT_VEYR_NAME|32|named monster proper name for Abbot Veyr|Abbot Veyr
 NAMED_MONSTER_ARVAELOS_NAME|32|named monster proper name for Arvaelos|Arvaelos
@@ -114613,6 +114854,98 @@ NPC_NYMIRA_NAME|24|NPC name for Ash Tower wizard Nymira|Nymira
 NPC_NYMIRA_TITLE|24|NPC title for Ash Tower wizard Nymira|Wizard
 NPC_NYMIRA_DESC|96|NPC inspect description for Ash Tower wizard Nymira|An ash-grey robe, ink-stained fingers, and an iron wand worn smooth at the grip.
 NPC_NYMIRA_SHOP_NAME|32|NPC shop display name for Nymira's Observatory|Nymira's Observatory
+NPC_ARENA_MASTER_1_NAME|24|NPC name for the Havenford arena master|Hadran
+NPC_ARENA_MASTER_1_TITLE|24|NPC title for Hadran|Arena Master
+NPC_ARENA_MASTER_1_DESC|128|inspect description for Hadran|A broad-shouldered arena master with scarred arms and a voice made to carry across the ring.
+NPC_ARENA_MASTER_2_NAME|24|NPC name for the Crossroads arena master|Vessa
+NPC_ARENA_MASTER_2_TITLE|24|NPC title for Vessa|Arena Master
+NPC_ARENA_MASTER_2_DESC|128|inspect description for Vessa|A seasoned arena master watching the ring with folded arms and an appraising stare.
+NPC_ARENA_MASTER_3_NAME|24|NPC name for the Highmark arena master|Calvor
+NPC_ARENA_MASTER_3_TITLE|24|NPC title for Calvor|Arena Master
+NPC_ARENA_MASTER_3_DESC|128|inspect description for Calvor|A silver-haired arena master in a formal coat, measuring every challenger with exacting care.
+NPC_ARENA_SUPPLIER_1_NAME|24|NPC name for the Havenford arena provisioner|Mella
+NPC_ARENA_SUPPLIER_1_TITLE|24|NPC title for Mella|Provisioner
+NPC_ARENA_SUPPLIER_1_DESC|128|inspect description for Mella|A brisk provisioner keeping bandages, food, ammunition, and lamp oil ready beside the arena ring.
+NPC_ARENA_SUPPLIER_1_SHOP_NAME|32|shop name for Mella's arena supplies|Mella's Arena Supplies
+NPC_ARENA_SUPPLIER_2_NAME|24|NPC name for the Crossroads arena provisioner|Torra
+NPC_ARENA_SUPPLIER_2_TITLE|24|NPC title for Torra|Provisioner
+NPC_ARENA_SUPPLIER_2_DESC|128|inspect description for Torra|A seasoned provisioner checking a broad stock of medicines, ammunition, and road supplies.
+NPC_ARENA_SUPPLIER_2_SHOP_NAME|32|shop name for Torra's arena supplies|Torra's Arena Supplies
+NPC_ARENA_SUPPLIER_3_NAME|24|NPC name for the Highmark arena provisioner|Iven
+NPC_ARENA_SUPPLIER_3_TITLE|24|NPC title for Iven|Provisioner
+NPC_ARENA_SUPPLIER_3_DESC|128|inspect description for Iven|A precise provisioner arranging fine medicines and field supplies behind a spotless counter.
+NPC_ARENA_SUPPLIER_3_SHOP_NAME|32|shop name for Iven's arena supplies|Iven's Arena Supplies
+NPC_ARENA_INNKEEPER_1_NAME|24|NPC name for the Havenford arena innkeeper|Sera
+NPC_ARENA_INNKEEPER_1_TITLE|24|NPC title for Sera|Innkeeper
+NPC_ARENA_INNKEEPER_1_DESC|128|inspect description for Sera|A warm innkeeper tending the arena's modest sleeping quarters.
+NPC_ARENA_INNKEEPER_2_NAME|24|NPC name for the Crossroads arena innkeeper|Korr
+NPC_ARENA_INNKEEPER_2_TITLE|24|NPC title for Korr|Innkeeper
+NPC_ARENA_INNKEEPER_2_DESC|128|inspect description for Korr|A calm innkeeper keeping the bunks clean and the arena crowd out of the sleeping quarters.
+NPC_ARENA_INNKEEPER_3_NAME|24|NPC name for the Highmark arena innkeeper|Valen
+NPC_ARENA_INNKEEPER_3_TITLE|24|NPC title for Valen|Innkeeper
+NPC_ARENA_INNKEEPER_3_DESC|128|inspect description for Valen|A reserved innkeeper in a neat coat, attentive to every guest returning from the ring.
+NPC_ARENA_ARMORER_1_NAME|24|NPC name for the Havenford arena armorer|Bren
+NPC_ARENA_ARMORER_1_TITLE|24|NPC title for Bren|Champion Armorer
+NPC_ARENA_ARMORER_1_DESC|128|inspect description for Bren|A blunt armorer guarding racks of equipment reserved for the arena's champions.
+NPC_ARENA_ARMORER_1_SHOP_NAME|32|shop name for Bren's champion equipment|Bren's Champion Gear
+NPC_ARENA_ARMORER_2_NAME|24|NPC name for the Crossroads arena armorer|Orsa
+NPC_ARENA_ARMORER_2_TITLE|24|NPC title for Orsa|Champion Armorer
+NPC_ARENA_ARMORER_2_DESC|128|inspect description for Orsa|A shrewd armorer keeping proven weapons and armor beyond the reach of untested fighters.
+NPC_ARENA_ARMORER_2_SHOP_NAME|32|shop name for Orsa's champion equipment|Orsa's Champion Gear
+NPC_ARENA_ARMORER_3_NAME|24|NPC name for the Highmark arena armorer|Halvek
+NPC_ARENA_ARMORER_3_TITLE|24|NPC title for Halvek|Champion Armorer
+NPC_ARENA_ARMORER_3_DESC|128|inspect description for Halvek|A formal armorer standing watch over Highmark-forged equipment meant for proven champions.
+NPC_ARENA_ARMORER_3_SHOP_NAME|32|shop name for Halvek's champion equipment|Halvek's Champion Gear
+NPC_ARENA_SPECTATOR_NAME|24|generic NPC name for arena spectators|spectator
+NPC_ARENA_SPECTATOR_DESC|96|inspect description for an arena spectator|A restless spectator keeping one eye on the ring and another on the betting crowd.
+NPC_ARENA_RATLING_NAME|24|NPC name for the arena ratling|ratling
+NPC_ARENA_RATLING_DESC|112|inspect description for the arena ratling|A blue-furred ratling watching the bouts with a knowing grin and an empty stomach.
+NPC_LINE_ARENA_SPECTATOR_1|112|arena spectator remark|The third bracket is where the confident ones stop smiling.
+NPC_LINE_ARENA_SPECTATOR_2|112|arena spectator remark|Keep moving. The ring punishes anyone who plants both feet.
+NPC_LINE_ARENA_SPECTATOR_3|112|arena spectator remark|I put five gold on the one with the shield. No, the other shield.
+NPC_LINE_ARENA_SPECTATOR_4|112|arena spectator remark|The champion broke a spear with one hand last bout.
+NPC_LINE_ARENA_SPECTATOR_5|112|arena spectator remark|The pillars help until something corners you behind one.
+NPC_LINE_ARENA_SPECTATOR_6|112|arena spectator remark|A clean win is good. A close win is worth watching.
+NPC_LINE_ARENA_SPECTATOR_7|112|arena spectator remark|They rake the sand between bouts. Never gets all the blood out.
+NPC_LINE_ARENA_SPECTATOR_8|112|arena spectator remark|You fighting, or just studying everyone who is?
+NPC_LINE_ARENA_RATLING_1|112|arena ratling remark|We've got a better arena back where I come from.
+NPC_LINE_ARENA_RATLING_2|112|arena ratling remark|Sure could use some cooked lizard right now...
+NPC_LINE_ARENA_RATLING_3|112|arena ratling remark|They say the champion has a golden sword of some kind.
+NPC_EXPEDITION_CAPTAIN_NAME|24|NPC personal name for the Expedition ship captain|Thauld
+NPC_EXPEDITION_CAPTAIN_TITLE|24|NPC title for the Expedition ship captain|Captain
+NPC_EXPEDITION_CAPTAIN_DESC|128|inspect description for the Expedition ship captain|Thauld wears a salt-stained coat and keeps one eye on the coast, the other on the Crown of the Sea-King.
+NPC_EXPEDITION_PROLOGUE_HUNTER_NAME|24|NPC personal name for the Tidecross hunter|Derrin
+NPC_EXPEDITION_PROLOGUE_HUNTER_TITLE|24|NPC title for the Tidecross hunter|Hunter
+NPC_EXPEDITION_PROLOGUE_HUNTER_DESC|128|inspect description for the Tidecross hunter|Derrin wears a patched sea cloak and carries a short bow strung against the damp.
+NPC_EXPEDITION_TRADER_NAME|24|temporary NPC name for the Expedition ship trader|Trader
+NPC_EXPEDITION_TRADER_DESC|128|inspect description for the Expedition ship trader|A practical shipboard merchant surrounded by lashed crates, packs, and carefully wrapped gear.
+NPC_EXPEDITION_TRADER_SHOP_NAME|32|NPC shop display name for the Expedition ship trader|Ship Stores
+NPC_EXPEDITION_MEREK_NAME|24|NPC personal name for the Expedition monster scholar|Merek
+NPC_EXPEDITION_MEREK_TITLE|24|NPC title for the Expedition monster scholar|Scholar
+NPC_EXPEDITION_MEREK_DESC|128|inspect description for the Expedition monster scholar|Merek carries specimen jars, charcoal rubbings, and a knife better suited to dissection than battle.
+NPC_EXPEDITION_NERIS_NAME|24|NPC personal name for the Expedition navigator|Neris
+NPC_EXPEDITION_NERIS_TITLE|24|NPC title for the Expedition navigator|Navigator
+NPC_EXPEDITION_NERIS_DESC|128|inspect description for the Expedition navigator|Neris keeps several charts pinned beneath brass weights and measures every new coastline twice.
+NPC_EXPEDITION_TAVIAN_NAME|24|NPC personal name for the Expedition antiquary|Tavian
+NPC_EXPEDITION_TAVIAN_TITLE|24|NPC title for the Expedition antiquary|Antiquary
+NPC_EXPEDITION_TAVIAN_DESC|128|inspect description for the Expedition antiquary|Tavian turns a salt-stained trinket between careful fingers, looking for some surviving trace of its history.
+NPC_EXPEDITION_LOCAL_QUEST_NAME|24|fallback name for a generated Expedition settlement quest giver|Villager
+NPC_EXPEDITION_LOCAL_QUEST_DESC|128|fallback inspect description for a generated Expedition settlement quest giver|An islander waiting near the common path, watchful for someone willing to help.
+NPC_EXPEDITION_WORKER_NAME|24|shared NPC name for Expedition ship workers|Crew Member
+NPC_EXPEDITION_WORKER_DESC|128|inspect description for an Expedition ship worker|A busy sailor checking the deck, rigging, and lashed cargo.
+NPC_EXPEDITION_FISHER_NAME|24|shared NPC name for Expedition settlement fishers|Fisher
+NPC_EXPEDITION_FISHER_DESC|128|inspect description for an Expedition settlement fisher|A weathered island fisher carrying line, hooks, and a knife for cleaning the catch.
+NPC_EXPEDITION_VILLAGER_NAME|24|shared NPC name for Expedition island villagers|Villager
+NPC_EXPEDITION_VILLAGER_DESC|128|inspect description for an Expedition island villager|An island villager dressed for salt wind, rough paths, and sudden rain.
+NPC_EXPEDITION_INNKEEPER_NAME|24|shared NPC name for Expedition settlement innkeepers|Innkeeper
+NPC_EXPEDITION_INNKEEPER_DESC|128|inspect description for an Expedition settlement innkeeper|A weatherwise innkeeper keeping a warm room and a full pantry near the island road.
+NPC_EXPEDITION_INNKEEPER_SHOP_NAME|32|shop display name for Expedition settlement innkeepers|Island Inn
+NPC_EXPEDITION_PROVISIONER_NAME|24|shared NPC name for Expedition settlement provisioners|Provisioner
+NPC_EXPEDITION_PROVISIONER_DESC|128|inspect description for an Expedition settlement provisioner|A practical merchant with rope, food, lamps, and other necessities close at hand.
+NPC_EXPEDITION_PROVISIONER_SHOP_NAME|32|shop display name for Expedition settlement provisioners|Island Provisions
+NPC_EXPEDITION_SMITH_NAME|24|shared NPC name for Expedition settlement smiths|Smith
+NPC_EXPEDITION_SMITH_DESC|128|inspect description for an Expedition settlement smith|A village smith working salt and rust from a row of tools and weapons.
+NPC_EXPEDITION_SMITH_SHOP_NAME|32|shop display name for Expedition settlement smiths|Village Forge
 NPC_INFINITE_DUNGEON_NIXEL_NAME|24|NPC name for Infinite Dungeon innkeeper Nixel|Nixel
 NPC_INFINITE_DUNGEON_RIVEL_NAME|24|NPC name for Hunter's Clearing Infinity Crystal merchant|Rivel
 NPC_INFINITE_DUNGEON_RIVEL_TITLE|24|NPC title for Hunter's Clearing Infinity Crystal merchant|Merchant
@@ -115106,6 +115439,15 @@ NPC_LINE_KESTREL_ORDERLY_3||random NPC flavor dialogue line 3 from kKestrelOrder
 NPC_LINE_KESTREL_ORDERLY_4||random NPC flavor dialogue line 4 from kKestrelOrderlyLines|Mud from the breach road dries black on the planks. We scrub until it looks ordinary.
 NPC_LINE_GENERIC_NPC_1||random NPC flavor dialogue line 1 from kGenericNpcLines|Wagons roll through lighter every season. Folks still wave like that fools the road.
 NPC_LINE_GENERIC_NPC_2||random NPC flavor dialogue line 2 from kGenericNpcLines|Strangers with maps stop in the square. The dogs remember more names than we do.
+NPC_LINE_EXPEDITION_WORKER_1||Expedition ship worker flavor dialogue|The rigging never stays tied twice. The sea has opinions.
+NPC_LINE_EXPEDITION_WORKER_2||Expedition ship worker flavor dialogue|Mind the wet planks. The last wave came over the bow.
+NPC_LINE_EXPEDITION_WORKER_3||Expedition ship worker flavor dialogue|Crates shift, ropes loosen, gulls steal. Plenty to do before we sail.
+NPC_LINE_EXPEDITION_VILLAGER_1||Expedition villager flavor dialogue|Fresh water lies inland. The shore pools turn bitter at low tide.
+NPC_LINE_EXPEDITION_VILLAGER_2||Expedition villager flavor dialogue|Storms blow branches across the paths. Watch your footing under the trees.
+NPC_LINE_EXPEDITION_VILLAGER_3||Expedition villager flavor dialogue|Most ships take what they need and leave. We make do after.
+DIALOGUE_EXPEDITION_INNKEEPER||Expedition settlement innkeeper greeting|There's a dry bed by the stove. It won't pitch with the sea.
+DIALOGUE_EXPEDITION_PROVISIONER||Expedition settlement provisioner greeting|Food, lamp oil, rope. If you came ashore without them, best fix that now.
+DIALOGUE_EXPEDITION_SMITH||Expedition settlement smith greeting|Salt finds every buckle. Let me see what you're carrying.
 NPC_LINE_CHILD_1||random NPC flavor dialogue line 1 from kChildLines|Pa says the cave took three sheep. I named one, so I count it twice.
 NPC_LINE_CHILD_2||random NPC flavor dialogue line 2 from kChildLines|The east path ate the goats. I saw prints like little knives before the rain.
 NPC_LINE_CHILD_3||random NPC flavor dialogue line 3 from kChildLines|Pa says the cave chief marks names on the wall. I only whisper mine indoors.
@@ -116804,6 +117146,8 @@ MAIN_DISPLAY_MODE_CHANGED|40|settings feedback message, placeholder 0 display mo
 MAIN_TUTORIAL_HEAD_EAST|48|tutorial message after intro closes|East to Brindle Quay. Boat waits to cross.
 MAIN_TUTORIAL_STORM_BREWING_TITLE|24|tutorial intro story panel title|STORM BREWING
 MAIN_INTRO_STORM_TITLE|20|intro story panel title|THE STORM
+MAIN_EXPEDITION_INTRO_TITLE|36|Expedition intro story panel title|THE CROWN OF THE SEA-KING
+MAIN_EXPEDITION_PROLOGUE_TITLE|28|Expedition prologue story panel title|A HARD NIGHT IN TIDECROSS
 MAIN_TUTORIAL_INTRO_1|72|tutorial intro story text|You wake before dawn by a roadside fire, the blackglass amulet warm.
 MAIN_TUTORIAL_INTRO_2|128|tutorial intro story text|The blackglass star amulet has pulled warm at your neck all night, always toward Valoria and the Dragonwake stirring beyond.
 MAIN_TUTORIAL_INTRO_3|88|tutorial intro story text|Time to reach Brindle Quay and board before Captain Thauld sails on the tide.
@@ -117134,6 +117478,9 @@ LAST_CHANCE_FINAL_PAGE_1||last-chance dialogue after final use|You should be dea
 LAST_CHANCE_FINAL_PAGE_2||last-chance dialogue after final use|Your skin flashes with patterned seals and your breathing steadies.
 LAST_CHANCE_PAGE_1||last-chance dialogue before final use|The amulet flares against your chest and forces breath back into you.
 LAST_CHANCE_PAGE_2||last-chance dialogue before final use|The pain eases enough for you to stand.
+LAST_CHANCE_EXPEDITION_FINAL_PAGE_1||Expedition last-chance dialogue after final use|You should be dead. Somehow, breath returns and your heart beats on.
+LAST_CHANCE_EXPEDITION_FINAL_PAGE_2||Expedition last-chance dialogue after final use|Every reserve is spent, but you force yourself back to your feet.
+LAST_CHANCE_EXPEDITION_PAGE_1||Expedition last-chance dialogue before final use|Darkness closes over you, but one stubborn breath pulls you back.
 LAST_CHANCE_ALIVE_PAGE||last-chance dialogue closing page|You are alive, hurt, and able to move.
 LAST_CHANCE_REVITALIZED||last-chance recovery message|You feel revitalized.
 LAST_CHANCE_NEAR_DEATH_DEFAULT|24|last-chance report phrase when no death cause is available|almost died
@@ -117141,6 +117488,7 @@ LAST_CHANCE_NEAR_DEATH_CAUSE|56|last-chance report phrase, placeholder 0 death c
 LAST_CHANCE_TAGLINE_01|32|last-chance randomized report tagline|Still standing. Barely.
 LAST_CHANCE_TAGLINE_02|32|last-chance randomized report tagline|That one was too close.
 LAST_CHANCE_TAGLINE_03|40|last-chance randomized report tagline|The amulet earned its keep.
+LAST_CHANCE_EXPEDITION_TAGLINE_03|40|Expedition last-chance randomized report tagline|Somehow, the worst has passed.
 LAST_CHANCE_TAGLINE_04|40|last-chance randomized report tagline|One more turn, one more problem.
 LAST_CHANCE_TAGLINE_05|56|last-chance randomized report tagline|A practical reminder to buy better armor.
 LAST_CHANCE_TAGLINE_06|40|last-chance randomized report tagline|The run stays alive, somehow.
@@ -117235,6 +117583,15 @@ DIALOGUE_VOSK_WAITING_MARK||NPC dialogue in talk_vosk before Tidehook route open
 DIALOGUE_VOSK_TIDEHOOK_ROUTE_OPEN||NPC dialogue in talk_vosk after Tidehook skiff route is open|South channel is open. Pay the fare and I will run you to Tidehook.
 DIALOGUE_VEYSHA_SKIFF_READY||NPC dialogue in talk_veysha after Tidehook skiff arrival|Tide marks are set. Pay the hand and the skiff runs north.
 DIALOGUE_VEYSHA_CHANNEL_WARNING||NPC dialogue in talk_veysha channel warning, second page|Step back from the edge. That channel keeps what it takes.
+DIALOGUE_LOST_RELIC_CAPTAIN_IDLE||Lost Relics explorer fallback dialogue|Fine weather for the coast. Not for the outer islands.
+DIALOGUE_LOST_RELIC_CAPTAIN_DONE||Lost Relics explorer dialogue after both voyages are complete|You've brought back more than most crews ever find. I have no better lead for you.
+DIALOGUE_LOST_RELIC_CAPTAIN_RESUME||Lost Relics explorer dialogue for resuming a voyage, placeholder 0 island name|Back to {0}? I kept the crossing open for you.
+DIALOGUE_LOST_RELIC_CAPTAIN_TOO_GREEN||Lost Relics explorer dialogue before the next voyage is available|I've heard a strange story about a relic on one of the outer islands. Might even be true.
+DIALOGUE_LOST_RELIC_CAPTAIN_OFFER||Lost Relics explorer voyage offer, placeholder 0 island name|I've heard of a relic on {0}. Small island, old ruins, bad landing. I can put you ashore, if the fare suits you.
+DIALOGUE_LOST_RELIC_EXPLORER_RETURN||Lost Relics explorer dialogue aboard the island boat|Ready to return to Valoria?
+DIALOGUE_CHOICE_PROMPT_SAIL_FOR_RELIC_ISLAND||Lost Relics paid voyage choice|Sail for the island?
+DIALOGUE_CHOICE_PROMPT_RETURN_TO_RELIC_ISLAND||Lost Relics free return voyage choice|Return to the island?
+DIALOGUE_CHOICE_PROMPT_RETURN_TO_VALORIA||Lost Relics boat return choice|Sail back to Valoria?
 DIALOGUE_QUADE_REEDWATER_ROUTE_OPEN||NPC dialogue in talk_quade for Reedwater skiff route|North water is clear enough. Fare first, then Reedwater.
 DIALOGUE_KETHRA_RACK_OPEN||NPC dialogue in talk_kethra for spear rack shop|Spears on the rack. Fish, boar, or bandit, the point does not care.
 DIALOGUE_NESKA_TAVERN_FOOD||NPC dialogue in talk_neska for tavern food shop|Beer from the cask, stew from the pot, coin on the counter. No singing unless you pay double.
@@ -117294,6 +117651,31 @@ DIALOGUE_CALDUS_ORC_BORRI_ROUTE_ACK||Ser Caldus acknowledges that the player fol
 DIALOGUE_VELRA_ASH_DONE||Peddler Velra post-Ash Tower chatter|Rhazvek is ash, the tower is quieter, and my buyers are suddenly less brave about asking where the ring came from.
 DIALOGUE_VELRA_ARCANE_CASE||Peddler Velra arcane case shop description|Sealed scrolls, capped wands, warded boxes. Do not open what you cannot pay for.
 DIALOGUE_NYMIRA_SHOP||Tower wizard Nymira offers her observatory stock|Rhazvek never crossed the warding circle. You did. Have a look at what I keep above the ash.
+DIALOGUE_EXPEDITION_CAPTAIN_IDLE||Expedition captain fallback dialogue|The tide is turning. We will move when the ship is ready.
+DIALOGUE_EXPEDITION_CAPTAIN_WAITING||Expedition captain reminder before the island objective; placeholders 0 island name and 1 jewel name|The crown still pulls inland across {0}. Listen for the {1} once you are below ground; I will keep the ship ready.
+DIALOGUE_EXPEDITION_CAPTAIN_READY||Expedition captain offers passage onward; placeholders 0 recovered jewel and 1 next island|Good. The {0} fits cleanly, and the crown now pulls toward {1}. Take whatever time you need.
+DIALOGUE_EXPEDITION_CAPTAIN_FINAL||Expedition captain dialogue after the seventh objective, placeholder 0 final jewel|The {0} is the seventh. The crown is whole again. When you are ready, we will sail for home and see what course it shows us.
+EXPEDITION_FINALE_OPENING_TITLE|32|fullscreen title for the Expedition final voyage|THE DROWNED CROWN
+EXPEDITION_FINALE_OPENING_CROWN||first fullscreen page of the Expedition final voyage|Thauld fits the seven jewels into the Crown of the Sea-King. The last stone locks into place, and cold blue fire runs through the dark silver.
+EXPEDITION_FINALE_OPENING_POSSESSION||second fullscreen page of the Expedition final voyage|"No course," Thauld whispers. "A summons." Before anyone can stop him, he sets the crown upon his head. Seawater pours from his mouth. When he speaks again, another voice rolls beneath his own. "Seven shores robbed me. Seven stones restore me. Kneel."
+EXPEDITION_FINALE_OPENING_WRECK||third fullscreen page of the Expedition final voyage|The sea rises beneath the ship. Lightning tears through the mast, the deck pitches, and a wall of black water drives the hull onto a hidden bar of sand.
+EXPEDITION_FINALE_OPENING_BATTLE||fourth fullscreen page of the Expedition final voyage|You wake in the shallows beside the wreck. Thauld stands upon the broken deck, crowned in blue fire. Whatever remains of the captain is trapped behind the dead eyes of the Drowned Emperor.
+EXPEDITION_FINALE_VICTORY_TITLE|32|fullscreen title after defeating the Expedition final boss|THE LAST VOYAGE
+EXPEDITION_FINALE_VICTORY_THAULD||first fullscreen page after defeating Thauld's possessed form|The blue fire gutters. Thauld falls against the broken rail, and the dead power inside him dies. The captain does not rise.
+EXPEDITION_FINALE_VICTORY_CROWN||second fullscreen page after defeating Thauld's possessed form|You wrench the seven jewels from the Crown of the Sea-King. Crown and stones alike vanish into the deep water beyond the reef.
+EXPEDITION_FINALE_VICTORY_MEAD||third fullscreen page after defeating Thauld's possessed form|Among the wreckage, you find an unbroken jug of mead. You sit upon the sand and take a long, hard drink.
+EXPEDITION_FINALE_VICTORY_END||final fullscreen page after defeating Thauld's possessed form|Morning breaks over a quiet sea, just in time for another journey to begin...\n\nTHE END
+EXPEDITION_FINALE_VICTORY_OUTCOME|112|victory outcome after defeating Thauld's possessed form|defeated Thauld, the Drowned Emperor, and cast the Crown of the Sea-King into the ocean
+DIALOGUE_CHOICE_PROMPT_SAIL_TO_FIRST_ISLAND||Expedition prologue voyage confirmation prompt|Sail for the Wandering Isles?
+DIALOGUE_EXPEDITION_TRADER||Expedition ship trader offers mixed stock|Food, lamps, steel, oddments. If the ship can carry it, I can probably sell it. Fresh travel supplies are in the chest between the berths.
+DIALOGUE_EXPEDITION_TRADER_TIDECROSS||Expedition ship trader speaks before departure|Food, lamps, bandages, a little spare gear. Thauld had me pack travel supplies in the chest between the berths. Take what you need before going ashore.
+DIALOGUE_EXPEDITION_MEREK_IDLE||Expedition monster scholar idle dialogue|Nothing here needs hunting yet. That may be the most interesting sign of all.
+DIALOGUE_EXPEDITION_MEREK_TIDECROSS||Expedition monster scholar explains a danger of the voyage|The Sea-King bred creatures that could follow a hull through black water. If his crown still calls across the islands, some of them may answer it.
+DIALOGUE_EXPEDITION_NERIS_IDLE||Expedition navigator idle dialogue|The coast is on the chart. The depths can wait until we find a useful lead.
+DIALOGUE_EXPEDITION_NERIS_TIDECROSS||Expedition navigator explains how the voyage will be guided|A compass needle follows north. The old tales say the Sea-King's crown points toward its lost jewels. I can chart the reefs and shoals, but first we need the crown.
+DIALOGUE_EXPEDITION_TAVIAN_IDLE||Expedition antiquary idle dialogue|Salt ruins old metal slowly. Impatient collectors finish the work much faster.
+DIALOGUE_EXPEDITION_TAVIAN_TIDECROSS||Expedition antiquary explains the crown's history|The Sea-King was a man before he drowned: a sorcerer with a crown set with seven jewels. His enemies tore them loose and scattered them. Thauld means to put them back.
+DIALOGUE_EXPEDITION_LOCAL_QUEST_IDLE||generated Expedition local giver idle dialogue|Safe travels. The inland paths are less forgiving than they look.
 DIALOGUE_INFINITE_DUNGEON_NIXEL||Nixel offers a room and inn supplies|Time does not pass here in the polite way, but sleep remains fond of beds. Mine are clean.
 DIALOGUE_INFINITE_DUNGEON_PIVEN||Piven offers provisions and tools|Rope, lamps, little certainties. Take enough. The stairs dislike certainty, which is why I keep selling it.
 DIALOGUE_INFINITE_DUNGEON_QUINEL||Quinel offers magic goods and services|This wand has already been used tomorrow. It seems perfectly well today. I also examine things and lift curses.
@@ -118869,6 +119251,7 @@ UI_OPTIONS_TOUCH_HUD_LABEL|16|options menu row label for touch HUD visibility|To
 UI_OPTIONS_TOUCH_HUD_TITLE|32|options detail title for touch HUD visibility|Touch HUD
 UI_OPTIONS_TOUCH_HUD_DESC_1|128|options touch HUD automatic behavior description|Auto shows the Android-style controls when a touch-first screen is detected.
 UI_OPTIONS_TOUCH_HUD_DESC_2|128|options touch HUD manual behavior description|On enables controls on touch PCs; Off is offered only when another pointer is available.
+UI_OPTIONS_TOUCH_HUD_DESC_WAVEDASH|128|WaveDash touch HUD manual behavior and recovery description|Off hides the controls. Tap the top-left corner 5 times quickly to restore them.
 UI_OPTIONS_DISPLAY_MODE_LABEL|18|options menu row label for native display mode|Display
 UI_OPTIONS_SHIFT_MODE_LABEL|18|options menu row label for shift movement behavior|Shift Key
 UI_OPTIONS_GAMEPAD_DISPLAY_LABEL|24|options menu row label for controller button label style|Gamepad Display
@@ -120542,6 +120925,11 @@ ZONE_TUTORIAL_ROAD_NAME|40|zone display name|South Road
 ZONE_TUTORIAL_TOWN_NAME|40|zone display name|Brindle Quay
 ZONE_STORMWRECK_ISLE_NAME|40|zone display name|Stormwreck Isle
 ZONE_INFINITE_DUNGEON_NAME|40|zone display name|Infinite Dungeon
+ZONE_EXPEDITION_SHIP_NAME|40|zone display name|Expedition Ship
+ZONE_LOST_RELIC_BOAT_NAME|40|zone display name|Explorer's Boat
+ZONE_EXPEDITION_WRECK_NAME|40|zone display name for the Expedition finale arena|Wrecked Ship
+ZONE_EXPEDITION_SETTLEMENT_NAME|40|zone display name|Island Settlement
+ZONE_EXPEDITION_OBJECTIVE_NAME|40|temporary zone display name for the Expedition objective dungeon|Island Depths
 ZONE_DOCKS_NAME|40|zone display name|Reedwater Docks
 ZONE_TIDEHOOK_DOCKS_NAME|40|zone display name|Tidehook Docks
 ZONE_HAVENFORD_NAME|40|zone display name|Havenford
@@ -120612,9 +121000,13 @@ ZONE_OLD_IMPERIAL_LIGHTHOUSE_NAME|56|zone display name|Old Imperial Lighthouse
 ZONE_WILDERNESS_NAME|40|zone display name|Wilderness
 ZONE_NOWHERE_NAME|24|zone display name fallback|Nowhere
 WORLD_POI_TUTORIAL_HOME_NAME|40|world map POI display name|Roadside Camp
+WORLD_POI_LOST_RELIC_LANDING_NAME|40|world map POI display name|Explorer's Boat
 WORLD_POI_TUTORIAL_TOWN_NAME|40|world map POI display name|Brindle Quay
 WORLD_POI_DOCKS_NAME|40|world map POI display name|Reedwater Docks
 WORLD_POI_TIDEHOOK_DOCKS_NAME|40|world map POI display name|Tidehook Docks
+WORLD_POI_SOUTHERN_ARENA_NAME|40|world map POI display name|Havenford Arena
+WORLD_POI_CROSSROADS_ARENA_NAME|40|world map POI display name|Crossroads Arena
+WORLD_POI_HIGHMARK_ARENA_NAME|40|world map POI display name|Highmark Arena
 WORLD_POI_HAVENFORD_NAME|40|world map POI display name|Havenford
 WORLD_POI_GOBLIN_CAVE_NAME|40|world map POI display name|Goblin Cave
 WORLD_POI_HAVENFORD_MINES_NAME|40|world map POI display name|Havenford Mines
@@ -121625,6 +122017,112 @@ QUEST_COMPLETED_EVENT|80|event text used before XP award when a quest is complet
 QUEST_STEP_COMPLETED_EVENT|80|event text used before XP award when a quest step is completed, placeholder 0 is quest name|Quest step completed: {0}
 QUEST_COMPLETED_MESSAGE|80|message shown when a quest completes with no visible XP award, placeholder 0 is quest name|Quest completed: {0}.
 QUEST_COMPLETED_WITH_XP_MESSAGE|96|message shown when a quest completes and grants XP, placeholder 0 is quest name, 1 is XP amount|Quest completed: {0}. Gained {1}xp.
+GENERATED_QUEST_LOCATION_REACHED|112|generated quest update after reaching a requested destination, placeholders 0 destination and 1 giver|You have explored {0}. Return to {1}.
+BOUNTY_TITLE|72|recurring bounty quest title, placeholder 0 named target|Bounty: {0}
+BOUNTY_SUMMARY|120|recurring bounty summary, placeholder 0 named target|Track down {0}, kill it, and return for the bounty.
+BOUNTY_OBJECTIVE|176|recurring bounty objective, placeholders 0 named target, 1 location hint, 2 giver|Kill {0}. {1} Return to {2} for the reward.
+BOUNTY_RETURN_OBJECTIVE|112|recurring bounty objective after the quarry dies, placeholder 0 bounty hunter|Report back to {0} for the bounty.
+BOUNTY_LOCATION_NEAR|96|near recurring bounty location hint, placeholders 0 direction and 1 origin|It was last seen a short way {0} of {1}.
+BOUNTY_LOCATION_MID|96|mid-distance recurring bounty location hint, placeholders 0 direction and 1 origin|It was last seen {0} of {1}.
+BOUNTY_LOCATION_FAR|96|far recurring bounty location hint, placeholders 0 direction and 1 origin|It was last seen far {0} of {1}.
+BOUNTY_LOCATION_DUNGEON|96|recurring bounty dungeon location hint, placeholder 0 dungeon name|It was last seen in {0}.
+BOUNTY_OFFER|176|recurring bounty offer, placeholders 0 named target and 1 location hint|There is coin on {0}. {1} Bring it down and come back to me.
+BOUNTY_REMINDER|152|recurring bounty reminder, placeholders 0 named target and 1 location hint|{0} is still out there. {1}
+BOUNTY_TURN_IN|112|recurring bounty hand-in, placeholder 0 named target|So {0} is dead. Good work. Here is the bounty.
+BOUNTY_COOLDOWN|96|recurring bounty hunter line during the contract cooldown|Nothing fresh yet. Give it a couple of days.
+BOUNTY_DISABLED|96|bounty hunter line when the Bounties modifier is disabled|No work worth sending you after today.
+BOUNTY_TOO_INEXPERIENCED|96|bounty hunter line before the player reaches the minimum bounty level|Not yet. Right now, you look more like the quarry.
+BOUNTY_NOT_HERE|96|bounty hunter line when recurring bounties are unavailable in this world or area|Nothing to hunt from here.
+BOUNTY_OTHER_HUNTER|128|bounty hunter line while another hunter owns the current contract, placeholder 0 hunter|Finish the trail you took from {0}. I will not cross it.
+BOUNTY_NONE_AVAILABLE|96|bounty hunter fallback when no reachable target can be generated|No trail I trust right now. Check back later.
+BOUNTY_TARGET_FOUND|112|message when the player reaches a recurring bounty encounter, placeholder 0 named target|You have found {0}.
+BOUNTY_SITE_NAME|48|temporary recurring bounty world-map site name|Bounty Trail
+BOUNTY_QUARRY_NEAR|128|one-time message on entering a recurring bounty target floor, placeholder 0 named quarry|Fresh tracks cross the ground. {0} is close.
+BOUNTY_EXPIRED|80|message when a recurring bounty expires|The bounty trail has gone cold.
+BOUNTY_QUARRY_SLAIN|160|quest update after a recurring bounty target dies, placeholders 0 quarry name and 1 bounty hunter name|Quest updated: {0} is dead. Return to {1} for the bounty.
+EXPEDITION_HUNT_TITLE_1|72|generated Expedition hunt title; placeholder 0 named target|Hunt {0}
+EXPEDITION_HUNT_TITLE_2|72|generated Expedition hunt title; placeholder 1 destination|Danger in {1}
+EXPEDITION_HUNT_TITLE_3|48|generated Expedition hunt title|A Dangerous Specimen
+EXPEDITION_HUNT_SUMMARY|128|generated Expedition hunt summary; placeholders 0 named target and 1 destination|Hunt {0} in {1} and return to the quest giver.
+EXPEDITION_HUNT_OBJECTIVE|128|generated Expedition hunt objective; placeholders 0 named target and 1 destination|Kill {0} in {1}, then return for your reward.
+EXPEDITION_HUNT_SHIP_OPEN_1|128|generated ship scholar hunt opening; placeholders 0 named target and 1 destination|I have been comparing tracks and shed hides from across the island.
+EXPEDITION_HUNT_SHIP_OPEN_2|128|generated ship scholar hunt opening; placeholders 0 named target and 1 destination|Something unusual has claimed a hunting ground inland.
+EXPEDITION_HUNT_SHIP_OPEN_3|128|generated ship scholar hunt opening; placeholders 0 named target and 1 destination|The crew brought me signs of a creature worth studying.
+EXPEDITION_HUNT_SHIP_OPEN_4|128|generated ship scholar hunt opening; placeholders 0 named target and 1 destination|This island has produced one specimen I would rather examine from a safe distance.
+EXPEDITION_HUNT_LOCAL_OPEN_1|128|generated island hunt opening; placeholders 0 named target and 1 destination|We have learned to keep clear of one trail after sundown.
+EXPEDITION_HUNT_LOCAL_OPEN_2|128|generated island hunt opening; placeholders 0 named target and 1 destination|Something has been worrying the people here for days.
+EXPEDITION_HUNT_LOCAL_OPEN_3|128|generated island hunt opening; placeholders 0 named target and 1 destination|The hunters came back without their traps and would not return for them.
+EXPEDITION_HUNT_LOCAL_OPEN_4|128|generated island hunt opening; placeholders 0 named target and 1 destination|You look better armed than anyone willing to take this work.
+EXPEDITION_HUNT_REASON_1|144|generated hunt reason; placeholders 0 named target and 1 destination|{0} has made a lair in {1}.
+EXPEDITION_HUNT_REASON_2|144|generated hunt reason; placeholders 0 named target and 1 destination|The tracks lead into {1}, and they belong to {0}.
+EXPEDITION_HUNT_REASON_3|144|generated hunt reason; placeholders 0 named target and 1 destination|Everything near {1} gives {0} a wide berth.
+EXPEDITION_HUNT_REASON_4|144|generated hunt reason; placeholders 0 named target and 1 destination|{0} has driven the lesser creatures deeper into {1}.
+EXPEDITION_HUNT_REQUEST_1|112|generated hunt request; placeholders 0 named target and 1 destination|Bring it down, then tell me what you found.
+EXPEDITION_HUNT_REQUEST_2|112|generated hunt request; placeholders 0 named target and 1 destination|Kill it before it grows bolder, and I will pay you.
+EXPEDITION_HUNT_REQUEST_3|112|generated hunt request; placeholders 0 named target and 1 destination|See that it does not leave the place alive.
+EXPEDITION_HUNT_REMINDER_1|112|generated hunt reminder; placeholders 0 named target and 1 destination|{0} is still somewhere in {1}.
+EXPEDITION_HUNT_REMINDER_2|112|generated hunt reminder; placeholders 0 named target and 1 destination|Look deep in {1}. That is where {0} has settled.
+EXPEDITION_HUNT_REMINDER_3|112|generated hunt reminder; placeholders 0 named target and 1 destination|Do not underestimate {0} when you reach {1}.
+EXPEDITION_HUNT_TURN_IN_1|112|generated hunt turn-in; placeholders 0 named target and 1 destination|Good. The island is safer with that creature dead.
+EXPEDITION_HUNT_TURN_IN_2|112|generated hunt turn-in; placeholders 0 named target and 1 destination|So {0} is dead. You earned the reward.
+EXPEDITION_HUNT_TURN_IN_3|112|generated hunt turn-in; placeholders 0 named target and 1 destination|That was dangerous work, and well done.
+EXPEDITION_HUNT_COMPLETED_1|104|generated completed hunt line; placeholders 0 named target and 1 destination|There has been no fresh sign of {0}.
+EXPEDITION_HUNT_COMPLETED_2|104|generated completed hunt line; placeholders 0 named target and 1 destination|The paths near {1} should be quieter now.
+EXPEDITION_HUNT_COMPLETED_3|104|generated completed hunt line; placeholders 0 named target and 1 destination|That creature will trouble no one again.
+EXPEDITION_EXPLORE_TITLE_1|64|generated Expedition exploration title; placeholder 0 destination|Chart {0}
+EXPEDITION_EXPLORE_TITLE_2|64|generated Expedition exploration title; placeholder 0 destination|Into {0}
+EXPEDITION_EXPLORE_TITLE_3|48|generated Expedition exploration title|An Unfinished Chart
+EXPEDITION_EXPLORE_SUMMARY|120|generated Expedition exploration summary; placeholder 0 destination|Reach the deepest floor of {0}, then return to Neris.
+EXPEDITION_EXPLORE_OBJECTIVE|120|generated Expedition exploration objective; placeholder 0 destination|Explore {0} to its final floor, then return to Neris.
+EXPEDITION_EXPLORE_OPEN_1|120|generated navigator quest opening; placeholder 0 destination|There is a blank reach on my chart that bothers me.
+EXPEDITION_EXPLORE_OPEN_2|120|generated navigator quest opening; placeholder 0 destination|A coastline is easy to mark. What lies beneath it is another matter.
+EXPEDITION_EXPLORE_OPEN_3|120|generated navigator quest opening; placeholder 0 destination|The old bearings point inland, but they end too soon.
+EXPEDITION_EXPLORE_OPEN_4|120|generated navigator quest opening; placeholder 0 destination|I would rather not leave this island with an unfinished chart.
+EXPEDITION_EXPLORE_REASON_1|120|generated exploration reason; placeholder 0 destination|No one aboard knows how deep {0} goes.
+EXPEDITION_EXPLORE_REASON_2|120|generated exploration reason; placeholder 0 destination|The lower reaches of {0} have never been mapped.
+EXPEDITION_EXPLORE_REASON_3|120|generated exploration reason; placeholder 0 destination|There may be another passage at the bottom of {0}.
+EXPEDITION_EXPLORE_REASON_4|120|generated exploration reason; placeholder 0 destination|A complete route through {0} would be useful on the return voyage.
+EXPEDITION_EXPLORE_REQUEST_1|112|generated exploration request; placeholder 0 destination|Reach the deepest floor and remember the way.
+EXPEDITION_EXPLORE_REQUEST_2|112|generated exploration request; placeholder 0 destination|Go as far as the passages allow, then report back.
+EXPEDITION_EXPLORE_REQUEST_3|112|generated exploration request; placeholder 0 destination|Find where the descent ends, and I will finish the chart.
+EXPEDITION_EXPLORE_REMINDER_1|104|generated exploration reminder; placeholder 0 destination|I still need to know where the descent through {0} ends.
+EXPEDITION_EXPLORE_REMINDER_2|104|generated exploration reminder; placeholder 0 destination|Reach the deepest floor of {0}, then come back to me.
+EXPEDITION_EXPLORE_REMINDER_3|104|generated exploration reminder; placeholder 0 destination|The blank place on my chart is still marked {0}.
+EXPEDITION_EXPLORE_TURN_IN_1|104|generated exploration turn-in; placeholder 0 destination|That gives me the missing depth. The chart is complete.
+EXPEDITION_EXPLORE_TURN_IN_2|104|generated exploration turn-in; placeholder 0 destination|Good. I can draw the whole route through {0} now.
+EXPEDITION_EXPLORE_TURN_IN_3|104|generated exploration turn-in; placeholder 0 destination|You found the end of it. That is all I needed.
+EXPEDITION_EXPLORE_COMPLETED_1|104|generated completed exploration line; placeholder 0 destination|The route through {0} is on the chart now.
+EXPEDITION_EXPLORE_COMPLETED_2|104|generated completed exploration line; placeholder 0 destination|There are fewer blank spaces on this island than before.
+EXPEDITION_EXPLORE_COMPLETED_3|104|generated completed exploration line; placeholder 0 destination|Your account of {0} was admirably precise.
+EXPEDITION_RECOVER_TITLE_1|64|generated Expedition recovery title; placeholders 0 item and 1 destination|Recover the {0}
+EXPEDITION_RECOVER_TITLE_2|64|generated Expedition recovery title; placeholders 0 item and 1 destination|A Find in {1}
+EXPEDITION_RECOVER_TITLE_3|48|generated Expedition recovery title|Something Left Behind
+EXPEDITION_RECOVER_SUMMARY|128|generated Expedition recovery summary; placeholders 0 item and 1 destination|Find the {0} in {1} and return it to the quest giver.
+EXPEDITION_RECOVER_OBJECTIVE|128|generated Expedition recovery objective; placeholders 0 item and 1 destination|Recover the {0} from {1}, then return for your reward.
+EXPEDITION_RECOVER_SHIP_OPEN_1|120|generated ship antiquary opening; placeholders 0 item and 1 destination|There is one small thing on this island that interests me greatly.
+EXPEDITION_RECOVER_SHIP_OPEN_2|120|generated ship antiquary opening; placeholders 0 item and 1 destination|Old voyages leave useful things in unlikely places.
+EXPEDITION_RECOVER_SHIP_OPEN_3|120|generated ship antiquary opening; placeholders 0 item and 1 destination|I have been following a mention in a water-stained journal.
+EXPEDITION_RECOVER_SHIP_OPEN_4|120|generated ship antiquary opening; placeholders 0 item and 1 destination|The island may hold more than coin and monster bones.
+EXPEDITION_RECOVER_LOCAL_OPEN_1|120|generated island recovery opening; placeholders 0 item and 1 destination|Something belonging to this village was lost beyond the safe paths.
+EXPEDITION_RECOVER_LOCAL_OPEN_2|120|generated island recovery opening; placeholders 0 item and 1 destination|There is an old keepsake we thought gone for good.
+EXPEDITION_RECOVER_LOCAL_OPEN_3|120|generated island recovery opening; placeholders 0 item and 1 destination|One of our people carried something precious inland and never returned.
+EXPEDITION_RECOVER_LOCAL_OPEN_4|120|generated island recovery opening; placeholders 0 item and 1 destination|If you mean to explore, I have a favor to ask.
+EXPEDITION_RECOVER_REASON_1|128|generated recovery reason; placeholders 0 item and 1 destination|The {0} should still be somewhere in {1}.
+EXPEDITION_RECOVER_REASON_2|128|generated recovery reason; placeholders 0 item and 1 destination|The last person to carry the {0} vanished in {1}.
+EXPEDITION_RECOVER_REASON_3|128|generated recovery reason; placeholders 0 item and 1 destination|A traveler saw the {0} near the deepest part of {1}.
+EXPEDITION_RECOVER_REASON_4|128|generated recovery reason; placeholders 0 item and 1 destination|Every clue I have points to {1}, and to the {0}.
+EXPEDITION_RECOVER_REQUEST_1|112|generated recovery request; placeholders 0 item and 1 destination|Bring it back intact, if you can.
+EXPEDITION_RECOVER_REQUEST_2|112|generated recovery request; placeholders 0 item and 1 destination|Find it and return it to me. I will make the trouble worthwhile.
+EXPEDITION_RECOVER_REQUEST_3|112|generated recovery request; placeholders 0 item and 1 destination|Keep an eye out for it when you reach the lower floor.
+EXPEDITION_RECOVER_REMINDER_1|112|generated recovery reminder; placeholders 0 item and 1 destination|The {0} should be deep in {1}.
+EXPEDITION_RECOVER_REMINDER_2|112|generated recovery reminder; placeholders 0 item and 1 destination|Do not leave {1} without looking for the {0}.
+EXPEDITION_RECOVER_REMINDER_3|112|generated recovery reminder; placeholders 0 item and 1 destination|I am still waiting for the {0} from {1}.
+EXPEDITION_RECOVER_TURN_IN_1|112|generated recovery turn-in; placeholders 0 item and 1 destination|You found it. Better still, you brought it back whole.
+EXPEDITION_RECOVER_TURN_IN_2|112|generated recovery turn-in; placeholders 0 item and 1 destination|There it is. I had begun to think the {0} was lost forever.
+EXPEDITION_RECOVER_TURN_IN_3|112|generated recovery turn-in; placeholders 0 item and 1 destination|Excellent. This was worth recovering after all.
+EXPEDITION_RECOVER_COMPLETED_1|104|generated completed recovery line; placeholders 0 item and 1 destination|The {0} survived longer than anyone expected.
+EXPEDITION_RECOVER_COMPLETED_2|104|generated completed recovery line; placeholders 0 item and 1 destination|There may be other lost things in {1}, but none I need today.
+EXPEDITION_RECOVER_COMPLETED_3|104|generated completed recovery line; placeholders 0 item and 1 destination|That was a good find.
 QUEST_TUTORIAL_FALLBACK_NAME|24|fallback name for an unknown tutorial quest|Tutorial Quest
 EXPERIENCE_GAIN_MESSAGE|48|message shown when XP is granted with no reason, placeholder 0 is XP amount|You gain {0} XP.
 EXPERIENCE_GAIN_REASON_MESSAGE|96|message shown when XP is granted for a reason, placeholder 0 is XP amount, 1 is reason phrase|You gain {0} XP for {1}.
@@ -121658,6 +122156,15 @@ COMBAT_PLAYER_ATTACK_WOUND|112|player melee hit wound message, placeholders 0 ta
 COMBAT_PLAYER_ATTACK_CRIT_WOUND|120|player melee critical hit wound message, placeholders 0 target name, 1 optional roll text with leading space, 2 damage amount, 3 wound result phrase|You critically hit the {0}{1} for {2} damage, {3}.
 COMBAT_PLAYER_ATTACK_NO_DAMAGE|88|player melee hit that deals no damage, placeholder 0 is target name, 1 is optional roll text with leading space|You hit the {0}{1}, but deal no damage.
 COMBAT_PLAYER_ATTACK_CRIT_NO_DAMAGE|96|player melee critical hit that deals no damage, placeholder 0 is target name, 1 is optional roll text with leading space|You critically hit the {0}{1}, but deal no damage.
+COMBAT_PLAYER_ATTACK_MISS_NAMED|72|player melee miss against a named target, placeholders 0 target name and 1 optional roll text|You miss {0}{1}.
+COMBAT_PLAYER_ATTACK_HIT_NAMED|88|player melee hit against a named target, placeholders 0 target name, 1 optional roll text, 2 damage|You hit {0}{1} for {2} damage.
+COMBAT_PLAYER_ATTACK_CRIT_NAMED|96|player critical hit against a named target, placeholders 0 target name, 1 optional roll text, 2 damage|You critically hit {0}{1} for {2} damage.
+COMBAT_PLAYER_ATTACK_KILL_NAMED|120|player melee kill against a named target, placeholders 0 target name, 1 optional roll text, 2 damage|You hit {0}{1} for {2} damage. You kill {0}.
+COMBAT_PLAYER_ATTACK_CRIT_KILL_NAMED|128|player critical kill against a named target, placeholders 0 target name, 1 optional roll text, 2 damage|You critically hit {0}{1} for {2} damage. You kill {0}.
+COMBAT_PLAYER_ATTACK_WOUND_NAMED|112|player melee wound against a named target, placeholders 0 target name, 1 optional roll text, 2 damage, 3 wound result|You hit {0}{1} for {2} damage, {3}.
+COMBAT_PLAYER_ATTACK_CRIT_WOUND_NAMED|120|player critical wound against a named target, placeholders 0 target name, 1 optional roll text, 2 damage, 3 wound result|You critically hit {0}{1} for {2} damage, {3}.
+COMBAT_PLAYER_ATTACK_NO_DAMAGE_NAMED|88|player harmless hit against a named target, placeholders 0 target name and 1 optional roll text|You hit {0}{1}, but deal no damage.
+COMBAT_PLAYER_ATTACK_CRIT_NO_DAMAGE_NAMED|96|player harmless critical hit against a named target, placeholders 0 target name and 1 optional roll text|You critically hit {0}{1}, but deal no damage.
 COMBAT_PARTY_ATTACK_MISS|96|inactive party melee miss, placeholders 0 attacker name, 1 target name, 2 optional roll text with leading space|{0} misses the {1}{2}.
 COMBAT_PARTY_ATTACK_HIT|112|inactive party melee hit, placeholders 0 attacker name, 1 target name, 2 optional roll text with leading space, 3 damage amount|{0} hits the {1}{2} for {3} damage.
 COMBAT_PARTY_ATTACK_CRIT|120|inactive party critical melee hit, placeholders 0 attacker name, 1 target name, 2 optional roll text with leading space, 3 damage amount|{0} critically hits the {1}{2} for {3} damage.
@@ -121667,6 +122174,15 @@ COMBAT_PARTY_ATTACK_WOUND|136|inactive party melee wound, placeholders 0 attacke
 COMBAT_PARTY_ATTACK_CRIT_WOUND|144|inactive party critical melee wound, placeholders 0 attacker name, 1 target name, 2 optional roll text with leading space, 3 damage amount, 4 wound result phrase|{0} critically hits the {1}{2} for {3} damage, {4}.
 COMBAT_PARTY_ATTACK_NO_DAMAGE|112|inactive party melee hit that deals no damage, placeholders 0 attacker name, 1 target name, 2 optional roll text with leading space|{0} hits the {1}{2}, but deals no damage.
 COMBAT_PARTY_ATTACK_CRIT_NO_DAMAGE|120|inactive party critical melee hit that deals no damage, placeholders 0 attacker name, 1 target name, 2 optional roll text with leading space|{0} critically hits the {1}{2}, but deals no damage.
+COMBAT_PARTY_ATTACK_MISS_NAMED|96|inactive party melee miss against a named target, placeholders 0 attacker name, 1 target name, 2 optional roll text|{0} misses {1}{2}.
+COMBAT_PARTY_ATTACK_HIT_NAMED|112|inactive party melee hit against a named target, placeholders 0 attacker name, 1 target name, 2 optional roll text, 3 damage|{0} hits {1}{2} for {3} damage.
+COMBAT_PARTY_ATTACK_CRIT_NAMED|120|inactive party critical hit against a named target, placeholders 0 attacker name, 1 target name, 2 optional roll text, 3 damage|{0} critically hits {1}{2} for {3} damage.
+COMBAT_PARTY_ATTACK_KILL_NAMED|136|inactive party melee kill against a named target, placeholders 0 attacker name, 1 target name, 2 optional roll text, 3 damage|{0} hits {1}{2} for {3} damage. {0} kills {1}.
+COMBAT_PARTY_ATTACK_CRIT_KILL_NAMED|144|inactive party critical kill against a named target, placeholders 0 attacker name, 1 target name, 2 optional roll text, 3 damage|{0} critically hits {1}{2} for {3} damage. {0} kills {1}.
+COMBAT_PARTY_ATTACK_WOUND_NAMED|136|inactive party melee wound against a named target, placeholders 0 attacker name, 1 target name, 2 optional roll text, 3 damage, 4 wound result|{0} hits {1}{2} for {3} damage, {4}.
+COMBAT_PARTY_ATTACK_CRIT_WOUND_NAMED|144|inactive party critical wound against a named target, placeholders 0 attacker name, 1 target name, 2 optional roll text, 3 damage, 4 wound result|{0} critically hits {1}{2} for {3} damage, {4}.
+COMBAT_PARTY_ATTACK_NO_DAMAGE_NAMED|112|inactive party harmless hit against a named target, placeholders 0 attacker name, 1 target name, 2 optional roll text|{0} hits {1}{2}, but deals no damage.
+COMBAT_PARTY_ATTACK_CRIT_NO_DAMAGE_NAMED|120|inactive party harmless critical hit against a named target, placeholders 0 attacker name, 1 target name, 2 optional roll text|{0} critically hits {1}{2}, but deals no damage.
 COMBAT_PLAYER_SURPRISE_ATTACK_HIT|104|player surprise attack hit message, placeholder 0 is target name, 1 is optional roll text with leading space, 2 is damage amount|Surprise attack! You hit the {0}{1} for {2} damage.
 COMBAT_PLAYER_SURPRISE_ATTACK_CRIT|112|player surprise attack critical hit message, placeholder 0 is target name, 1 is optional roll text with leading space, 2 is damage amount|Surprise attack! You critically hit the {0}{1} for {2} damage.
 COMBAT_PLAYER_SURPRISE_ATTACK_KILL|120|player surprise attack hit kill message, placeholder 0 is target name, 1 is optional roll text with leading space, 2 is damage amount|Surprise attack! You hit the {0}{1} for {2} damage, killing it.
@@ -121694,6 +122210,8 @@ COMBAT_PLAYER_BACKSTAB_CRIT_NO_DAMAGE|112|player backstab critical hit that deal
 COMBAT_MONSTER_WOUND_TRANSITION|72|message when a monster enters a worse wound state, placeholder 0 is monster name, 1 is wound state|The {0} is {1}.
 COMBAT_MONSTER_ATTACK_MISS|72|monster melee miss message, placeholder 0 is monster name without article, 1 is optional roll text with leading space|The {0} misses you{1}.
 COMBAT_MONSTER_ATTACK_MISS_PARTY|96|monster melee miss against an inactive party member, placeholders 0 monster name without article, 1 party member name, 2 optional roll text with leading space|The {0} misses {1}{2}.
+COMBAT_MONSTER_ATTACK_MISS_NAMED|72|named monster melee miss message, placeholders 0 proper name and 1 optional roll text with leading space|{0} misses you{1}.
+COMBAT_MONSTER_ATTACK_MISS_PARTY_NAMED|96|named monster melee miss against an inactive party member, placeholders 0 proper name, 1 party member name, and 2 optional roll text with leading space|{0} misses {1}{2}.
 COMBAT_MONSTER_ATTACK_HIT|88|monster melee hit message, placeholder 0 is attacker phrase, 1 is optional roll text with leading space, 2 is damage amount|{0} hits you{1} for {2} damage.
 COMBAT_MONSTER_ATTACK_HIT_PARTY|112|monster melee hit against an inactive party member, placeholders 0 attacker phrase, 1 party member name, 2 optional roll text with leading space, 3 damage amount|{0} hits {1}{2} for {3} damage.
 COMBAT_MONSTER_ATTACK_NO_DAMAGE|88|monster melee hit that glances from armor, placeholder 0 is attacker phrase, 1 is optional roll text with leading space|{0} hits you{1}, but the blow glances off.
@@ -121750,6 +122268,12 @@ COMBAT_COMPACT_CRIT_DAMAGE||compact player attack critical-only damage suffix, p
 COMBAT_COMPACT_DAMAGE||compact player attack damage suffix, placeholder 0 is damage| for {0} damage
 COMBAT_COMPACT_KILL_SUFFIX||compact player attack kill suffix, placeholder 0 is target name| You kill the {0}.
 COMBAT_PARTY_COMPACT_KILL_SUFFIX||compact inactive party attack kill suffix, placeholders 0 attacker name, 1 target name| {0} kills the {1}.
+COMBAT_COMPACT_HIT_NAMED||compact player attack hit summary against a named target, placeholders 0 target name and 1 hit count|You hit {0} {1}x
+COMBAT_COMPACT_MISS_NAMED||compact player attack miss summary against a named target, placeholder 0 target name|You miss {0}
+COMBAT_PARTY_COMPACT_HIT_NAMED||compact inactive party attack against a named target, placeholders 0 attacker name, 1 target name, 2 hit count|{0} hits {1} {2}x
+COMBAT_PARTY_COMPACT_MISS_NAMED||compact inactive party miss against a named target, placeholders 0 attacker name and 1 target name|{0} misses {1}
+COMBAT_COMPACT_KILL_SUFFIX_NAMED||compact player attack kill suffix for a named target, placeholder 0 target name| You kill {0}.
+COMBAT_PARTY_COMPACT_KILL_SUFFIX_NAMED||compact inactive party attack kill suffix for a named target, placeholders 0 attacker name and 1 target name| {0} kills {1}.
 COMBAT_SURFACE_ICE||short terrain name for slippery ice|ice
 COMBAT_SURFACE_OIL||short terrain name for slippery oil|oil
 COMBAT_MIRROR_IMAGE_HIT_SUFFIX||suffix appended when mirror image absorbs a monster hit| A mirror image shatters and absorbs part of the blow.
@@ -121766,6 +122290,11 @@ COMBAT_OFFHAND_CRIT_KILL||player off-hand critical kill message, placeholder 0 i
 COMBAT_OFFHAND_KILL||player off-hand kill message, placeholder 0 is monster name, 1 is optional roll text with leading space, 2 is damage amount, 3 is optional damage roll text with leading space|Off-hand drops the {0}{1} for {2}{3}.
 COMBAT_OFFHAND_CRIT_HIT||player off-hand critical hit message, placeholder 0 is monster name, 1 is optional roll text with leading space, 2 is damage amount, 3 is optional damage roll text with leading space|Off-hand crits the {0}{1} for {2}{3}.
 COMBAT_OFFHAND_HIT||player off-hand hit message, placeholder 0 is monster name, 1 is optional roll text with leading space, 2 is damage amount, 3 is optional damage roll text with leading space|Off-hand hits the {0}{1} for {2}{3}.
+COMBAT_OFFHAND_MISS_NAMED||player off-hand miss against a named target, placeholders 0 target name and 1 optional roll text|Off-hand misses {0}{1}.
+COMBAT_OFFHAND_CRIT_KILL_NAMED||player off-hand critical kill against a named target, placeholders 0 target name, 1 optional roll text, 2 damage, 3 optional damage roll text|Off-hand crits {0}{1} for {2}{3}. You kill {0}.
+COMBAT_OFFHAND_KILL_NAMED||player off-hand kill against a named target, placeholders 0 target name, 1 optional roll text, 2 damage, 3 optional damage roll text|Off-hand hits {0}{1} for {2}{3}. You kill {0}.
+COMBAT_OFFHAND_CRIT_HIT_NAMED||player off-hand critical hit against a named target, placeholders 0 target name, 1 optional roll text, 2 damage, 3 optional damage roll text|Off-hand crits {0}{1} for {2}{3}.
+COMBAT_OFFHAND_HIT_NAMED||player off-hand hit against a named target, placeholders 0 target name, 1 optional roll text, 2 damage, 3 optional damage roll text|Off-hand hits {0}{1} for {2}{3}.
 COMBAT_MONSTER_BREATH_COVER||monster breath misses due to cover, placeholder 0 is monster name, 1 is breath action text|The {0} {1}, but cover breaks the blast.
 COMBAT_MONSTER_BREATH_IMMUNE||player immunity blocks monster breath, placeholder 0 is resistance name, 1 is monster name|Your {0} immunity leaves the {1}'s breath harmless.
 COMBAT_MONSTER_BREATH_DIVINE_SHIELD||player divine shield blocks monster breath, placeholder 0 is monster name|The {0}'s breath breaks harmlessly against your divine shield.
@@ -121826,6 +122355,8 @@ COMBAT_MONSTER_ACID_SLIME_BONUS||green slime bonus acid damage sentence|Acid sli
 COMBAT_MONSTER_STRENGTH_DRAIN||shadow strength drain message, placeholder 0 is monster name|The {0} leaches strength from your limbs.
 COMBAT_MONSTER_RAISE_DEAD_VISIBLE||monster raise-dead summon message, placeholder 0 is caster monster name, 1 is summoned monster name|The {0} raises {1} into the fight.
 COMBAT_MONSTER_RAISE_DEAD_HEARD||heard-only monster raise-dead summon message|You hear a grave-chant and the scrape of fresh dead nearby.
+COMBAT_THAULD_CALL_DROWNED_VISIBLE||Drowned Emperor summon message, placeholders 0 boss name and 1 summoned monster name|{0} raises one hand. A {1} climbs from the sea.
+COMBAT_THAULD_CALL_DROWNED_HEARD||heard-only Drowned Emperor summon message|Water hammers the hull as something climbs aboard.
 COMBAT_MONSTER_SPLIT_SLIME_VISIBLE||visible ooze split message, placeholder 0 is monster name|The {0} pulls itself into two smaller masses.
 COMBAT_MONSTER_SPLIT_SLIME_HEARD||heard-only ooze split message|You hear wet tearing nearby.
 COMBAT_MONSTER_HARPY_SONG_PULL||harpy song pull message, placeholder 0 is monster name|The {0}'s song draws you closer.
@@ -121866,6 +122397,7 @@ COMBAT_MONSTER_STENCH_PARTY||troglodyte stench sickens inactive party member, pl
 COMBAT_MONSTER_CHARGE||monster charge message, placeholder 0 is monster name|The {0} lowers its horns and charges.
 COMBAT_MONSTER_ACTION_SLING_STONE||monster projectile action fragment|looses a sling stone
 COMBAT_MONSTER_ACTION_SHORTBOW||monster projectile action fragment|fires a shortbow
+COMBAT_MONSTER_ACTION_DART||monster projectile action fragment|throws a dart
 COMBAT_MONSTER_ACTION_JAVELIN||monster projectile action fragment|throws a javelin
 COMBAT_MONSTER_ACTION_THROWN_TRIDENT||monster projectile action fragment|hurls a trident
 COMBAT_MONSTER_ACTION_THROWING_AXE||monster projectile action fragment|throws an axe
@@ -121895,20 +122427,32 @@ COMBAT_MONSTER_ACTION_BREATH_STARFALL_STORM||monster breath action fragment|brea
 COMBAT_MONSTER_ACTION_BREATH_CRUSHING_GALE||monster breath action fragment|breathes a crushing gale
 COMBAT_MONSTER_ACTION_BREATH_GRAVEFIRE||monster breath action fragment|breathes gravefire
 COMBAT_MONSTER_ACTION_MISS||monster action miss message, placeholder 0 is monster name, 1 is action fragment|The {0} {1}, but misses you.
+COMBAT_MONSTER_ACTION_MISS_NAMED||named monster action miss message, placeholders 0 proper name and 1 action fragment|{0} {1}, but misses you.
 COMBAT_MONSTER_DEATH_WARD_BLOCK||death ward blocks monster death magic, placeholder 0 is monster name|Your death ward turns the {0}'s death magic aside.
+COMBAT_MONSTER_DEATH_WARD_BLOCK_NAMED||death ward blocks named monster death magic, placeholder 0 is proper name|Your death ward turns {0}'s death magic aside.
 COMBAT_MONSTER_ACTION_IMMUNE||player immunity blocks monster action, placeholder 0 is resistance name, 1 is monster name|Your {0} immunity leaves the {1}'s attack harmless.
+COMBAT_MONSTER_ACTION_IMMUNE_NAMED||player immunity blocks named monster action, placeholders 0 resistance name and 1 proper name|Your {0} immunity leaves {1}'s attack harmless.
 COMBAT_MONSTER_ACTION_DIVINE_SHIELD||divine shield blocks monster action, placeholder 0 is monster name, 1 is action fragment|The {0}'s {1} breaks harmlessly against your divine shield.
+COMBAT_MONSTER_ACTION_DIVINE_SHIELD_NAMED||divine shield blocks named monster action, placeholders 0 proper name and 1 action fragment|{0}'s {1} breaks harmlessly against your divine shield.
 COMBAT_MONSTER_ACTION_NO_HARM||monster action glances from armor or debug invincibility blocks it, placeholder 0 is monster name, 1 is action fragment|The {0} {1} at you, but the attack glances off.
+COMBAT_MONSTER_ACTION_NO_HARM_NAMED||named monster action glances from armor or debug invincibility blocks it, placeholders 0 proper name and 1 action fragment|{0} {1} at you, but the attack glances off.
 COMBAT_MONSTER_ACTION_DAMAGE||monster action damage message, placeholder 0 is monster name, 1 is action fragment, 2 is damage amount|The {0} {1} for {2} damage.
+COMBAT_MONSTER_ACTION_DAMAGE_NAMED||named monster action damage message, placeholders 0 proper name, 1 action fragment, and 2 damage amount|{0} {1} for {2} damage.
 COMBAT_MONSTER_ACTION_CONFUSION_SUFFIX||suffix appended when monster action confuses player| The impact rattles your thoughts.
 COMBAT_MONSTER_ACTION_SICKNESS_SUFFIX||suffix appended when monster action sickens player| A dead chill settles into you.
 COMBAT_MONSTER_ACTION_POISON_SUFFIX||suffix appended when monster action poisons player| Venom rides in with the hit.
 COMBAT_MONSTER_ACTION_MISS_PARTY||monster action misses inactive party member, placeholders 0 monster name, 1 action fragment, 2 target name|The {0} {1}, but misses {2}.
+COMBAT_MONSTER_ACTION_MISS_PARTY_NAMED||named monster action misses inactive party member, placeholders 0 proper name, 1 action fragment, and 2 target name|{0} {1}, but misses {2}.
 COMBAT_MONSTER_DEATH_WARD_BLOCK_PARTY||inactive party member death ward blocks monster death magic, placeholders 0 monster name, 1 target name|{1}'s death ward turns the {0}'s death magic aside.
+COMBAT_MONSTER_DEATH_WARD_BLOCK_PARTY_NAMED||inactive party member death ward blocks named monster death magic, placeholders 0 proper name and 1 target name|{1}'s death ward turns {0}'s death magic aside.
 COMBAT_MONSTER_ACTION_IMMUNE_PARTY||inactive party member immunity blocks monster action, placeholders 0 resistance name, 1 monster name, 2 target name|{2}'s {0} immunity leaves the {1}'s attack harmless.
+COMBAT_MONSTER_ACTION_IMMUNE_PARTY_NAMED||inactive party member immunity blocks named monster action, placeholders 0 resistance name, 1 proper name, and 2 target name|{2}'s {0} immunity leaves {1}'s attack harmless.
 COMBAT_MONSTER_ACTION_DIVINE_SHIELD_PARTY||inactive party member divine shield blocks monster action, placeholders 0 monster name, 1 action fragment, 2 target name|The {0}'s {1} breaks harmlessly against {2}'s divine shield.
+COMBAT_MONSTER_ACTION_DIVINE_SHIELD_PARTY_NAMED||divine shield blocks named monster action against an inactive party member, placeholders 0 proper name, 1 action fragment, and 2 target name|{0}'s {1} breaks harmlessly against {2}'s divine shield.
 COMBAT_MONSTER_ACTION_NO_HARM_PARTY||monster action glances from an inactive party member's armor or debug invincibility blocks it, placeholders 0 monster name, 1 action fragment, 2 target name|The {0} {1} at {2}, but the attack glances off.
+COMBAT_MONSTER_ACTION_NO_HARM_PARTY_NAMED||named monster action glances from an inactive party member's armor or debug invincibility blocks it, placeholders 0 proper name, 1 action fragment, and 2 target name|{0} {1} at {2}, but the attack glances off.
 COMBAT_MONSTER_ACTION_DAMAGE_PARTY||monster action damages inactive party member, placeholders 0 monster name, 1 action fragment, 2 damage amount, 3 target name|The {0} {1}, hitting {3} for {2} damage.
+COMBAT_MONSTER_ACTION_DAMAGE_PARTY_NAMED||named monster action damages inactive party member, placeholders 0 proper name, 1 action fragment, 2 damage amount, and 3 target name|{0} {1}, hitting {3} for {2} damage.
 COMBAT_MONSTER_ACTION_CONFUSION_SUFFIX_PARTY||suffix when monster action confuses inactive party member, placeholder 0 target name| The impact rattles {0}'s thoughts.
 COMBAT_MONSTER_ACTION_SICKNESS_SUFFIX_PARTY||suffix when monster action sickens inactive party member, placeholder 0 target name| A dead chill settles into {0}.
 COMBAT_MONSTER_ACTION_POISON_SUFFIX_PARTY||suffix when monster action poisons inactive party member, placeholder 0 target name| Venom rides in with the hit on {0}.
@@ -125354,6 +125898,14 @@ ITEM_WAND_OF_DETECT_MAGIC_NAME|64|item display name for Wand of Detect Magic|wan
 ITEM_WAND_OF_DETECT_MAGIC_DESC||item description for Wand of Detect Magic|An ash wand banked with Detect Magic, revealing nearby magical creatures, items, equipment, and held objects.
 ITEM_ORC_FORTRESS_MAP_SKETCH_NAME|64|item display name for Orc Fortress Map Sketch|orc fortress map sketch
 ITEM_ORC_FORTRESS_MAP_SKETCH_DESC||item description for Orc Fortress Map Sketch|A rough map sketch showing fresh orc positions west of South Gate.
+ITEM_CROWN_OF_THE_SEA_KING_NAME|64|item display name for Crown of the Sea-King|Crown of the Sea-King
+ITEM_CROWN_OF_THE_SEA_KING_DESC||item description for Crown of the Sea-King|A dark silver crown with seven empty jewel settings. The metal pulls faintly toward the open sea.
+ITEM_WEATHERED_SURVEY_LEDGER_NAME|64|item display name for Weathered Survey Ledger|weathered survey ledger
+ITEM_WEATHERED_SURVEY_LEDGER_DESC||item description for Weathered Survey Ledger|A swollen field ledger filled with old bearings, sketches, and cramped margin notes.
+ITEM_TARNISHED_SHRINE_TOKEN_NAME|64|item display name for Tarnished Shrine Token|tarnished shrine token
+ITEM_TARNISHED_SHRINE_TOKEN_DESC||item description for Tarnished Shrine Token|A small metal token worn smooth around a nearly forgotten island shrine.
+ITEM_SEALED_CURIO_BOX_NAME|64|item display name for Sealed Curio Box|sealed curio box
+ITEM_SEALED_CURIO_BOX_DESC||item description for Sealed Curio Box|A palm-sized box bound in wire and sealed against salt and damp.
 ITEM_ATTRIBUTE_RING_NAME|64|item display name for Attribute Ring|attribute ring
 ITEM_ATTRIBUTE_RING_DESC||item description for Attribute Ring|A prepared ring that takes on one attribute charm when its magic settles.
 ITEM_ATTRIBUTE_RING_UNIDENTIFIED_NAME|64|unidentified item display name for Attribute Ring|runed ring
@@ -125578,6 +126130,34 @@ MONSTER_ZOMBIE_NAME|64|monster display name for Zombie|zombie
 MONSTER_ZOMBIE_DESC||monster description for Zombie|A swollen human corpse with gray skin, stiff limbs, and grave dirt packed into its clothes. It shambles straight ahead, soaking blows while trying to drag the living down.
 MONSTER_BANDIT_NAME|64|monster display name for Bandit|bandit
 MONSTER_BANDIT_DESC||monster description for Bandit|A human road thief in a hide jerkin, carrying a short sword and a pouch of stolen scraps. It tests for weakness, then backs away when the fight turns disciplined.
+MONSTER_BANDIT_ROOKIE_NAME|64|monster display name for Bandit Rookie|bandit rookie
+MONSTER_BANDIT_ROOKIE_DESC||monster description for Bandit Rookie|A nervous road thief in mismatched clothes, gripping a rusty knife and watching the others for courage. It rushes easy-looking prey but loses its nerve in a fair fight.
+MONSTER_ORC_RUNT_NAME|64|monster display name for Orc Runt|orc runt
+MONSTER_ORC_RUNT_DESC||monster description for Orc Runt|A slight, underfed orc in torn clothes, gripping a rusty knife too tightly. It circles behind stronger orcs and darts forward when prey turns away.
+MONSTER_ORC_SCAVENGER_NAME|64|monster display name for Orc Scavenger|orc scavenger
+MONSTER_ORC_SCAVENGER_DESC||monster description for Orc Scavenger|A lean orc in patched hides, carrying a knotted club and a sack of battlefield scraps. It hangs behind the first rush, then closes on anything already wounded.
+MONSTER_DUERGAR_DRUDGE_NAME|64|monster display name for Duergar Drudge|duergar drudge
+MONSTER_DUERGAR_DRUDGE_DESC||monster description for Duergar Drudge|A short gray-skinned dwarf in soot-stiff work clothes, carrying a heavy cudgel with both hands. It is used to cramped tunnels and fights stubbornly when cornered.
+MONSTER_DUERGAR_DELVER_NAME|64|monster display name for Duergar Delver|duergar delver
+MONSTER_DUERGAR_DELVER_DESC||monster description for Duergar Delver|A stocky gray-skinned dwarf in worn leather, with a hand axe tucked close for tunnel fighting. It advances in short guarded steps and refuses to leave a narrow passage.
+MONSTER_CULT_INITIATE_NAME|64|monster display name for Cult Initiate|cult initiate
+MONSTER_CULT_INITIATE_DESC||monster description for Cult Initiate|A frightened initiate in plain dark clothes, holding a rusty knife and repeating a half-learned prayer under its breath. It follows the nearest acolyte into danger.
+MONSTER_SPIDERLING_NAME|64|monster display name for Spiderling|spiderling
+MONSTER_SPIDERLING_DESC||monster description for Spiderling|A hand-sized spider with thin gray legs and a soft mottled body. It pours from cracks in short bursts and bites whatever stops moving.
+MONSTER_SMALL_SLIME_NAME|64|monster display name for Small Slime|small slime
+MONSTER_SMALL_SLIME_DESC||monster description for Small Slime|A palm-deep smear of translucent green slime, moving in slow folds across damp stone. Its surface stings bare skin, but the mass tears apart easily.
+MONSTER_DECREPIT_SKELETON_NAME|64|monster display name for Decrepit Skeleton|decrepit skeleton
+MONSTER_DECREPIT_SKELETON_DESC||monster description for Decrepit Skeleton|A loose frame of yellowed bones held together by weak grave magic. Cracked ribs and missing fingers rattle as it claws its way forward.
+MONSTER_SMALL_LEECH_NAME|64|monster display name for Small Leech|small leech
+MONSTER_SMALL_LEECH_DESC||monster description for Small Leech|A thumb-thick black leech writhing through mud and shallow water. Its round mouth worries at warm flesh, but it has little strength behind the bite.
+MONSTER_SHORE_CRAB_NAME|64|monster display name for Shore Crab|shore crab
+MONSTER_SHORE_CRAB_DESC||monster description for Shore Crab|A knee-wide red crab with a rough shell and two small snapping claws. It scuttles from wet sand and weed when anything passes too close.
+MONSTER_VENOMOUS_SPIDER_NAME|64|monster display name for Venomous Spider|venomous spider
+MONSTER_VENOMOUS_SPIDER_DESC||monster description for Venomous Spider|A knee-high cave spider with a dark swollen abdomen and pale venom beading on its short fangs. It keeps low to the stone and bites before retreating into cover.
+MONSTER_CAVE_GECKO_NAME|64|monster display name for Cave Gecko|cave gecko
+MONSTER_CAVE_GECKO_DESC||monster description for Cave Gecko|A pale cave gecko with flat gripping toes, a thick tail, and lidless black eyes. It clings to low walls and snaps at insects, vermin, and exposed fingers.
+MONSTER_GIANT_CAVE_GECKO_NAME|64|monster display name for Giant Cave Gecko|giant cave gecko
+MONSTER_GIANT_CAVE_GECKO_DESC||monster description for Giant Cave Gecko|A dog-sized pale gecko with broad gripping feet, a muscular tail, and a mouth lined with small hooked teeth. It waits flat against stone before lunging at close prey.
 MONSTER_GIANT_BAT_NAME|64|monster display name for Giant Bat|giant bat
 MONSTER_GIANT_BAT_DESC||monster description for Giant Bat|A large bat with leathery wings, a foxlike face, and clawed feet tucked under its body. It swoops through tight spaces, clips low, and flaps away before a clean counterblow.
 MONSTER_BUGBEAR_NAME|64|monster display name for Bugbear|bugbear
@@ -126190,6 +126770,7 @@ UI_ACTION_EXAMINE|16|generic input action label|examine
 UI_ACTION_EXAMINE_ALL|20|generic input action label|examine all
 UI_ACTION_CLEANSE|16|generic input action label|cleanse
 UI_ACTION_REPAIR|16|generic input action label|repair
+UI_ACTION_IMBUE|16|generic input action label for placing magic into an item|imbue
 UI_RENDER_TITLE_EXAMINE|16|shop mode title fragment|EXAMINE
 UI_RENDER_TITLE_CLEANSE|16|shop mode title fragment|CLEANSE
 UI_RENDER_TITLE_EXAMINE_TARGET|32|vendor examine item target title|EXAMINE ITEM
